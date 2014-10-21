@@ -1,0 +1,194 @@
+
+
+
+Portugal
+- Porto
+- Matosinhos
+- Coimbra
+- Vila Nova de Gaia
+- Setúbal
+- Faro
+- Évora
+- Braga
+- Aveiro
+- Bragança
+- Lisbon
+
+
+Russia
+- Moscow
+- Penza
+- Saint Petersburg
+- Ryazan
+- Ekaterinburg
+- Ufa
+
+
+Finland
+- Helsinki
+
+
+United Kingdom
+- London
+- Southampton
+- Nottingham
+- Plymouth
+- Exeter
+- Leeds
+- Liverpool
+- Brighton
+- Birmingham
+- Bristol
+- Newport
+- Cardiff
+- Aberdeen
+- Glasgow
+- Edinburgh
+- Newcastle
+- Manchester
+
+
+Sweden
+- Malmö
+- Umeå
+- Uppsala
+- Linköping
+- Västerås
+- Stockholm
+- Gothenburg
+
+
+Germany
+- Bremen
+- Rostock
+- Dresden
+- Frankfurt
+- Cologne
+- Munich
+- Hamburg
+- Stuttgart
+- Berlin
+- Magdeburg
+
+
+Spain
+- Valencia
+- Madrid
+- Salamanca
+- Oviedo
+- Gijón
+- Burgos
+- Granada
+- Murcia
+- Alicante
+- Barcelona
+- Bilbao
+- Zaragoza
+- Seville
+- A Coruña
+
+
+France
+- Strasbourg
+- Bordeaux
+- Lille
+- Marseille
+- Lyon
+- Paris
+- Nantes
+- Toulouse
+- Grenoble
+- Nancy
+- Rennes
+- Nice
+- Clermont-Ferrand
+- Metz
+- Montpellier
+
+
+Ukraine
+- Odesa
+- Kyiv
+
+
+Poland
+- Łódź
+- Wrocław
+- Poznań
+- Gdańsk
+- Szczecin
+- Katowice
+- Cracow
+- Warsaw
+
+
+Italy
+- Rome
+- Milan
+- Florence
+- Naples
+- Turin
+- Bari
+- Palermo
+- Genoa
+- Bologna
+
+
+Norway
+- Bergen
+- Oslo
+
+
+Ireland
+- Dublin
+- Belfast
+
+
+Switzerland
+- Lausanne
+- St. Gallen
+- Lucerne
+- Basel
+- Zurich
+- Geneva
+- Fribourg
+- Winterthur
+- Berne
+
+
+Austria
+- Salzburg
+- Graz
+- Linz
+- Vienna
+- Innsbruck
+
+
+Belgium
+- Liège
+- Charleroi
+- Brussels
+- Ghent
+- Antwerp
+
+
+Netherlands
+- Amsterdam
+
+
+Denmark
+- Copenhagen
+
+
+Sweden
+- Malmö
+- Umeå
+- Uppsala
+- Linköping
+- Västerås
+- Stockholm
+- Gothenburg
+
+
+Finland
+- Helsinki
