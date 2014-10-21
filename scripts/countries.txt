@@ -13,12 +13,7 @@ Romania
 Croatia
 Italy
 Norway
-Lithuania
-Moldova
 Estonia
-Latvia
-Cyprus
-Macedonia
 Hungary
 Ireland
 Switzerland
@@ -29,22 +24,11 @@ Slovakia
 Denmark
 Iceland
 Bulgaria
-Kosovo
-Albania
-Bosnia and Herzegovina
 Czech Republic
 Slovenia
 Serbia
 Luxembourg
-Malta
-Andorra
-Liechtenstein
 Monaco
-San Marino
-Montenegro
-Vatican City
 Czech Republic
 Sweden
 Finland
-Faroe Islands
-Gibraltar
