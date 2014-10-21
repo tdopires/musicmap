@@ -28,7 +28,6 @@ def main(argv=None):
                 print 'Array number ' + str(i) + ' is ready.'
                 all_urls.append(inner_urls)
                 inner_urls = []
-                break
 
     if inner_urls:
         all_urls.append(inner_urls)
