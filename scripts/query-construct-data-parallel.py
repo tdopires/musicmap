@@ -2,8 +2,32 @@
 
 import sys, getopt, requests, datetime, urllib, grequests
 
-def exception_handling(request, exception):
-    print '\n\nData could not be retrieved! :( \n' + request.text
+
+def call_reqs(i, len_all_urls, inner_urls, file_name):
+    reqs = [ua[0] for ua in inner_urls]
+    artists = [ua[1] for ua in inner_urls]
+    
+    sys.stdout.write(datetime.datetime.now().strftime('%d-%m-%Y-%H:%M:%S') + ' - ' + str(i) + '/' + str(len_all_urls) + ' ')
+
+    resps = grequests.map(reqs)
+    print '!'
+
+    for j, resp in enumerate(resps):
+        if not resp:
+            continue
+
+        if resp.status_code == requests.codes.ok:
+            if resp.text == '# Empty NT\n':
+                continue
+
+            with open(file_name, 'a+') as f:
+                f.write('\n\n# ' + artists[j] + '\n')
+                f.write(resp.text)
+                f.flush()
+                f.close()
+        else:
+            print unicode(artists[j], 'utf-8') + ' data could not be retrieved...\n\n' + resp.text
+
 
 def main(argv=None):
 
@@ -17,6 +41,9 @@ def main(argv=None):
         
         artists = input_file.readlines()
         i = 0
+        len_all_urls = (len(artists) / 100) + 1
+        print 'We are going to make parallel requests ' + str(len_all_urls) + ' times'
+
         for artist in artists:
             artist = artist.replace('\n', '').strip()
 
@@ -25,35 +52,14 @@ def main(argv=None):
 
             if len(inner_urls) == 100:
                 i += 1
-                print 'Array number ' + str(i) + ' is ready.'
-                all_urls.append(inner_urls)
+                call_reqs(i, len_all_urls, inner_urls, file_name)
                 inner_urls = []
 
-    if inner_urls:
-        all_urls.append(inner_urls)
-
-    len_all_urls = len(all_urls)
-    print 'We are going to make parallel requests ' + str(len_all_urls) + ' times'
-    i = 0
-    for reqs_artists in all_urls:
-        reqs = [ua[0] for ua in reqs_artists]
-        artists = [ua[1] for ua in reqs_artists]
-
-        i += 1
-        sys.stdout.write(str(i) + '/' + str(len_all_urls) + ' ')
-
-        resps = grequests.map(reqs, exception_handler=exception_handling)
-        print '!'
-
-        for j, resp in enumerate(resps):
-            if resp.status_code == requests.codes.ok:
-                if resp.text == '# Empty NT\n':
-                    continue
-
-                with open(file_name, 'a+') as f:
-                    f.write('\n\n# ' + artists[j] + '\n')
-                    f.write(resp.text)
-            
+        if inner_urls:
+            i += 1
+            call_requests(i, len_all_urls, inner_urls)
+            inner_urls = []
+        
 
 if __name__ == "__main__":
     sys.exit(main())
