@@ -21,15 +21,7 @@ def call_reqs(i, len_all_urls, inner_urls, file_name):
                 continue
 
             with open(file_name, 'a+') as f:
-
-                lastindex = resp.text.rindex('<http://purl.org/ontology/mo/MusicArtist>')
-                begin = resp.text[:lastindex]
-                lastn = begin.rindex('http://musicbrainz.org/artist/')
-                tok = begin[lastn:]
-                tok = tok[:tok.index('>')]
-
-                f.write('\n\n#==> ' + unicode(artists[j], "utf-8").encode("utf-8"))
-                f.write(' == ' + tok + ' \n')
+                f.write('\n\n# ' + artists[j] + '\n')
                 f.write(resp.text)
                 f.flush()
                 f.close()
