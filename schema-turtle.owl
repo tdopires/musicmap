@@ -98,6 +98,26 @@
 
 
 
+###  http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#has_location
+
+mbo:has_location rdf:type :ObjectProperty ;
+                 
+                 rdfs:range <http://dbpedia.org/page/Location> ;
+                 
+                 rdfs:domain mbo:Relation_Artist_Location .
+
+
+
+###  http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#top_player_in
+
+mbo:top_player_in rdf:type :ObjectProperty ;
+                  
+                  rdfs:domain <http://purl.org/ontology/mo/MusicArtist> ;
+                  
+                  rdfs:range mbo:Relation_Artist_Location .
+
+
+
 ###  mbo:from_genre
 
 <mbo:from_genre> rdf:type :ObjectProperty ;
@@ -185,6 +205,16 @@
                                                rdfs:domain <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ;
                                                
                                                rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#has_listeners
+
+mbo:has_listeners rdf:type :DatatypeProperty ;
+                  
+                  rdfs:domain mbo:Relation_Artist_Location ;
+                  
+                  rdfs:range xsd:int .
 
 
 
@@ -284,6 +314,12 @@
                                     rdfs:subClassOf <http://purl.org/ontology/mo/MusicalManifestation> ;
                                     
                                     <http://purl.org/dc/elements/1.1/description> "A track on a particular record"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#Relation_Artist_Location
+
+mbo:Relation_Artist_Location rdf:type :Class .
 
 
 
