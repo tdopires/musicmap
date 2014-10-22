@@ -57,7 +57,7 @@ def main(argv=None):
 
         if inner_urls:
             i += 1
-            call_requests(i, len_all_urls, inner_urls)
+            call_reqs(i, len_all_urls, inner_urls, file_name)
             inner_urls = []
         
 

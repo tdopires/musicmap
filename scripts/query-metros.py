@@ -16,9 +16,10 @@ def main(argv=None):
         resp = requests.get(query_url.replace('{0}', unicode(urllib.quote(country, ''), 'utf-8')))
 
         if resp.status_code == requests.codes.ok:
+            print '\n\n' + country
+            
             if isinstance(resp.json()['metros'], dict):
-                print '\n\n' + country
-
+                
                 r = resp.json()['metros']['metro']
 
                 if isinstance(r, list):
