@@ -29,6 +29,3 @@ Slovenia
 Serbia
 Luxembourg
 Monaco
-Czech Republic
-Sweden
-Finland

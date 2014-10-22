@@ -19,6 +19,16 @@
 #################################################################
 
 
+###  http://dbpedia.org/ontology/isPartOf
+
+<http://dbpedia.org/ontology/isPartOf> rdf:type :ObjectProperty ;
+                                       
+                                       rdfs:range <http://dbpedia.org/ontology/continent> ;
+                                       
+                                       rdfs:domain <http://dbpedia.org/page/Location> .
+
+
+
 ###  http://purl.org/ontology/mo/biography
 
 <http://purl.org/ontology/mo/biography> rdf:type :ObjectProperty ;
@@ -74,6 +84,17 @@
                                     rdfs:domain <http://purl.org/ontology/mo/Record> ;
                                     
                                     rdfs:range <http://purl.org/ontology/mo/Track> .
+
+
+
+###  http://www.geonames.org/ontology#parentCountry
+
+<http://www.geonames.org/ontology#parentCountry> rdf:type :FunctionalProperty ,
+                                                          :ObjectProperty ;
+                                                 
+                                                 rdfs:domain <http://dbpedia.org/ontology/city> ;
+                                                 
+                                                 rdfs:range <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> .
 
 
 
@@ -156,6 +177,17 @@
 
 
 
+###  http://www.geonames.org/ontology#countryCode
+
+<http://www.geonames.org/ontology#countryCode> rdf:type :DatatypeProperty ,
+                                                        :FunctionalProperty ;
+                                               
+                                               rdfs:domain <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ;
+                                               
+                                               rdfs:range xsd:string .
+
+
+
 
 
 #################################################################
@@ -163,6 +195,28 @@
 #    Classes
 #
 #################################################################
+
+
+###  http://dbpedia.org/ontology/city
+
+<http://dbpedia.org/ontology/city> rdf:type :Class ;
+                                   
+                                   rdfs:subClassOf <http://dbpedia.org/page/Location> .
+
+
+
+###  http://dbpedia.org/ontology/continent
+
+<http://dbpedia.org/ontology/continent> rdf:type :Class ;
+                                        
+                                        rdfs:subClassOf <http://dbpedia.org/page/Location> .
+
+
+
+###  http://dbpedia.org/page/Location
+
+<http://dbpedia.org/page/Location> rdf:type :Class .
+
 
 
 ###  http://purl.org/ontology/mo/Genre
@@ -233,380 +287,1383 @@
 
 
 
-<http://musicbrainz.org/release/4f445753-5290-4e54-8e37-57680e355f64#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Daft Club"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/76f2dad0-8235-4400-996e-f90132e6607c#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/recording/2a220770-1150-4190-b0e0-57d89a0a7469#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Veridis Quo" .
-<http://musicbrainz.org/recording/cd347933-c52b-4b05-9fe9-f237f913137d#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/5ad66522-edce-3a77-b5fa-7956ee879239#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/6f084ec6-91aa-339c-87ba-a4507fc2eca2#_> <http://purl.org/ontology/mo/track_count> "15"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/36e2aede-346d-4931-8565-78d810d167c7#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/0c871a4a-efdf-47f8-98c2-cc277f806d2f#_> .
-<http://musicbrainz.org/release/610299a4-f9e4-3d54-8cf3-43e08f8467cb#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/b3b3b771-60cb-49db-b435-4a4a840268de#_> .
-<http://musicbrainz.org/release/0db43954-5462-4936-a76f-33d2a10862dd#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2a220770-1150-4190-b0e0-57d89a0a7469#_> .
-<http://musicbrainz.org/release/6fd1ed45-d3c6-4d8d-897e-22f6e89c0ff3#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/02163cf1-f083-4152-8276-23d32aa9dcba#_> .
-<http://musicbrainz.org/release/3d0661a5-b8a4-4045-9aa9-566812b8bc78#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/a8e8c765-a777-4cdb-9588-0a91bd4666ed#_> .
-<http://musicbrainz.org/release/d36255ce-cd6e-4220-b283-93633c4d409c#_> <http://purl.org/ontology/mo/track_count> "15"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/30e45d86-707d-4042-9df5-93724557aadb#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/51467269-3122-3d7e-92b2-0f0a694d30c1#_> <http://purl.org/ontology/mo/track_count> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/44e85a85-77d7-3e2e-8416-65a27d2aef68#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/7c0e11a3-1c7a-4e6d-a14d-6e86d86dbaad#_> .
-<http://musicbrainz.org/release/497f9acf-a695-332e-bc20-1c8745248550#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/89ae9c78-7e38-40ec-bf9f-79d1f2678890#_> .
-<http://musicbrainz.org/release/79215cdf-4764-4dee-b0b9-fec1643df7c5#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/0c871a4a-efdf-47f8-98c2-cc277f806d2f#_> .
-<http://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/0db43954-5462-4936-a76f-33d2a10862dd#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/recording/02163cf1-f083-4152-8276-23d32aa9dcba#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/recording/3b60ae01-5266-400e-b4cd-bee49324df8b#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Burnin" .
-<http://musicbrainz.org/release/5000a285-b67e-4cfc-b54b-2b98f1810d2e#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/dbc0da50-4bc6-4230-9e7b-136b5dc2b31a#_> .
-<http://musicbrainz.org/release/4867ceba-ffe7-40c0-a093-45be6c03c655#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/f0bbc967-7e1c-398c-9ab6-eb66f1c0c181#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/8bca2404-e209-4915-baf8-b4d2633eafb8#_> .
-<http://musicbrainz.org/recording/5868fca7-9b77-4a3f-8eef-e3ebe8621e4c#_> <http://www.w3.org/2000/01/rdf-schema#label>  "What I Mean" .
-<http://musicbrainz.org/release/c6e0351d-6337-35c0-8d31-468fc4ddc70b#_> <http://purl.org/ontology/mo/track_count> "16"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/6f084ec6-91aa-339c-87ba-a4507fc2eca2#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/recording/3b60ae01-5266-400e-b4cd-bee49324df8b#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/recording/28651acc-1f13-4431-b2de-d93a33a50084#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Ph\u0153nix" .
-<http://musicbrainz.org/release/497f9acf-a695-332e-bc20-1c8745248550#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/9ca385f4-4082-494a-974a-b1a8aa997838#_> .
-<http://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/10cdacde-e54a-412a-863b-81d9ea6b3df2#_> .
-<http://musicbrainz.org/recording/5d182e4b-9d5e-437c-9fd3-7d2d246fd574#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Crescendolls (Laidback Luke remix)" .
-<http://musicbrainz.org/release/5ad66522-edce-3a77-b5fa-7956ee879239#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Discovery"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/10cdacde-e54a-412a-863b-81d9ea6b3df2#_> .
-<http://musicbrainz.org/release/76b44de6-dbef-4cdf-b0b7-aca8ea054f7d#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Something About Us: Love Theme From Interstella 5555"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/098060d4-ba3c-469d-88b0-08642261c7ab#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/recording/77eb9a09-f507-4455-b40b-589386cae338#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Aerodynamic (Slum Village remix)" .
-<http://musicbrainz.org/release/3d8a17df-66ba-4e84-b601-9e80269c4b14#_> <http://purl.org/ontology/mo/track_count> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/32385e9e-51cd-3d5e-8d56-2fdc354a166a#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/9ca385f4-4082-494a-974a-b1a8aa997838#_> .
-<http://musicbrainz.org/release/820123f9-a337-4add-8233-286a82918613#_> <http://purl.org/ontology/mo/track_count> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/ce45ae00-c3e2-38db-95e3-2cc4c42f2985#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/98473e2e-6521-4ce9-932c-f1be22ce844d#_> <http://purl.org/ontology/mo/track_count> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/51467269-3122-3d7e-92b2-0f0a694d30c1#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/36e2aede-346d-4931-8565-78d810d167c7#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/b6a94846-aa16-4d8d-b3f9-9ae2d56f08d9#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/d073287b-d1bd-4f11-a933-a4386f8cf701#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/6fd1ed45-d3c6-4d8d-897e-22f6e89c0ff3#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/5868fca7-9b77-4a3f-8eef-e3ebe8621e4c#_> .
-<http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_>  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/MusicArtist> .
-<http://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/89ae9c78-7e38-40ec-bf9f-79d1f2678890#_> .
-<http://musicbrainz.org/release/51467269-3122-3d7e-92b2-0f0a694d30c1#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2a220770-1150-4190-b0e0-57d89a0a7469#_> .
-<http://musicbrainz.org/release/ce45ae00-c3e2-38db-95e3-2cc4c42f2985#_> <http://purl.org/ontology/mo/track_count> "16"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/recording/a8e8c765-a777-4cdb-9588-0a91bd4666ed#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Alive" .
-<http://musicbrainz.org/release/ce45ae00-c3e2-38db-95e3-2cc4c42f2985#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/d073287b-d1bd-4f11-a933-a4386f8cf701#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2a220770-1150-4190-b0e0-57d89a0a7469#_> .
-<http://musicbrainz.org/release/32385e9e-51cd-3d5e-8d56-2fdc354a166a#_> <http://purl.org/ontology/mo/track_count> "16"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_>  <http://purl.org/ontology/mo/biography> <http://fr.wikipedia.org/wiki/Daft_Punk> .
-<http://musicbrainz.org/release/8343b377-ea18-4d64-b5f6-ffaf55d8f55b#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/7c0e11a3-1c7a-4e6d-a14d-6e86d86dbaad#_> .
-<http://musicbrainz.org/release/f6758afb-ecff-410e-8979-b131cfa3c6d3#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/3d8a17df-66ba-4e84-b601-9e80269c4b14#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/820123f9-a337-4add-8233-286a82918613#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Digital Love"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/recording/02163cf1-f083-4152-8276-23d32aa9dcba#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Alabama Blues" .
-<http://musicbrainz.org/recording/dc34eb9c-5c5a-4340-80fe-a493fb5f06ca#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/3d8a17df-66ba-4e84-b601-9e80269c4b14#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Daft Club"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/0db43954-5462-4936-a76f-33d2a10862dd#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/9ca385f4-4082-494a-974a-b1a8aa997838#_> .
-<http://musicbrainz.org/release/61257a51-ebff-47dd-8dbc-c23b0ab77f10#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/a08473a1-e622-49cc-bb97-65f813429025#_> .
-<http://musicbrainz.org/release/79215cdf-4764-4dee-b0b9-fec1643df7c5#_> <http://purl.org/ontology/mo/track_count> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/recording/380715c4-92c8-4b43-a839-8ebcfd3a6c20#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/76f2dad0-8235-4400-996e-f90132e6607c#_> <http://purl.org/ontology/mo/track_count> "13"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/recording/1e386f4f-5302-418a-b603-1fa47eeedc28#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_>  <http://xmlns.com/foaf/0.1/name>  "Daft Punk" .
-<http://musicbrainz.org/recording/b3b3b771-60cb-49db-b435-4a4a840268de#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Digital Love (radio edit)" .
-<http://musicbrainz.org/recording/a08473a1-e622-49cc-bb97-65f813429025#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Alive" .
-<http://musicbrainz.org/release/3d8a17df-66ba-4e84-b601-9e80269c4b14#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/5d182e4b-9d5e-437c-9fd3-7d2d246fd574#_> .
-<http://musicbrainz.org/release/3d8a17df-66ba-4e84-b601-9e80269c4b14#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/30e45d86-707d-4042-9df5-93724557aadb#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Discovery"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/recording/ce70f2eb-8187-432f-a9a7-4ad638a09211#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/44e85a85-77d7-3e2e-8416-65a27d2aef68#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Discovery"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/29437381-b2f4-4d1f-9cc7-e64d186abb99#_> <http://purl.org/ontology/mo/track_count> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/c6e0351d-6337-35c0-8d31-468fc4ddc70b#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/recording/89ae9c78-7e38-40ec-bf9f-79d1f2678890#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/ce45ae00-c3e2-38db-95e3-2cc4c42f2985#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/89ae9c78-7e38-40ec-bf9f-79d1f2678890#_> .
-<http://musicbrainz.org/release/d36255ce-cd6e-4220-b283-93633c4d409c#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/9ca385f4-4082-494a-974a-b1a8aa997838#_> .
-<http://musicbrainz.org/release/44e85a85-77d7-3e2e-8416-65a27d2aef68#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/recording/1e386f4f-5302-418a-b603-1fa47eeedc28#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Crescendolls (Laidback Luke remix)" .
-<http://musicbrainz.org/release/51467269-3122-3d7e-92b2-0f0a694d30c1#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/7c0e11a3-1c7a-4e6d-a14d-6e86d86dbaad#_> .
-<http://musicbrainz.org/release/c5922184-c4e7-35df-bd1d-b198da677993#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/380715c4-92c8-4b43-a839-8ebcfd3a6c20#_> .
-<http://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Homework"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/3d0661a5-b8a4-4045-9aa9-566812b8bc78#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/497f9acf-a695-332e-bc20-1c8745248550#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/28651acc-1f13-4431-b2de-d93a33a50084#_> .
-<http://musicbrainz.org/recording/8bca2404-e209-4915-baf8-b4d2633eafb8#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/0db43954-5462-4936-a76f-33d2a10862dd#_> <http://purl.org/ontology/mo/track_count> "7"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/46937ece-a947-40eb-8c83-c8cd5d375bdd#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/a39cf01b-ec82-3e05-a642-0cb3c612dde3#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/d36255ce-cd6e-4220-b283-93633c4d409c#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/28651acc-1f13-4431-b2de-d93a33a50084#_> .
-<http://musicbrainz.org/recording/380715c4-92c8-4b43-a839-8ebcfd3a6c20#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Da Funk (original version)" .
-<http://musicbrainz.org/release/497f9acf-a695-332e-bc20-1c8745248550#_> <http://purl.org/ontology/mo/track_count> "16"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/76b44de6-dbef-4cdf-b0b7-aca8ea054f7d#_> <http://purl.org/ontology/mo/track_count> "4"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/610299a4-f9e4-3d54-8cf3-43e08f8467cb#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Digital Love"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/36e2aede-346d-4931-8565-78d810d167c7#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2c718ee9-ad54-4016-ae43-e8df5ea1b4e1#_> .
-<http://musicbrainz.org/release/32385e9e-51cd-3d5e-8d56-2fdc354a166a#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/10cdacde-e54a-412a-863b-81d9ea6b3df2#_> .
-<http://musicbrainz.org/release/3992a2e2-21b0-4ec1-9615-dae4bbbc57ed#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/77eb9a09-f507-4455-b40b-589386cae338#_> .
-<http://musicbrainz.org/release/d36255ce-cd6e-4220-b283-93633c4d409c#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/6fd1ed45-d3c6-4d8d-897e-22f6e89c0ff3#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/0b73c226-c97c-4d3c-939b-46c48348b607#_> .
-<http://musicbrainz.org/release/d073287b-d1bd-4f11-a933-a4386f8cf701#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Discovery"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/36e2aede-346d-4931-8565-78d810d167c7#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/497f9acf-a695-332e-bc20-1c8745248550#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/497f9acf-a695-332e-bc20-1c8745248550#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/a08473a1-e622-49cc-bb97-65f813429025#_> .
-<http://musicbrainz.org/recording/5868fca7-9b77-4a3f-8eef-e3ebe8621e4c#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/f6758afb-ecff-410e-8979-b131cfa3c6d3#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/833f00e1-781f-4edd-90e4-e52712618862#_> .
-<http://musicbrainz.org/release/61257a51-ebff-47dd-8dbc-c23b0ab77f10#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Musique, Volume 1: 1993-2005"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/8343b377-ea18-4d64-b5f6-ffaf55d8f55b#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Discovery"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/32385e9e-51cd-3d5e-8d56-2fdc354a166a#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/76f2dad0-8235-4400-996e-f90132e6607c#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Discovery: Bonus Tracks From daftclub.com"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/a39cf01b-ec82-3e05-a642-0cb3c612dde3#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/5d182e4b-9d5e-437c-9fd3-7d2d246fd574#_> .
-<http://musicbrainz.org/release/1c0eaaf9-0852-4232-8dc1-e53597a9b441#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Around the World"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/30e45d86-707d-4042-9df5-93724557aadb#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/7c0e11a3-1c7a-4e6d-a14d-6e86d86dbaad#_> .
-<http://musicbrainz.org/release/46937ece-a947-40eb-8c83-c8cd5d375bdd#_> <http://purl.org/ontology/mo/track_count> "5"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/3d0661a5-b8a4-4045-9aa9-566812b8bc78#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/288c087d-286f-4bcd-bce7-4e4580505c54#_> .
-<http://musicbrainz.org/recording/fdccf21c-9925-411a-9a30-0f7ea79c152c#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/f0bbc967-7e1c-398c-9ab6-eb66f1c0c181#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/77eb9a09-f507-4455-b40b-589386cae338#_> .
-<http://musicbrainz.org/release/32385e9e-51cd-3d5e-8d56-2fdc354a166a#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Homework"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/29437381-b2f4-4d1f-9cc7-e64d186abb99#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/b6a94846-aa16-4d8d-b3f9-9ae2d56f08d9#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/79215cdf-4764-4dee-b0b9-fec1643df7c5#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/dbc0da50-4bc6-4230-9e7b-136b5dc2b31a#_> .
-<http://musicbrainz.org/release/a39cf01b-ec82-3e05-a642-0cb3c612dde3#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/77eb9a09-f507-4455-b40b-589386cae338#_> .
-<http://musicbrainz.org/release/29437381-b2f4-4d1f-9cc7-e64d186abb99#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/c5922184-c4e7-35df-bd1d-b198da677993#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/6f084ec6-91aa-339c-87ba-a4507fc2eca2#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Musique, Volume 1: 1993-2005"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/recording/dbc0da50-4bc6-4230-9e7b-136b5dc2b31a#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/3d0661a5-b8a4-4045-9aa9-566812b8bc78#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/ce70f2eb-8187-432f-a9a7-4ad638a09211#_> .
-<http://musicbrainz.org/recording/369a32e9-0cf5-4776-abdb-073bf5f8c341#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/recording/0c871a4a-efdf-47f8-98c2-cc277f806d2f#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/recording/0c871a4a-efdf-47f8-98c2-cc277f806d2f#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Give Life Back to Music" .
-<http://musicbrainz.org/recording/a08473a1-e622-49cc-bb97-65f813429025#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/4867ceba-ffe7-40c0-a093-45be6c03c655#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/0c871a4a-efdf-47f8-98c2-cc277f806d2f#_> .
-<http://musicbrainz.org/release/ffc8b6c6-7294-475d-bc91-cfb1fde68e4f#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/d073287b-d1bd-4f11-a933-a4386f8cf701#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/c6e0351d-6337-35c0-8d31-468fc4ddc70b#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/89ae9c78-7e38-40ec-bf9f-79d1f2678890#_> .
-<http://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/9ca385f4-4082-494a-974a-b1a8aa997838#_> .
-<http://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/28651acc-1f13-4431-b2de-d93a33a50084#_> .
-<http://musicbrainz.org/release/29437381-b2f4-4d1f-9cc7-e64d186abb99#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/380715c4-92c8-4b43-a839-8ebcfd3a6c20#_> .
-<http://musicbrainz.org/release/ffc8b6c6-7294-475d-bc91-cfb1fde68e4f#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/10cdacde-e54a-412a-863b-81d9ea6b3df2#_> .
-<http://musicbrainz.org/release/5ad66522-edce-3a77-b5fa-7956ee879239#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/7c0e11a3-1c7a-4e6d-a14d-6e86d86dbaad#_> .
-<http://musicbrainz.org/release/4867ceba-ffe7-40c0-a093-45be6c03c655#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2c718ee9-ad54-4016-ae43-e8df5ea1b4e1#_> .
-<http://musicbrainz.org/release/b6a94846-aa16-4d8d-b3f9-9ae2d56f08d9#_> <http://purl.org/ontology/mo/track_count> "15"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/30e45d86-707d-4042-9df5-93724557aadb#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/3d8a17df-66ba-4e84-b601-9e80269c4b14#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/8bca2404-e209-4915-baf8-b4d2633eafb8#_> .
-<http://musicbrainz.org/release/b6a94846-aa16-4d8d-b3f9-9ae2d56f08d9#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/a08473a1-e622-49cc-bb97-65f813429025#_> .
-<http://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305#_> <http://purl.org/ontology/mo/track_count> "8"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/4867ceba-ffe7-40c0-a093-45be6c03c655#_> <http://purl.org/ontology/mo/track_count> "7"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/610299a4-f9e4-3d54-8cf3-43e08f8467cb#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/6f084ec6-91aa-339c-87ba-a4507fc2eca2#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/a08473a1-e622-49cc-bb97-65f813429025#_> .
-<http://musicbrainz.org/recording/0b73c226-c97c-4d3c-939b-46c48348b607#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/recording/a8e8c765-a777-4cdb-9588-0a91bd4666ed#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/recording/7c0e11a3-1c7a-4e6d-a14d-6e86d86dbaad#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Aerodynamic" .
-<http://musicbrainz.org/release/ffc8b6c6-7294-475d-bc91-cfb1fde68e4f#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Homework"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/95d9f3ef-c935-4a7b-b9cb-36aea57b6bae#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/a08473a1-e622-49cc-bb97-65f813429025#_> .
-<http://musicbrainz.org/release/4867ceba-ffe7-40c0-a093-45be6c03c655#_> <http://purl.org/ontology/mo/track_count> "6"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/d36255ce-cd6e-4220-b283-93633c4d409c#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Homework"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/ce45ae00-c3e2-38db-95e3-2cc4c42f2985#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/10cdacde-e54a-412a-863b-81d9ea6b3df2#_> .
-<http://musicbrainz.org/release/5000a285-b67e-4cfc-b54b-2b98f1810d2e#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/29437381-b2f4-4d1f-9cc7-e64d186abb99#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Da Funk"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/51467269-3122-3d7e-92b2-0f0a694d30c1#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Discovery"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/6fd1ed45-d3c6-4d8d-897e-22f6e89c0ff3#_> <http://purl.org/ontology/mo/track_count> "15"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/f0bbc967-7e1c-398c-9ab6-eb66f1c0c181#_> <http://purl.org/ontology/mo/track_count> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/820123f9-a337-4add-8233-286a82918613#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/b3b3b771-60cb-49db-b435-4a4a840268de#_> .
-<http://musicbrainz.org/release/ac7518c6-b630-4761-99c7-6a94cc35a594#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2a220770-1150-4190-b0e0-57d89a0a7469#_> .
-<http://musicbrainz.org/recording/27b481a7-0d7d-45ee-a8ff-d03a778e40ea#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Phoenix" .
-<http://musicbrainz.org/release/3d8a17df-66ba-4e84-b601-9e80269c4b14#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/77eb9a09-f507-4455-b40b-589386cae338#_> .
-<http://musicbrainz.org/release/098060d4-ba3c-469d-88b0-08642261c7ab#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/7c0e11a3-1c7a-4e6d-a14d-6e86d86dbaad#_> .
-<http://musicbrainz.org/release/98473e2e-6521-4ce9-932c-f1be22ce844d#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Get Lucky"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/3992a2e2-21b0-4ec1-9615-dae4bbbc57ed#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/8bca2404-e209-4915-baf8-b4d2633eafb8#_> .
-<http://musicbrainz.org/recording/7c0e11a3-1c7a-4e6d-a14d-6e86d86dbaad#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/recording/ce70f2eb-8187-432f-a9a7-4ad638a09211#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Rollin and Scratchin" .
-<http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_>  <http://www.w3.org/2000/01/rdf-schema#label>  "Daft Punk" .
-<http://musicbrainz.org/recording/2ac40b9b-b009-4c3e-8b67-7c4b065df926#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Rock'n'roll" .
-<http://musicbrainz.org/release/b6a94846-aa16-4d8d-b3f9-9ae2d56f08d9#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Musique, Volume 1: 1993-2005"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/1c0eaaf9-0852-4232-8dc1-e53597a9b441#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/6659bfd7-d0b3-4585-98ff-a9aa0299e17a#_> .
-<http://musicbrainz.org/recording/dbc0da50-4bc6-4230-9e7b-136b5dc2b31a#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Instant Crush" .
-<http://musicbrainz.org/recording/b3b3b771-60cb-49db-b435-4a4a840268de#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/ffc8b6c6-7294-475d-bc91-cfb1fde68e4f#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/9ca385f4-4082-494a-974a-b1a8aa997838#_> .
-<http://musicbrainz.org/release/95d9f3ef-c935-4a7b-b9cb-36aea57b6bae#_> <http://www.w3.org/2000/01/rdf-schema#label>  "The New Wave"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/497f9acf-a695-332e-bc20-1c8745248550#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Homework"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/c6e0351d-6337-35c0-8d31-468fc4ddc70b#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/28651acc-1f13-4431-b2de-d93a33a50084#_> .
-<http://musicbrainz.org/recording/833f00e1-781f-4edd-90e4-e52712618862#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/recording/0b73c226-c97c-4d3c-939b-46c48348b607#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Are You Sleeping" .
-<http://musicbrainz.org/release/32385e9e-51cd-3d5e-8d56-2fdc354a166a#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/28651acc-1f13-4431-b2de-d93a33a50084#_> .
-<http://musicbrainz.org/release/79215cdf-4764-4dee-b0b9-fec1643df7c5#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/833f00e1-781f-4edd-90e4-e52712618862#_> .
-<http://musicbrainz.org/release/3d0661a5-b8a4-4045-9aa9-566812b8bc78#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/c2e8ce8f-385b-4354-b739-5f880e88e9e8#_> .
-<http://musicbrainz.org/release/46937ece-a947-40eb-8c83-c8cd5d375bdd#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/b3b3b771-60cb-49db-b435-4a4a840268de#_> .
-<http://musicbrainz.org/release/92102aaf-ed3b-49eb-bf3a-af0563a72933#_> <http://purl.org/ontology/mo/track_count> "6"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/36e2aede-346d-4931-8565-78d810d167c7#_> <http://purl.org/ontology/mo/track_count> "13"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/recording/77eb9a09-f507-4455-b40b-589386cae338#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/98473e2e-6521-4ce9-932c-f1be22ce844d#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/833f00e1-781f-4edd-90e4-e52712618862#_> .
-<http://musicbrainz.org/release/ffc8b6c6-7294-475d-bc91-cfb1fde68e4f#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/a08473a1-e622-49cc-bb97-65f813429025#_> .
-<http://musicbrainz.org/release/f6758afb-ecff-410e-8979-b131cfa3c6d3#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2c718ee9-ad54-4016-ae43-e8df5ea1b4e1#_> .
-<http://musicbrainz.org/recording/fdccf21c-9925-411a-9a30-0f7ea79c152c#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Oh Yeah" .
-<http://musicbrainz.org/release/5000a285-b67e-4cfc-b54b-2b98f1810d2e#_> <http://purl.org/ontology/mo/track_count> "13"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/recording/10cdacde-e54a-412a-863b-81d9ea6b3df2#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/44e85a85-77d7-3e2e-8416-65a27d2aef68#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/recording/2c718ee9-ad54-4016-ae43-e8df5ea1b4e1#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Touch" .
-<http://musicbrainz.org/release/79215cdf-4764-4dee-b0b9-fec1643df7c5#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/ac7518c6-b630-4761-99c7-6a94cc35a594#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/4867ceba-ffe7-40c0-a093-45be6c03c655#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Random Access Memories"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/89ae9c78-7e38-40ec-bf9f-79d1f2678890#_> .
-<http://musicbrainz.org/release/a39cf01b-ec82-3e05-a642-0cb3c612dde3#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/8bca2404-e209-4915-baf8-b4d2633eafb8#_> .
-<http://musicbrainz.org/release/098060d4-ba3c-469d-88b0-08642261c7ab#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2a220770-1150-4190-b0e0-57d89a0a7469#_> .
-<http://musicbrainz.org/release/5ad66522-edce-3a77-b5fa-7956ee879239#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/36e2aede-346d-4931-8565-78d810d167c7#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/833f00e1-781f-4edd-90e4-e52712618862#_> .
-<http://musicbrainz.org/recording/27b481a7-0d7d-45ee-a8ff-d03a778e40ea#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/ffc8b6c6-7294-475d-bc91-cfb1fde68e4f#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/46937ece-a947-40eb-8c83-c8cd5d375bdd#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Digital Love"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/98473e2e-6521-4ce9-932c-f1be22ce844d#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/c5922184-c4e7-35df-bd1d-b198da677993#_> <http://purl.org/ontology/mo/track_count> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_>  <http://purl.org/ontology/mo/biography> <http://en.wikipedia.org/wiki/Daft_Punk> .
-<http://musicbrainz.org/release/30e45d86-707d-4042-9df5-93724557aadb#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2a220770-1150-4190-b0e0-57d89a0a7469#_> .
-<http://musicbrainz.org/recording/9ca385f4-4082-494a-974a-b1a8aa997838#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/a39cf01b-ec82-3e05-a642-0cb3c612dde3#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Daft Club"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/1c0eaaf9-0852-4232-8dc1-e53597a9b441#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/54f6a421-470e-4b22-b2d6-9b688eac8313#_> .
-<http://musicbrainz.org/release/4f445753-5290-4e54-8e37-57680e355f64#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/recording/5d182e4b-9d5e-437c-9fd3-7d2d246fd574#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/92102aaf-ed3b-49eb-bf3a-af0563a72933#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/recording/c2e8ce8f-385b-4354-b739-5f880e88e9e8#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Fresh" .
-<http://musicbrainz.org/recording/6659bfd7-d0b3-4585-98ff-a9aa0299e17a#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/c6e0351d-6337-35c0-8d31-468fc4ddc70b#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/a08473a1-e622-49cc-bb97-65f813429025#_> .
-<http://musicbrainz.org/release/51467269-3122-3d7e-92b2-0f0a694d30c1#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/ce45ae00-c3e2-38db-95e3-2cc4c42f2985#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/9ca385f4-4082-494a-974a-b1a8aa997838#_> .
-<http://musicbrainz.org/recording/8f36491a-bdc7-4434-bfad-8f0ac5304a54#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/79215cdf-4764-4dee-b0b9-fec1643df7c5#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/3d0661a5-b8a4-4045-9aa9-566812b8bc78#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/27b481a7-0d7d-45ee-a8ff-d03a778e40ea#_> .
-<http://musicbrainz.org/release/30e45d86-707d-4042-9df5-93724557aadb#_> <http://purl.org/ontology/mo/track_count> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/d36255ce-cd6e-4220-b283-93633c4d409c#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/f6758afb-ecff-410e-8979-b131cfa3c6d3#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Random Access Memories"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/recording/89ae9c78-7e38-40ec-bf9f-79d1f2678890#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Oh Yeah" .
-<http://musicbrainz.org/release/5ad66522-edce-3a77-b5fa-7956ee879239#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2a220770-1150-4190-b0e0-57d89a0a7469#_> .
-<http://musicbrainz.org/release/610299a4-f9e4-3d54-8cf3-43e08f8467cb#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/4867ceba-ffe7-40c0-a093-45be6c03c655#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/8343b377-ea18-4d64-b5f6-ffaf55d8f55b#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2a220770-1150-4190-b0e0-57d89a0a7469#_> .
-<http://musicbrainz.org/release/3d0661a5-b8a4-4045-9aa9-566812b8bc78#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2ac40b9b-b009-4c3e-8b67-7c4b065df926#_> .
-<http://musicbrainz.org/release/8343b377-ea18-4d64-b5f6-ffaf55d8f55b#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/a08473a1-e622-49cc-bb97-65f813429025#_> .
-<http://musicbrainz.org/release/76b44de6-dbef-4cdf-b0b7-aca8ea054f7d#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/32385e9e-51cd-3d5e-8d56-2fdc354a166a#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/a08473a1-e622-49cc-bb97-65f813429025#_> .
-<http://musicbrainz.org/release/76b44de6-dbef-4cdf-b0b7-aca8ea054f7d#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2a220770-1150-4190-b0e0-57d89a0a7469#_> .
-<http://musicbrainz.org/release/0db43954-5462-4936-a76f-33d2a10862dd#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/7c0e11a3-1c7a-4e6d-a14d-6e86d86dbaad#_> .
-<http://musicbrainz.org/release/3992a2e2-21b0-4ec1-9615-dae4bbbc57ed#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/recording/c2e8ce8f-385b-4354-b739-5f880e88e9e8#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/1c0eaaf9-0852-4232-8dc1-e53597a9b441#_> <http://purl.org/ontology/mo/track_count> "5"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/36e2aede-346d-4931-8565-78d810d167c7#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/dbc0da50-4bc6-4230-9e7b-136b5dc2b31a#_> .
-<http://musicbrainz.org/release/4f445753-5290-4e54-8e37-57680e355f64#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/5d182e4b-9d5e-437c-9fd3-7d2d246fd574#_> .
-<http://musicbrainz.org/release/8343b377-ea18-4d64-b5f6-ffaf55d8f55b#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/ac7518c6-b630-4761-99c7-6a94cc35a594#_> <http://purl.org/ontology/mo/track_count> "7"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/recording/833f00e1-781f-4edd-90e4-e52712618862#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Get Lucky" .
-<http://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/0db43954-5462-4936-a76f-33d2a10862dd#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Discovery"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/44e85a85-77d7-3e2e-8416-65a27d2aef68#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2a220770-1150-4190-b0e0-57d89a0a7469#_> .
-<http://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/28651acc-1f13-4431-b2de-d93a33a50084#_> .
-<http://musicbrainz.org/release/36e2aede-346d-4931-8565-78d810d167c7#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Random Access Memories"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/497f9acf-a695-332e-bc20-1c8745248550#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/10cdacde-e54a-412a-863b-81d9ea6b3df2#_> .
-<http://musicbrainz.org/release/f6758afb-ecff-410e-8979-b131cfa3c6d3#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/dbc0da50-4bc6-4230-9e7b-136b5dc2b31a#_> .
-<http://musicbrainz.org/release/098060d4-ba3c-469d-88b0-08642261c7ab#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Discovery"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/4831c85e-dd92-445b-a19b-5e65e7d1ce16#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/5000a285-b67e-4cfc-b54b-2b98f1810d2e#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2c718ee9-ad54-4016-ae43-e8df5ea1b4e1#_> .
-<http://musicbrainz.org/recording/6659bfd7-d0b3-4585-98ff-a9aa0299e17a#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Around the World (Tee's Frozen Sun mix)" .
-<http://musicbrainz.org/release/6fd1ed45-d3c6-4d8d-897e-22f6e89c0ff3#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Decks n' Drums n' 909"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/3d0661a5-b8a4-4045-9aa9-566812b8bc78#_> <http://purl.org/ontology/mo/track_count> "13"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/92102aaf-ed3b-49eb-bf3a-af0563a72933#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/8f36491a-bdc7-4434-bfad-8f0ac5304a54#_> .
-<http://musicbrainz.org/release/4831c85e-dd92-445b-a19b-5e65e7d1ce16#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/6f084ec6-91aa-339c-87ba-a4507fc2eca2#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/3d0661a5-b8a4-4045-9aa9-566812b8bc78#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Live @ Rex Club Paris"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/61257a51-ebff-47dd-8dbc-c23b0ab77f10#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/recording/2c718ee9-ad54-4016-ae43-e8df5ea1b4e1#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/recording/cc3a8e1a-3c04-48b4-8de8-db1c6720ec1b#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/recording/be4c15d9-8843-4e44-bbfe-6fa4cb71d1ed#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/5000a285-b67e-4cfc-b54b-2b98f1810d2e#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/833f00e1-781f-4edd-90e4-e52712618862#_> .
-<http://musicbrainz.org/recording/cc3a8e1a-3c04-48b4-8de8-db1c6720ec1b#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Aerodynamic (Slum Village remix)" .
-<http://musicbrainz.org/release/4831c85e-dd92-445b-a19b-5e65e7d1ce16#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Around the World"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/recording/28651acc-1f13-4431-b2de-d93a33a50084#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/44e85a85-77d7-3e2e-8416-65a27d2aef68#_> <http://purl.org/ontology/mo/track_count> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/a39cf01b-ec82-3e05-a642-0cb3c612dde3#_> <http://purl.org/ontology/mo/track_count> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/recording/2ac40b9b-b009-4c3e-8b67-7c4b065df926#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/c6e0351d-6337-35c0-8d31-468fc4ddc70b#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Homework"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/ce45ae00-c3e2-38db-95e3-2cc4c42f2985#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Homework"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/d36255ce-cd6e-4220-b283-93633c4d409c#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/10cdacde-e54a-412a-863b-81d9ea6b3df2#_> .
-<http://musicbrainz.org/release/4867ceba-ffe7-40c0-a093-45be6c03c655#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/833f00e1-781f-4edd-90e4-e52712618862#_> .
-<http://musicbrainz.org/release/76f2dad0-8235-4400-996e-f90132e6607c#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/61257a51-ebff-47dd-8dbc-c23b0ab77f10#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/98473e2e-6521-4ce9-932c-f1be22ce844d#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/recording/be4c15d9-8843-4e44-bbfe-6fa4cb71d1ed#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Around the World (Tee's Frozen Sun mix)" .
-<http://musicbrainz.org/release/32385e9e-51cd-3d5e-8d56-2fdc354a166a#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/89ae9c78-7e38-40ec-bf9f-79d1f2678890#_> .
-<http://musicbrainz.org/release/4831c85e-dd92-445b-a19b-5e65e7d1ce16#_> <http://purl.org/ontology/mo/track_count> "4"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/a08473a1-e622-49cc-bb97-65f813429025#_> .
-<http://musicbrainz.org/release/95d9f3ef-c935-4a7b-b9cb-36aea57b6bae#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/3992a2e2-21b0-4ec1-9615-dae4bbbc57ed#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/5d182e4b-9d5e-437c-9fd3-7d2d246fd574#_> .
-<http://musicbrainz.org/recording/8bca2404-e209-4915-baf8-b4d2633eafb8#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Digital Love (Boris Dlugosch remix)" .
-<http://musicbrainz.org/recording/288c087d-286f-4bcd-bce7-4e4580505c54#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/95d9f3ef-c935-4a7b-b9cb-36aea57b6bae#_> <http://purl.org/ontology/mo/track_count> "4"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/c5922184-c4e7-35df-bd1d-b198da677993#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Da Funk"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/ce45ae00-c3e2-38db-95e3-2cc4c42f2985#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/28651acc-1f13-4431-b2de-d93a33a50084#_> .
-<http://musicbrainz.org/release/820123f9-a337-4add-8233-286a82918613#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/098060d4-ba3c-469d-88b0-08642261c7ab#_> <http://purl.org/ontology/mo/track_count> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/4f445753-5290-4e54-8e37-57680e355f64#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/77eb9a09-f507-4455-b40b-589386cae338#_> .
-<http://musicbrainz.org/release/f0bbc967-7e1c-398c-9ab6-eb66f1c0c181#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Daft Club"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/c5922184-c4e7-35df-bd1d-b198da677993#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/recording/9ca385f4-4082-494a-974a-b1a8aa997838#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Fresh" .
-<http://musicbrainz.org/release/ac7518c6-b630-4761-99c7-6a94cc35a594#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/7c0e11a3-1c7a-4e6d-a14d-6e86d86dbaad#_> .
-<http://musicbrainz.org/release/4f445753-5290-4e54-8e37-57680e355f64#_> <http://purl.org/ontology/mo/track_count> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/f0bbc967-7e1c-398c-9ab6-eb66f1c0c181#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/ac7518c6-b630-4761-99c7-6a94cc35a594#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/61257a51-ebff-47dd-8dbc-c23b0ab77f10#_> <http://purl.org/ontology/mo/track_count> "15"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/76f2dad0-8235-4400-996e-f90132e6607c#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/369a32e9-0cf5-4776-abdb-073bf5f8c341#_> .
-<http://musicbrainz.org/release/8343b377-ea18-4d64-b5f6-ffaf55d8f55b#_> <http://purl.org/ontology/mo/track_count> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/ac7518c6-b630-4761-99c7-6a94cc35a594#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Discovery"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/497f9acf-a695-332e-bc20-1c8745248550#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/6fd1ed45-d3c6-4d8d-897e-22f6e89c0ff3#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/d073287b-d1bd-4f11-a933-a4386f8cf701#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/7c0e11a3-1c7a-4e6d-a14d-6e86d86dbaad#_> .
-<http://musicbrainz.org/recording/8f36491a-bdc7-4434-bfad-8f0ac5304a54#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Aerodynamic (Slum Village remix)" .
-<http://musicbrainz.org/release/3992a2e2-21b0-4ec1-9615-dae4bbbc57ed#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Daft Club"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/79215cdf-4764-4dee-b0b9-fec1643df7c5#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/2c718ee9-ad54-4016-ae43-e8df5ea1b4e1#_> .
-<http://musicbrainz.org/release/d36255ce-cd6e-4220-b283-93633c4d409c#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/89ae9c78-7e38-40ec-bf9f-79d1f2678890#_> .
-<http://musicbrainz.org/release/76f2dad0-8235-4400-996e-f90132e6607c#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/dc34eb9c-5c5a-4340-80fe-a493fb5f06ca#_> .
-<http://musicbrainz.org/release/ce45ae00-c3e2-38db-95e3-2cc4c42f2985#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/a08473a1-e622-49cc-bb97-65f813429025#_> .
-<http://musicbrainz.org/release/f0bbc967-7e1c-398c-9ab6-eb66f1c0c181#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/5d182e4b-9d5e-437c-9fd3-7d2d246fd574#_> .
-<http://musicbrainz.org/release/3d0661a5-b8a4-4045-9aa9-566812b8bc78#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/3b60ae01-5266-400e-b4cd-bee49324df8b#_> .
-<http://musicbrainz.org/release/c6e0351d-6337-35c0-8d31-468fc4ddc70b#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/ffc8b6c6-7294-475d-bc91-cfb1fde68e4f#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/89ae9c78-7e38-40ec-bf9f-79d1f2678890#_> .
-<http://musicbrainz.org/release/1c0eaaf9-0852-4232-8dc1-e53597a9b441#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/3d0661a5-b8a4-4045-9aa9-566812b8bc78#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/cd347933-c52b-4b05-9fe9-f237f913137d#_> .
-<http://musicbrainz.org/release/ffc8b6c6-7294-475d-bc91-cfb1fde68e4f#_> <http://purl.org/ontology/mo/track_count> "16"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/4f445753-5290-4e54-8e37-57680e355f64#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/recording/dc34eb9c-5c5a-4340-80fe-a493fb5f06ca#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Aerodynamic Special (One More Time / Aerodynamic)" .
-<http://musicbrainz.org/recording/2a220770-1150-4190-b0e0-57d89a0a7469#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/f6758afb-ecff-410e-8979-b131cfa3c6d3#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/0c871a4a-efdf-47f8-98c2-cc277f806d2f#_> .
-<http://musicbrainz.org/recording/369a32e9-0cf5-4776-abdb-073bf5f8c341#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Harder, Better, Faster, Stronger (Jess & Crabbe remix)" .
-<http://musicbrainz.org/recording/cd347933-c52b-4b05-9fe9-f237f913137d#_> <http://www.w3.org/2000/01/rdf-schema#label>  "The Chase" .
-<http://musicbrainz.org/release/6fd1ed45-d3c6-4d8d-897e-22f6e89c0ff3#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/46937ece-a947-40eb-8c83-c8cd5d375bdd#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/5ad66522-edce-3a77-b5fa-7956ee879239#_> <http://purl.org/ontology/mo/track_count> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/c6e0351d-6337-35c0-8d31-468fc4ddc70b#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/10cdacde-e54a-412a-863b-81d9ea6b3df2#_> .
-<http://musicbrainz.org/recording/10cdacde-e54a-412a-863b-81d9ea6b3df2#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Daftendirekt" .
-<http://musicbrainz.org/recording/54f6a421-470e-4b22-b2d6-9b688eac8313#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Track> .
-<http://musicbrainz.org/release/95d9f3ef-c935-4a7b-b9cb-36aea57b6bae#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/f6758afb-ecff-410e-8979-b131cfa3c6d3#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/5000a285-b67e-4cfc-b54b-2b98f1810d2e#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/0c871a4a-efdf-47f8-98c2-cc277f806d2f#_> .
-<http://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec#_> <http://purl.org/ontology/mo/track_count> "16"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/3992a2e2-21b0-4ec1-9615-dae4bbbc57ed#_> <http://purl.org/ontology/mo/track_count> "15"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Homework"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/32385e9e-51cd-3d5e-8d56-2fdc354a166a#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/d073287b-d1bd-4f11-a933-a4386f8cf701#_> <http://purl.org/ontology/mo/track_count> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/f0bbc967-7e1c-398c-9ab6-eb66f1c0c181#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/recording/54f6a421-470e-4b22-b2d6-9b688eac8313#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Call Out Research Hook" .
-<http://musicbrainz.org/release/a39cf01b-ec82-3e05-a642-0cb3c612dde3#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/76f2dad0-8235-4400-996e-f90132e6607c#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/cc3a8e1a-3c04-48b4-8de8-db1c6720ec1b#_> .
-<http://musicbrainz.org/release/4867ceba-ffe7-40c0-a093-45be6c03c655#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/dbc0da50-4bc6-4230-9e7b-136b5dc2b31a#_> .
-<http://musicbrainz.org/release/098060d4-ba3c-469d-88b0-08642261c7ab#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/5000a285-b67e-4cfc-b54b-2b98f1810d2e#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/3992a2e2-21b0-4ec1-9615-dae4bbbc57ed#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/79215cdf-4764-4dee-b0b9-fec1643df7c5#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Random Access Memories"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/3d0661a5-b8a4-4045-9aa9-566812b8bc78#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/76f2dad0-8235-4400-996e-f90132e6607c#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/1e386f4f-5302-418a-b603-1fa47eeedc28#_> .
-<http://musicbrainz.org/release/92102aaf-ed3b-49eb-bf3a-af0563a72933#_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
-<http://musicbrainz.org/release/1c0eaaf9-0852-4232-8dc1-e53597a9b441#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/76b44de6-dbef-4cdf-b0b7-aca8ea054f7d#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/ffc8b6c6-7294-475d-bc91-cfb1fde68e4f#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/28651acc-1f13-4431-b2de-d93a33a50084#_> .
-<http://musicbrainz.org/release/f6758afb-ecff-410e-8979-b131cfa3c6d3#_> <http://purl.org/ontology/mo/track_count> "13"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/610299a4-f9e4-3d54-8cf3-43e08f8467cb#_> <http://purl.org/ontology/mo/track_count> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://musicbrainz.org/release/3d0661a5-b8a4-4045-9aa9-566812b8bc78#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/fdccf21c-9925-411a-9a30-0f7ea79c152c#_> .
-<http://musicbrainz.org/release/5000a285-b67e-4cfc-b54b-2b98f1810d2e#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Random Access Memories"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/c6e0351d-6337-35c0-8d31-468fc4ddc70b#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/9ca385f4-4082-494a-974a-b1a8aa997838#_> .
-<http://musicbrainz.org/release/92102aaf-ed3b-49eb-bf3a-af0563a72933#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Harder, Better, Faster, Stronger"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://musicbrainz.org/release/820123f9-a337-4add-8233-286a82918613#_> <http://purl.org/ontology/mo/publisher> <http://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56#_> .
-<http://musicbrainz.org/release/4f445753-5290-4e54-8e37-57680e355f64#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/8bca2404-e209-4915-baf8-b4d2633eafb8#_> .
-<http://musicbrainz.org/release/4831c85e-dd92-445b-a19b-5e65e7d1ce16#_> <http://purl.org/ontology/mo/track> <http://musicbrainz.org/recording/be4c15d9-8843-4e44-bbfe-6fa4cb71d1ed#_> .
-<http://musicbrainz.org/recording/288c087d-286f-4bcd-bce7-4e4580505c54#_> <http://www.w3.org/2000/01/rdf-schema#label>  "Musique" .
+###  http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country
+
+<http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> rdf:type :Class ;
+                                                                                                          
+                                                                                                          rdfs:subClassOf <http://dbpedia.org/page/Location> .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.geonames.org/2262963/setubal.html
+
+<http://www.geonames.org/2262963/setubal.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                        :NamedIndividual ;
+                                               
+                                               rdfs:label "Setúbal"^^xsd:string ;
+                                               
+                                               <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/PT/portugal.html> .
+
+
+
+###  http://www.geonames.org/2267057/lisbon.html
+
+<http://www.geonames.org/2267057/lisbon.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Lisbon"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/PT/portugal.html> .
+
+
+
+###  http://www.geonames.org/2509954/valencia.html
+
+<http://www.geonames.org/2509954/valencia.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                         :NamedIndividual ;
+                                                
+                                                rdfs:label "Valencia"^^xsd:string ;
+                                                
+                                                <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/ES/spain.html> .
+
+
+
+###  http://www.geonames.org/2510911/sevilla.html
+
+<http://www.geonames.org/2510911/sevilla.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                        :NamedIndividual ;
+                                               
+                                               rdfs:label "Seville"^^xsd:string ;
+                                               
+                                               <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/ES/spain.html> .
+
+
+
+###  http://www.geonames.org/2513416/murcia.html
+
+<http://www.geonames.org/2513416/murcia.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Murcia"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/ES/spain.html> .
+
+
+
+###  http://www.geonames.org/2523920/palermo.html
+
+<http://www.geonames.org/2523920/palermo.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                        :NamedIndividual ;
+                                               
+                                               rdfs:label "Palermo"^^xsd:string ;
+                                               
+                                               <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/IT/italy.html> .
+
+
+
+###  http://www.geonames.org/2618425/copenhagen.html
+
+<http://www.geonames.org/2618425/copenhagen.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                           :NamedIndividual ;
+                                                  
+                                                  rdfs:label "Copenhagen"^^xsd:string ;
+                                                  
+                                                  <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/DK/denmark.html> .
+
+
+
+###  http://www.geonames.org/2643123/manchester.html
+
+<http://www.geonames.org/2643123/manchester.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                           :NamedIndividual ;
+                                                  
+                                                  rdfs:label "Manchester"^^xsd:string ;
+                                                  
+                                                  <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/GB/united-kingdom.html> .
+
+
+
+###  http://www.geonames.org/2643743/london.html
+
+<http://www.geonames.org/2643743/london.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "London"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/GB/united-kingdom.html> .
+
+
+
+###  http://www.geonames.org/2644210/liverpool.html
+
+<http://www.geonames.org/2644210/liverpool.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                          :NamedIndividual ;
+                                                 
+                                                 rdfs:label "Liverpool"^^xsd:string ;
+                                                 
+                                                 <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/GB/united-kingdom.html> .
+
+
+
+###  http://www.geonames.org/2644688/leeds.html
+
+<http://www.geonames.org/2644688/leeds.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                      :NamedIndividual ;
+                                             
+                                             rdfs:label "Leeds"^^xsd:string ;
+                                             
+                                             <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/GB/united-kingdom.html> .
+
+
+
+###  http://www.geonames.org/2648579/glasgow.html
+
+<http://www.geonames.org/2648579/glasgow.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                        :NamedIndividual ;
+                                               
+                                               rdfs:label "Glasgow"^^xsd:string ;
+                                               
+                                               <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/GB/united-kingdom.html> .
+
+
+
+###  http://www.geonames.org/2650225/edinburgh.html
+
+<http://www.geonames.org/2650225/edinburgh.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                          :NamedIndividual ;
+                                                 
+                                                 rdfs:label "Edinburgh"^^xsd:string ;
+                                                 
+                                                 <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/GB/united-kingdom.html> .
+
+
+
+###  http://www.geonames.org/2654675/bristol.html
+
+<http://www.geonames.org/2654675/bristol.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                        :NamedIndividual ;
+                                               
+                                               rdfs:label "Bristol"^^xsd:string ;
+                                               
+                                               <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/GB/united-kingdom.html> .
+
+
+
+###  http://www.geonames.org/2655603/birmingham.html
+
+<http://www.geonames.org/2655603/birmingham.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                           :NamedIndividual ;
+                                                  
+                                                  rdfs:label "Birmingham"^^xsd:string ;
+                                                  
+                                                  <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/GB/united-kingdom.html> .
+
+
+
+###  http://www.geonames.org/2657896/zuerich.html
+
+<http://www.geonames.org/2657896/zuerich.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                        :NamedIndividual ;
+                                               
+                                               rdfs:label "Zurich"^^xsd:string ;
+                                               
+                                               <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/CH/switzerland.html> .
+
+
+
+###  http://www.geonames.org/2657970/winterthur.html
+
+<http://www.geonames.org/2657970/winterthur.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                           :NamedIndividual ;
+                                                  
+                                                  rdfs:label "Winterthur"^^xsd:string ;
+                                                  
+                                                  <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/CH/switzerland.html> .
+
+
+
+###  http://www.geonames.org/2658822/sankt-gallen.html
+
+<http://www.geonames.org/2658822/sankt-gallen.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    rdfs:label "St. Gallen"^^xsd:string ;
+                                                    
+                                                    <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/CH/switzerland.html> .
+
+
+
+###  http://www.geonames.org/2659811/luzern.html
+
+<http://www.geonames.org/2659811/luzern.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Lucerne"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/CH/switzerland.html> .
+
+
+
+###  http://www.geonames.org/2659994/lausanne.html
+
+<http://www.geonames.org/2659994/lausanne.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                         :NamedIndividual ;
+                                                
+                                                rdfs:label "Lausanne"^^xsd:string ;
+                                                
+                                                <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/CH/switzerland.html> .
+
+
+
+###  http://www.geonames.org/2660646/geneve.html
+
+<http://www.geonames.org/2660646/geneve.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Geneva"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/CH/switzerland.html> .
+
+
+
+###  http://www.geonames.org/2661604/basel.html
+
+<http://www.geonames.org/2661604/basel.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                      :NamedIndividual ;
+                                             
+                                             rdfs:label "Basel"^^xsd:string ;
+                                             
+                                             <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/CH/switzerland.html> .
+
+
+
+###  http://www.geonames.org/2664454/vaesteras.html
+
+<http://www.geonames.org/2664454/vaesteras.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                          :NamedIndividual ;
+                                                 
+                                                 rdfs:label "Västerås"^^xsd:string ;
+                                                 
+                                                 <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/SE/sweden.html> .
+
+
+
+###  http://www.geonames.org/2666199/uppsala.html
+
+<http://www.geonames.org/2666199/uppsala.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                        :NamedIndividual ;
+                                               
+                                               rdfs:label "Uppsala"^^xsd:string ;
+                                               
+                                               <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/SE/sweden.html> .
+
+
+
+###  http://www.geonames.org/2673730/stockholm.html
+
+<http://www.geonames.org/2673730/stockholm.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                          :NamedIndividual ;
+                                                 
+                                                 rdfs:label "Stockholm"^^xsd:string ;
+                                                 
+                                                 <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/SE/sweden.html> .
+
+
+
+###  http://www.geonames.org/2694762/linkoeping.html
+
+<http://www.geonames.org/2694762/linkoeping.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                           :NamedIndividual ;
+                                                  
+                                                  rdfs:label "Linköping"^^xsd:string ;
+                                                  
+                                                  <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/SE/sweden.html> .
+
+
+
+###  http://www.geonames.org/2711537/goeteborg.html
+
+<http://www.geonames.org/2711537/goeteborg.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                          :NamedIndividual ;
+                                                 
+                                                 rdfs:label "Gothenburg"^^xsd:string ;
+                                                 
+                                                 <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/SE/sweden.html> .
+
+
+
+###  http://www.geonames.org/2732544/vila-nova-de-gaia.html
+
+<http://www.geonames.org/2732544/vila-nova-de-gaia.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                                  :NamedIndividual ;
+                                                         
+                                                         rdfs:label "Vila Nova de Gaia"^^xsd:string ;
+                                                         
+                                                         <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/PT/portugal.html> .
+
+
+
+###  http://www.geonames.org/2735943/porto.html
+
+<http://www.geonames.org/2735943/porto.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                      :NamedIndividual ;
+                                             
+                                             rdfs:label "Porto"^^xsd:string ;
+                                             
+                                             <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/PT/portugal.html> .
+
+
+
+###  http://www.geonames.org/2740637/coimbra.html
+
+<http://www.geonames.org/2740637/coimbra.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                        :NamedIndividual ;
+                                               
+                                               rdfs:label "Coimbra"^^xsd:string ;
+                                               
+                                               <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/PT/portugal.html> .
+
+
+
+###  http://www.geonames.org/2742032/braga.html
+
+<http://www.geonames.org/2742032/braga.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                      :NamedIndividual ;
+                                             
+                                             rdfs:label "Braga"^^xsd:string ;
+                                             
+                                             <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/PT/portugal.html> .
+
+
+
+###  http://www.geonames.org/2759794/amsterdam.html
+
+<http://www.geonames.org/2759794/amsterdam.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                          :NamedIndividual ;
+                                                 
+                                                 rdfs:label "Amsterdam"^^xsd:string ;
+                                                 
+                                                 <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/NL/netherlands.html> .
+
+
+
+###  http://www.geonames.org/2761369/vienna.html
+
+<http://www.geonames.org/2761369/vienna.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Vienna"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/AT/austria.html> .
+
+
+
+###  http://www.geonames.org/2766824/salzburg.html
+
+<http://www.geonames.org/2766824/salzburg.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                         :NamedIndividual ;
+                                                
+                                                rdfs:label "Salzburg"^^xsd:string ;
+                                                
+                                                <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/AT/austria.html> .
+
+
+
+###  http://www.geonames.org/2772400/linz.html
+
+<http://www.geonames.org/2772400/linz.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                     :NamedIndividual ;
+                                            
+                                            rdfs:label "Linz"^^xsd:string ;
+                                            
+                                            <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/AT/austria.html> .
+
+
+
+###  http://www.geonames.org/2775220/innsbruck.html
+
+<http://www.geonames.org/2775220/innsbruck.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                          :NamedIndividual ;
+                                                 
+                                                 rdfs:label "Innsbruck"^^xsd:string ;
+                                                 
+                                                 <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/AT/austria.html> .
+
+
+
+###  http://www.geonames.org/2778067/graz.html
+
+<http://www.geonames.org/2778067/graz.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                     :NamedIndividual ;
+                                            
+                                            rdfs:label "Graz"^^xsd:string ;
+                                            
+                                            <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/AT/austria.html> .
+
+
+
+###  http://www.geonames.org/2792413/liege.html
+
+<http://www.geonames.org/2792413/liege.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                      :NamedIndividual ;
+                                             
+                                             rdfs:label "Liège"^^xsd:string ;
+                                             
+                                             <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/BE/belgium.html> .
+
+
+
+###  http://www.geonames.org/2797656/gent.html
+
+<http://www.geonames.org/2797656/gent.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                     :NamedIndividual ;
+                                            
+                                            rdfs:label "Ghent"^^xsd:string ;
+                                            
+                                            <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/BE/belgium.html> .
+
+
+
+###  http://www.geonames.org/2800481/charleroi.html
+
+<http://www.geonames.org/2800481/charleroi.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                          :NamedIndividual ;
+                                                 
+                                                 rdfs:label "Charleroi"^^xsd:string ;
+                                                 
+                                                 <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/BE/belgium.html> .
+
+
+
+###  http://www.geonames.org/2800866/brussels.html
+
+<http://www.geonames.org/2800866/brussels.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                         :NamedIndividual ;
+                                                
+                                                rdfs:label "Brussels"^^xsd:string ;
+                                                
+                                                <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/BE/belgium.html> .
+
+
+
+###  http://www.geonames.org/2803138/antwerpen.html
+
+<http://www.geonames.org/2803138/antwerpen.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                          :NamedIndividual ;
+                                                 
+                                                 rdfs:label "Antwerp"^^xsd:string ;
+                                                 
+                                                 <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/BE/belgium.html> .
+
+
+
+###  http://www.geonames.org/2825297/stuttgart.html
+
+<http://www.geonames.org/2825297/stuttgart.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                          :NamedIndividual ;
+                                                 
+                                                 rdfs:label "Stuttgart"^^xsd:string ;
+                                                 
+                                                 <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/DE/germany.html> .
+
+
+
+###  http://www.geonames.org/2867714/munich.html
+
+<http://www.geonames.org/2867714/munich.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Munich"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/DE/germany.html> .
+
+
+
+###  http://www.geonames.org/2886242/koeln.html
+
+<http://www.geonames.org/2886242/koeln.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                      :NamedIndividual ;
+                                             
+                                             rdfs:label "Cologne"^^xsd:string ;
+                                             
+                                             <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/DE/germany.html> .
+
+
+
+###  http://www.geonames.org/2911298/hamburg.html
+
+<http://www.geonames.org/2911298/hamburg.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                        :NamedIndividual ;
+                                               
+                                               rdfs:label "Hamburg"^^xsd:string ;
+                                               
+                                               <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/DE/germany.html> .
+
+
+
+###  http://www.geonames.org/2925533/frankfurt-am-main.html
+
+<http://www.geonames.org/2925533/frankfurt-am-main.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                                  :NamedIndividual ;
+                                                         
+                                                         rdfs:label "Frankfurt"^^xsd:string ;
+                                                         
+                                                         <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/DE/germany.html> .
+
+
+
+###  http://www.geonames.org/2944388/bremen.html
+
+<http://www.geonames.org/2944388/bremen.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Bremen"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/DE/germany.html> .
+
+
+
+###  http://www.geonames.org/2950159/berlin.html
+
+<http://www.geonames.org/2950159/berlin.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Berlin"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/DE/germany.html> .
+
+
+
+###  http://www.geonames.org/2964574/dublin.html
+
+<http://www.geonames.org/2964574/dublin.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Dublin"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/IE/ireland.html> .
+
+
+
+###  http://www.geonames.org/2972315/toulouse.html
+
+<http://www.geonames.org/2972315/toulouse.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                         :NamedIndividual ;
+                                                
+                                                rdfs:label "Toulouse"^^xsd:string ;
+                                                
+                                                <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/FR/france.html> .
+
+
+
+###  http://www.geonames.org/2973783/strasbourg.html
+
+<http://www.geonames.org/2973783/strasbourg.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                           :NamedIndividual ;
+                                                  
+                                                  rdfs:label "Strasbourg"^^xsd:string ;
+                                                  
+                                                  <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/FR/france.html> .
+
+
+
+###  http://www.geonames.org/2988507/paris.html
+
+<http://www.geonames.org/2988507/paris.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                      :NamedIndividual ;
+                                             
+                                             rdfs:label "Paris"^^xsd:string ;
+                                             
+                                             <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/FR/france.html> .
+
+
+
+###  http://www.geonames.org/2990440/nice.html
+
+<http://www.geonames.org/2990440/nice.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                     :NamedIndividual ;
+                                            
+                                            rdfs:label "Nice"^^xsd:string ;
+                                            
+                                            <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/FR/france.html> .
+
+
+
+###  http://www.geonames.org/2990969/nantes.html
+
+<http://www.geonames.org/2990969/nantes.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Nantes"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/FR/france.html> .
+
+
+
+###  http://www.geonames.org/2992166/montpellier.html
+
+<http://www.geonames.org/2992166/montpellier.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                            :NamedIndividual ;
+                                                   
+                                                   rdfs:label "Montpellier"^^xsd:string ;
+                                                   
+                                                   <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/FR/france.html> .
+
+
+
+###  http://www.geonames.org/2995469/marseille.html
+
+<http://www.geonames.org/2995469/marseille.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                          :NamedIndividual ;
+                                                 
+                                                 rdfs:label "Marseille"^^xsd:string ;
+                                                 
+                                                 <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/FR/france.html> .
+
+
+
+###  http://www.geonames.org/2996944/lyon.html
+
+<http://www.geonames.org/2996944/lyon.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                     :NamedIndividual ;
+                                            
+                                            rdfs:label "Lyon"^^xsd:string ;
+                                            
+                                            <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/FR/france.html> .
+
+
+
+###  http://www.geonames.org/2998324/lille.html
+
+<http://www.geonames.org/2998324/lille.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                      :NamedIndividual ;
+                                             
+                                             rdfs:label "Lille"^^xsd:string ;
+                                             
+                                             <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/FR/france.html> .
+
+
+
+###  http://www.geonames.org/3031582/bordeaux.html
+
+<http://www.geonames.org/3031582/bordeaux.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                         :NamedIndividual ;
+                                                
+                                                rdfs:label "Bordeaux"^^xsd:string ;
+                                                
+                                                <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/FR/france.html> .
+
+
+
+###  http://www.geonames.org/3081368/wroclaw.html
+
+<http://www.geonames.org/3081368/wroclaw.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                        :NamedIndividual ;
+                                               
+                                               rdfs:label "Wrocław"^^xsd:string ;
+                                               
+                                               <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/PL/poland.html> .
+
+
+
+###  http://www.geonames.org/3083829/szczecin.html
+
+<http://www.geonames.org/3083829/szczecin.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                         :NamedIndividual ;
+                                                
+                                                rdfs:label "Szczecin"^^xsd:string ;
+                                                
+                                                <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/PL/poland.html> .
+
+
+
+###  http://www.geonames.org/3088171/poznan.html
+
+<http://www.geonames.org/3088171/poznan.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Poznań"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/PL/poland.html> .
+
+
+
+###  http://www.geonames.org/3093133/lodz.html
+
+<http://www.geonames.org/3093133/lodz.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                     :NamedIndividual ;
+                                            
+                                            rdfs:label "Łódź"^^xsd:string ;
+                                            
+                                            <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/PL/poland.html> .
+
+
+
+###  http://www.geonames.org/3096472/katowice.html
+
+<http://www.geonames.org/3096472/katowice.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                         :NamedIndividual ;
+                                                
+                                                rdfs:label "Katowice"^^xsd:string ;
+                                                
+                                                <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/PL/poland.html> .
+
+
+
+###  http://www.geonames.org/3099434/gdansk.html
+
+<http://www.geonames.org/3099434/gdansk.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Gdańsk"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/PL/poland.html> .
+
+
+
+###  http://www.geonames.org/3104324/zaragoza.html
+
+<http://www.geonames.org/3104324/zaragoza.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                         :NamedIndividual ;
+                                                
+                                                rdfs:label "Zaragoza"^^xsd:string ;
+                                                
+                                                <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/ES/spain.html> .
+
+
+
+###  http://www.geonames.org/3117735/madrid.html
+
+<http://www.geonames.org/3117735/madrid.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Madrid"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/ES/spain.html> .
+
+
+
+###  http://www.geonames.org/3128026/bilbao.html
+
+<http://www.geonames.org/3128026/bilbao.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Bilbao"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/ES/spain.html> .
+
+
+
+###  http://www.geonames.org/3128760/barcelona.html
+
+<http://www.geonames.org/3128760/barcelona.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                          :NamedIndividual ;
+                                                 
+                                                 rdfs:label "Barcelona"^^xsd:string ;
+                                                 
+                                                 <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/ES/spain.html> .
+
+
+
+###  http://www.geonames.org/3143244/oslo.html
+
+<http://www.geonames.org/3143244/oslo.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                     :NamedIndividual ;
+                                            
+                                            rdfs:label "Oslo"^^xsd:string ;
+                                            
+                                            <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/NO/norway.html> .
+
+
+
+###  http://www.geonames.org/3161732/bergen.html
+
+<http://www.geonames.org/3161732/bergen.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Bergen"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/NO/norway.html> .
+
+
+
+###  http://www.geonames.org/3165524/turin.html
+
+<http://www.geonames.org/3165524/turin.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                      :NamedIndividual ;
+                                             
+                                             rdfs:label "Turin"^^xsd:string ;
+                                             
+                                             <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/IT/italy.html> .
+
+
+
+###  http://www.geonames.org/3169070/rome.html
+
+<http://www.geonames.org/3169070/rome.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                     :NamedIndividual ;
+                                            
+                                            rdfs:label "Rome"^^xsd:string ;
+                                            
+                                            <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/IT/italy.html> .
+
+
+
+###  http://www.geonames.org/3172394/napoli.html
+
+<http://www.geonames.org/3172394/napoli.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Naples"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/IT/italy.html> .
+
+
+
+###  http://www.geonames.org/3173435/milano.html
+
+<http://www.geonames.org/3173435/milano.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                       :NamedIndividual ;
+                                              
+                                              rdfs:label "Milan"^^xsd:string ;
+                                              
+                                              <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/IT/italy.html> .
+
+
+
+###  http://www.geonames.org/3176219/genoa.html
+
+<http://www.geonames.org/3176219/genoa.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                      :NamedIndividual ;
+                                             
+                                             rdfs:label "Genoa"^^xsd:string ;
+                                             
+                                             <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/IT/italy.html> .
+
+
+
+###  http://www.geonames.org/3176959/florence.html
+
+<http://www.geonames.org/3176959/florence.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                         :NamedIndividual ;
+                                                
+                                                rdfs:label "Florence"^^xsd:string ;
+                                                
+                                                <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/IT/italy.html> .
+
+
+
+###  http://www.geonames.org/3181928/bologna.html
+
+<http://www.geonames.org/3181928/bologna.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                        :NamedIndividual ;
+                                               
+                                               rdfs:label "Bologna"^^xsd:string ;
+                                               
+                                               <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/IT/italy.html> .
+
+
+
+###  http://www.geonames.org/3182351/bari.html
+
+<http://www.geonames.org/3182351/bari.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                     :NamedIndividual ;
+                                            
+                                            rdfs:label "Bari"^^xsd:string ;
+                                            
+                                            <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/IT/italy.html> .
+
+
+
+###  http://www.geonames.org/498817/saint-petersburg.html
+
+<http://www.geonames.org/498817/saint-petersburg.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                                :NamedIndividual ;
+                                                       
+                                                       rdfs:label "Saint Petersburg"^^xsd:string ;
+                                                       
+                                                       <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/RU/russia.html> .
+
+
+
+###  http://www.geonames.org/524901/moscow.html
+
+<http://www.geonames.org/524901/moscow.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                      :NamedIndividual ;
+                                             
+                                             rdfs:label "Moscow"^^xsd:string ;
+                                             
+                                             <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/RU/russia.html> .
+
+
+
+###  http://www.geonames.org/6255148/
+
+<http://www.geonames.org/6255148/> rdf:type <http://dbpedia.org/ontology/continent> ,
+                                            :NamedIndividual ;
+                                   
+                                   rdfs:label "Europe"^^xsd:string ;
+                                   
+                                   <http://purl.org/dc/elements/1.1/title> "Europe"^^xsd:string .
+
+
+
+###  http://www.geonames.org/658225/helsinki.html
+
+<http://www.geonames.org/658225/helsinki.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                        :NamedIndividual ;
+                                               
+                                               rdfs:label "Helsinki"^^xsd:string ;
+                                               
+                                               <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/FI/finland.html> .
+
+
+
+###  http://www.geonames.org/698740/odessa.html
+
+<http://www.geonames.org/698740/odessa.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                      :NamedIndividual ;
+                                             
+                                             rdfs:label "Odesa"^^xsd:string ;
+                                             
+                                             <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/UA/ukraine.html> .
+
+
+
+###  http://www.geonames.org/703448/kiev.html
+
+<http://www.geonames.org/703448/kiev.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                    :NamedIndividual ;
+                                           
+                                           rdfs:label "Kyiv"^^xsd:string ;
+                                           
+                                           <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/UA/ukraine.html> .
+
+
+
+###  http://www.geonames.org/756135/warsaw.html
+
+<http://www.geonames.org/756135/warsaw.html> rdf:type <http://dbpedia.org/ontology/city> ,
+                                                      :NamedIndividual ;
+                                             
+                                             rdfs:label "Warsaw"^^xsd:string ;
+                                             
+                                             <http://www.geonames.org/ontology#parentCountry> <http://www.geonames.org/countries/PL/poland.html> .
+
+
+
+###  http://www.geonames.org/countries/AT/austria.html
+
+<http://www.geonames.org/countries/AT/austria.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    rdfs:label "Austria"^^xsd:string ;
+                                                    
+                                                    <http://www.geonames.org/ontology#countryCode> "AT"^^xsd:string ;
+                                                    
+                                                    <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/BE/belgium.html
+
+<http://www.geonames.org/countries/BE/belgium.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    rdfs:label "Belgium"^^xsd:string ;
+                                                    
+                                                    <http://www.geonames.org/ontology#countryCode> "BE"^^xsd:string ;
+                                                    
+                                                    <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/BG/bulgaria.html
+
+<http://www.geonames.org/countries/BG/bulgaria.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     rdfs:label "Bulgaria"^^xsd:string ;
+                                                     
+                                                     <http://www.geonames.org/ontology#countryCode> "BG"^^xsd:string ;
+                                                     
+                                                     <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/CH/switzerland.html
+
+<http://www.geonames.org/countries/CH/switzerland.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                                 :NamedIndividual ;
+                                                        
+                                                        rdfs:label "Switzerland"^^xsd:string ;
+                                                        
+                                                        <http://www.geonames.org/ontology#countryCode> "CH"^^xsd:string ;
+                                                        
+                                                        <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/CZ/czech-republic.html
+
+<http://www.geonames.org/countries/CZ/czech-republic.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                                    :NamedIndividual ;
+                                                           
+                                                           rdfs:label "Czech Republic"^^xsd:string ;
+                                                           
+                                                           <http://www.geonames.org/ontology#countryCode> "CZ"^^xsd:string ;
+                                                           
+                                                           <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/DE/germany.html
+
+<http://www.geonames.org/countries/DE/germany.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    rdfs:label "Germany"^^xsd:string ;
+                                                    
+                                                    <http://www.geonames.org/ontology#countryCode> "DE"^^xsd:string ;
+                                                    
+                                                    <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/DK/denmark.html
+
+<http://www.geonames.org/countries/DK/denmark.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    rdfs:label "Denmark"^^xsd:string ;
+                                                    
+                                                    <http://www.geonames.org/ontology#countryCode> "DK"^^xsd:string ;
+                                                    
+                                                    <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/EE/estonia.html
+
+<http://www.geonames.org/countries/EE/estonia.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    rdfs:label "Estonia"^^xsd:string ;
+                                                    
+                                                    <http://www.geonames.org/ontology#countryCode> "EE"^^xsd:string ;
+                                                    
+                                                    <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/ES/spain.html
+
+<http://www.geonames.org/countries/ES/spain.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                           :NamedIndividual ;
+                                                  
+                                                  rdfs:label "Spain"^^xsd:string ;
+                                                  
+                                                  <http://www.geonames.org/ontology#countryCode> "ES"^^xsd:string ;
+                                                  
+                                                  <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/FI/finland.html
+
+<http://www.geonames.org/countries/FI/finland.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    rdfs:label "Finland"^^xsd:string ;
+                                                    
+                                                    <http://www.geonames.org/ontology#countryCode> "FI"^^xsd:string ;
+                                                    
+                                                    <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/FR/france.html
+
+<http://www.geonames.org/countries/FR/france.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                            :NamedIndividual ;
+                                                   
+                                                   rdfs:label "France"^^xsd:string ;
+                                                   
+                                                   <http://www.geonames.org/ontology#countryCode> "FR"^^xsd:string ;
+                                                   
+                                                   <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/GB/united-kingdom.html
+
+<http://www.geonames.org/countries/GB/united-kingdom.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                                    :NamedIndividual ;
+                                                           
+                                                           rdfs:label "United Kingdom"^^xsd:string ;
+                                                           
+                                                           <http://www.geonames.org/ontology#countryCode> "GB"^^xsd:string ;
+                                                           
+                                                           <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/GR/greece.html
+
+<http://www.geonames.org/countries/GR/greece.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                            :NamedIndividual ;
+                                                   
+                                                   rdfs:label "Greece"^^xsd:string ;
+                                                   
+                                                   <http://www.geonames.org/ontology#countryCode> "GR"^^xsd:string ;
+                                                   
+                                                   <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/HR/croatia.html
+
+<http://www.geonames.org/countries/HR/croatia.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    rdfs:label "Croatia"^^xsd:string ;
+                                                    
+                                                    <http://www.geonames.org/ontology#countryCode> "HR"^^xsd:string ;
+                                                    
+                                                    <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/HU/hungary.html
+
+<http://www.geonames.org/countries/HU/hungary.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    rdfs:label "Hungary"^^xsd:string ;
+                                                    
+                                                    <http://www.geonames.org/ontology#countryCode> "HU"^^xsd:string ;
+                                                    
+                                                    <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/IE/ireland.html
+
+<http://www.geonames.org/countries/IE/ireland.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    rdfs:label "Ireland"^^xsd:string ;
+                                                    
+                                                    <http://www.geonames.org/ontology#countryCode> "IE"^^xsd:string ;
+                                                    
+                                                    <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/IS/iceland.html
+
+<http://www.geonames.org/countries/IS/iceland.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    rdfs:label "Iceland"^^xsd:string ;
+                                                    
+                                                    <http://www.geonames.org/ontology#countryCode> "IS"^^xsd:string ;
+                                                    
+                                                    <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/IT/italy.html
+
+<http://www.geonames.org/countries/IT/italy.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                           :NamedIndividual ;
+                                                  
+                                                  rdfs:label "Italy"^^xsd:string ;
+                                                  
+                                                  <http://www.geonames.org/ontology#countryCode> "IT"^^xsd:string ;
+                                                  
+                                                  <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/LU/luxembourg.html
+
+<http://www.geonames.org/countries/LU/luxembourg.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                                :NamedIndividual ;
+                                                       
+                                                       rdfs:label "Luxembourg"^^xsd:string ;
+                                                       
+                                                       <http://www.geonames.org/ontology#countryCode> "LU"^^xsd:string ;
+                                                       
+                                                       <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/MC/monaco.html
+
+<http://www.geonames.org/countries/MC/monaco.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                            :NamedIndividual ;
+                                                   
+                                                   rdfs:label "Monaco"^^xsd:string ;
+                                                   
+                                                   <http://www.geonames.org/ontology#countryCode> "MC"^^xsd:string ;
+                                                   
+                                                   <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/NL/netherlands.html
+
+<http://www.geonames.org/countries/NL/netherlands.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                                 :NamedIndividual ;
+                                                        
+                                                        rdfs:label "Netherlands"^^xsd:string ;
+                                                        
+                                                        <http://www.geonames.org/ontology#countryCode> "NL"^^xsd:string ;
+                                                        
+                                                        <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/NO/norway.html
+
+<http://www.geonames.org/countries/NO/norway.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                            :NamedIndividual ;
+                                                   
+                                                   rdfs:label "Norway"^^xsd:string ;
+                                                   
+                                                   <http://www.geonames.org/ontology#countryCode> "NO"^^xsd:string ;
+                                                   
+                                                   <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/PL/poland.html
+
+<http://www.geonames.org/countries/PL/poland.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                            :NamedIndividual ;
+                                                   
+                                                   rdfs:label "Poland"^^xsd:string ;
+                                                   
+                                                   <http://www.geonames.org/ontology#countryCode> "PL"^^xsd:string ;
+                                                   
+                                                   <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/PT/portugal.html
+
+<http://www.geonames.org/countries/PT/portugal.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     rdfs:label "Portugal"^^xsd:string ;
+                                                     
+                                                     <http://www.geonames.org/ontology#countryCode> "PT"^^xsd:string ;
+                                                     
+                                                     <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/RO/romania.html
+
+<http://www.geonames.org/countries/RO/romania.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    rdfs:label "Romania"^^xsd:string ;
+                                                    
+                                                    <http://www.geonames.org/ontology#countryCode> "RO"^^xsd:string ;
+                                                    
+                                                    <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/RS/serbia.html
+
+<http://www.geonames.org/countries/RS/serbia.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                            :NamedIndividual ;
+                                                   
+                                                   rdfs:label "Serbia"^^xsd:string ;
+                                                   
+                                                   <http://www.geonames.org/ontology#countryCode> "RS"^^xsd:string ;
+                                                   
+                                                   <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/RU/russia.html
+
+<http://www.geonames.org/countries/RU/russia.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                            :NamedIndividual ;
+                                                   
+                                                   rdfs:label "Russia"^^xsd:string ;
+                                                   
+                                                   <http://www.geonames.org/ontology#countryCode> "RU"^^xsd:string ;
+                                                   
+                                                   <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/SE/sweden.html
+
+<http://www.geonames.org/countries/SE/sweden.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                            :NamedIndividual ;
+                                                   
+                                                   rdfs:label "Sweden"^^xsd:string ;
+                                                   
+                                                   <http://www.geonames.org/ontology#countryCode> "SE"^^xsd:string ;
+                                                   
+                                                   <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/SI/slovenia.html
+
+<http://www.geonames.org/countries/SI/slovenia.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     rdfs:label "Slovenia"^^xsd:string ;
+                                                     
+                                                     <http://www.geonames.org/ontology#countryCode> "SI"^^xsd:string ;
+                                                     
+                                                     <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/SK/slovakia.html
+
+<http://www.geonames.org/countries/SK/slovakia.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     rdfs:label "Slovakia"^^xsd:string ;
+                                                     
+                                                     <http://www.geonames.org/ontology#countryCode> "SK"^^xsd:string ;
+                                                     
+                                                     <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+###  http://www.geonames.org/countries/UA/ukraine.html
+
+<http://www.geonames.org/countries/UA/ukraine.html> rdf:type <http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    rdfs:label "Ukraine"^^xsd:string ;
+                                                    
+                                                    <http://www.geonames.org/ontology#countryCode> "UA"^^xsd:string ;
+                                                    
+                                                    <http://dbpedia.org/ontology/isPartOf> <http://www.geonames.org/6255148/> .
+
+
+
+
+###  Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net
+

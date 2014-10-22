@@ -1,27 +1,15 @@
-
-
-
 Portugal
 - Porto
-- Matosinhos
 - Coimbra
 - Vila Nova de Gaia
 - Setúbal
-- Faro
-- Évora
 - Braga
-- Aveiro
-- Bragança
 - Lisbon
 
 
 Russia
 - Moscow
-- Penza
 - Saint Petersburg
-- Ryazan
-- Ekaterinburg
-- Ufa
 
 
 Finland
@@ -30,27 +18,16 @@ Finland
 
 United Kingdom
 - London
-- Southampton
-- Nottingham
-- Plymouth
-- Exeter
 - Leeds
 - Liverpool
-- Brighton
 - Birmingham
 - Bristol
-- Newport
-- Cardiff
-- Aberdeen
 - Glasgow
 - Edinburgh
-- Newcastle
 - Manchester
 
 
 Sweden
-- Malmö
-- Umeå
 - Uppsala
 - Linköping
 - Västerås
@@ -60,32 +37,22 @@ Sweden
 
 Germany
 - Bremen
-- Rostock
-- Dresden
 - Frankfurt
 - Cologne
 - Munich
 - Hamburg
 - Stuttgart
 - Berlin
-- Magdeburg
 
 
 Spain
 - Valencia
 - Madrid
-- Salamanca
-- Oviedo
-- Gijón
-- Burgos
-- Granada
 - Murcia
-- Alicante
 - Barcelona
 - Bilbao
 - Zaragoza
 - Seville
-- A Coruña
 
 
 France
@@ -97,12 +64,7 @@ France
 - Paris
 - Nantes
 - Toulouse
-- Grenoble
-- Nancy
-- Rennes
 - Nice
-- Clermont-Ferrand
-- Metz
 - Montpellier
 
 
@@ -118,7 +80,6 @@ Poland
 - Gdańsk
 - Szczecin
 - Katowice
-- Cracow
 - Warsaw
 
 
@@ -141,7 +102,6 @@ Norway
 
 Ireland
 - Dublin
-- Belfast
 
 
 Switzerland
@@ -151,9 +111,7 @@ Switzerland
 - Basel
 - Zurich
 - Geneva
-- Fribourg
 - Winterthur
-- Berne
 
 
 Austria
@@ -178,17 +136,3 @@ Netherlands
 
 Denmark
 - Copenhagen
-
-
-Sweden
-- Malmö
-- Umeå
-- Uppsala
-- Linköping
-- Västerås
-- Stockholm
-- Gothenburg
-
-
-Finland
-- Helsinki
