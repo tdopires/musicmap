@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 
-import sys, getopt, requests, datetime, urllib, grequests
+import sys, getopt, requests, datetime, urllib, grequests, json
 
-
-def call_reqs(i, len_all_urls, inner_urls, file_name):
+def call_reqs(i, len_all_urls, inner_urls, genres_set, artist_genres):
     reqs = [ua[0] for ua in inner_urls]
     artists = [ua[1] for ua in inner_urls]
     
@@ -17,12 +16,14 @@ def call_reqs(i, len_all_urls, inner_urls, file_name):
             continue
 
         if resp.status_code == requests.codes.ok:
-            print artists[j], [ k['name'] for k in resp.json()['toptags']['tag'] if int(k['count']) >= 66 ]
-            #with open(file_name, 'a+') as f:
-            #    f.write('\n\n# ' + artists[j] + '\n')
-            #    f.write(resp.text)
-            #    f.flush()
-            #    f.close()
+            if resp.json()['toptags'].get('tag') and isinstance(resp.json()['toptags']['tag'], list):
+                genres = [ k['name'] for k in resp.json()['toptags']['tag'] if k['count'] and int(k['count']) >= 66 ]
+
+                for genre in genres:
+                    genres_set.add(genre)
+
+                artist_genres[artists[j]] = genres
+                
         else:
             print unicode(artists[j], 'utf-8') + ' data could not be retrieved...\n\n' + resp.text
 
@@ -33,9 +34,16 @@ def main(argv=None):
 
     file_name = 'artists-genres-result-' + datetime.datetime.now().strftime('%d-%m-%Y-%H:%M:%S') + '.txt'
 
+    genres_set = set([])
+    artist_genres = {}
+
+    artists_uris = []
+    with open('artists-with-uri.txt', 'r') as input_file:
+        artists_uris = json.loads(input_file.read())
+
     all_urls = []
     inner_urls = []
-    with open('artists-genres.txt', 'r') as input_file:
+    with open('artists.txt', 'r') as input_file:
         
         artists = input_file.readlines()
         i = 0
@@ -50,13 +58,28 @@ def main(argv=None):
 
             if len(inner_urls) == 100:
                 i += 1
-                call_reqs(i, len_all_urls, inner_urls, file_name)
+                call_reqs(i, len_all_urls, inner_urls, genres_set, artist_genres)
                 inner_urls = []
 
         if inner_urls:
             i += 1
-            call_reqs(i, len_all_urls, inner_urls, file_name)
+            call_reqs(i, len_all_urls, inner_urls, genres_set, artist_genres)
             inner_urls = []
+
+
+    #for genre in genres_set:
+    #    print 'mbo:' + genre.replace(' ', '_').lower() + ' rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; '
+    #    print '                rdfs:label "' + genre.title() + '"^^xsd:string .'
+
+    for artist_name in artist_genres.keys():
+        artist_uri = artists_uris.get(artist_name.lower())
+        if artist_uri:
+            genres = artist_genres[artist_name]
+
+            for genre in genres:
+                n_genre = genre.replace('/', '_').replace('-', '_')
+                if n_genre.title() in ["Folk Rock", "Dance", "Heavy Metal", "Classic Rock", "Alternative Rock", "Mpb", "Electrohouse", "Folk", "Indie Rock", "Indie Pop", "Instrumental", "Metalcore", "Indie", "Punk Rock", "Salsa", "Opera", "Trap", "Rock", "Dubstep", "Blues", "Techno", "Pop Rock", "Gospel", "Punk", "Hard Rock", "Electronic", "Forro", "Classical", "Death Metal", "Samba", "Rap", "Trance", "Hip-Hop", "Metal", "Jazz", "Hip Hop", "Country", "Pop", "Funk", "Sertanejo", "Ska", "Thrash Metal", "Orchestral", "Bossa Nova", "Reggae"]:
+                    print '<' + artist_uri + '> <mbo:from_genre> mbo:' + genre.replace(' ', '_').lower() + ' .'
         
 
 if __name__ == "__main__":

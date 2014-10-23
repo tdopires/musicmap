@@ -1,0 +1,131 @@
+mbo:folk_rock rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Folk Rock"^^xsd:string .
+
+mbo:dance rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Dance"^^xsd:string .
+
+mbo:heavy_metal rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Heavy Metal"^^xsd:string .
+
+mbo:classic_rock rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Classic Rock"^^xsd:string .
+
+mbo:alternative_rock rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Alternative Rock"^^xsd:string .
+
+mbo:mpb rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Mpb"^^xsd:string .
+
+mbo:electrohouse rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Electrohouse"^^xsd:string .
+
+mbo:folk rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Folk"^^xsd:string .
+
+mbo:indie_rock rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Indie Rock"^^xsd:string .
+
+mbo:indie_pop rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Indie Pop"^^xsd:string .
+
+mbo:instrumental rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Instrumental"^^xsd:string .
+
+mbo:metalcore rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Metalcore"^^xsd:string .
+
+mbo:indie rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Indie"^^xsd:string .
+
+mbo:punk_rock rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Punk Rock"^^xsd:string .
+
+mbo:salsa rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Salsa"^^xsd:string .
+
+mbo:opera rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Opera"^^xsd:string .
+
+mbo:trap rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Trap"^^xsd:string .
+
+mbo:rock rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Rock"^^xsd:string .
+
+mbo:dubstep rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Dubstep"^^xsd:string .
+
+mbo:blues rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Blues"^^xsd:string .
+
+mbo:techno rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Techno"^^xsd:string .
+
+mbo:pop_rock rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Pop Rock"^^xsd:string .
+
+mbo:gospel rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Gospel"^^xsd:string .
+
+mbo:punk rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Punk"^^xsd:string .
+
+mbo:hard_rock rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Hard Rock"^^xsd:string .
+
+mbo:electronic rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Electronic"^^xsd:string .
+
+mbo:forro rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Forro"^^xsd:string .
+
+mbo:classical rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Classical"^^xsd:string .
+
+mbo:death_metal rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Death Metal"^^xsd:string .
+
+mbo:samba rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Samba"^^xsd:string .
+
+mbo:rap rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Rap"^^xsd:string .
+
+mbo:trance rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Trance"^^xsd:string .
+                
+mbo:metal rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Metal"^^xsd:string .
+
+mbo:jazz rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Jazz"^^xsd:string .
+
+mbo:hip_hop rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Hip Hop"^^xsd:string .
+
+mbo:country rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Country"^^xsd:string .
+
+mbo:pop rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Pop"^^xsd:string .
+
+mbo:funk rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Funk"^^xsd:string .
+
+mbo:sertanejo rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Sertanejo"^^xsd:string .
+
+mbo:ska rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Ska"^^xsd:string .
+
+mbo:thrash_metal rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Thrash Metal"^^xsd:string .
+
+mbo:orchestral rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Orchestral"^^xsd:string .
+
+mbo:bossa_nova rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Bossa Nova"^^xsd:string .
+
+mbo:reggae rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; 
+                rdfs:label "Reggae"^^xsd:string .
