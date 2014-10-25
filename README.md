@@ -29,7 +29,7 @@ unzip server/cumulusrdf-1.0.1.war -d server/apache-tomcat-7.0.56/webapps/ROOT/
 ```
 sudo server/apache-cassandra-1.2.19/bin/cassandra -f
 ```
-6. Start Apache Tomcat
+6. Start Apache Tomcat (in another terminal tab)
 ```
 server/apache-tomcat-7.0.56/bin/catalina.sh run
 ```
