@@ -1,0 +1,331 @@
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+    color: #333;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #1b98f8;
+}
+
+
+/*
+ * -- HELPER STYLES --
+ * Over-riding some of the .pure-button styles to make my buttons look unique
+ */
+.primary-button,
+.secondary-button {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 20px;
+}
+.primary-button {
+    color: #fff;
+    background: #1b98f8;
+    margin: 1em 0;
+}
+.secondary-button {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #666;
+    padding: 0.5em 2em;
+    font-size: 80%;
+}
+
+/*
+ * -- LAYOUT STYLES --
+ * This layout consists of three main elements, `#nav` (navigation bar), and `#main` (content). All 3 elements are within `#layout`
+ */
+#layout, #nav, #main {
+    margin: 0;
+    padding: 0;
+}
+
+/* Make the navigation 100% width on phones */
+#nav {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background: rgb(37, 42, 58);
+    text-align: center;
+}
+/* Show the "Menu" button on phones */
+#nav .nav-menu-button {
+    display: block;
+    top: 0.5em;
+    right: 0.5em;
+    position: absolute;
+}
+
+/* When "Menu" is clicked, the navbar should be 80% height */
+#nav.active {
+    height: 80%;
+}
+/* Don't show the navigation items... */
+.nav-inner {
+    display: none;
+}
+
+/* ...until the "Menu" button is clicked */
+#nav.active .nav-inner {
+    display: block;
+    padding: 2em 0;
+}
+
+
+/*
+ * -- NAV BAR STYLES --
+ * Styling the default .pure-menu to look a little more unique.
+ */
+#nav .pure-menu.pure-menu-open {
+    background: transparent;
+    border: none;
+    text-align: left;
+}
+    #nav .pure-menu a:hover,
+    #nav .pure-menu a:focus {
+        background: rgb(55, 60, 90);
+    }
+    #nav .pure-menu a {
+        color: #fff;
+        margin-left: 0.5em;
+    }
+    #nav .pure-menu-heading {
+        border-bottom: none;
+        font-size:110%;
+        color: rgb(75, 113, 151);
+    }
+
+#nav h2 {
+    color: white;
+    text-decoration: underline;
+}
+
+.genre-0 .label { background-color: #FFFF00; }
+.genre-1 .label { background-color: #1CE6FF; }
+.genre-2 .label { background-color: #FF34FF; }
+.genre-3 .label { background-color: #FF4A46; }
+.genre-4 .label { background-color: #008941; }
+.genre-5 .label { background-color: #006FA6; }
+.genre-6 .label { background-color: #A30059; }
+.genre-7 .label { background-color: #FFDBE5; }
+.genre-8 .label { background-color: #7A4900; }
+.genre-9 .label { background-color: #0000A6; }
+.genre-10 .label { background-color: #63FFAC; }
+.genre-11 .label { background-color: #B79762; }
+.genre-12 .label { background-color: #004D43; }
+.genre-13 .label { background-color: #8FB0FF; }
+.genre-14 .label { background-color: #997D87; }
+.genre-15 .label { background-color: #5A0007; }
+.genre-16 .label { background-color: #A3C8C9; }
+.genre-17 .label { background-color: #BF5650; }
+.genre-18 .label { background-color: #1B4400; }
+.genre-19 .label { background-color: #4FC601; }
+.genre-20 .label { background-color: #3B5DFF; }
+.genre-21 .label { background-color: #4A3B53; }
+.genre-22 .label { background-color: #FF2F80; }
+.genre-23 .label { background-color: #61615A; }
+.genre-24 .label { background-color: #BA0900; }
+.genre-25 .label { background-color: #6B7900; }
+.genre-26 .label { background-color: #00C2A0; }
+.genre-27 .label { background-color: #FFAA92; }
+.genre-28 .label { background-color: #FF90C9; }
+.genre-29 .label { background-color: #B903AA; }
+.genre-30 .label { background-color: #D16100; }
+.genre-31 .label { background-color: #FF6832; }
+.genre-32 .label { background-color: #000035; }
+.genre-33 .label { background-color: #7B4F4B; }
+.genre-34 .label { background-color: #A1C299; }
+.genre-35 .label { background-color: #300018; }
+.genre-36 .label { background-color: #0AA6D8; }
+.genre-37 .label { background-color: #013349; }
+.genre-38 .label { background-color: #00846F; }
+.genre-39 .label { background-color: #372101; }
+.genre-40 .label { background-color: #FFB500; }
+.genre-41 .label { background-color: #C2FFED; }
+.genre-42 .label { background-color: #00489C; }
+.genre-43 .label { background-color: #CC0744; }
+.genre-44 .label { background-color: #FF1A59; }
+
+.genre:active ,
+.genre.active {
+    background: rgb(20, 95, 102);
+}
+
+.genre-selected-title {
+    color: rgb(75, 113, 151);
+    left: 230px;
+    position: fixed;
+    z-index: 10;
+}
+
+#loading {
+    display: none;
+    background: url("../../img/loading.gif") no-repeat scroll 0 0 white;
+    color: #4385ff;
+    height: 20px;
+    left: 50%;
+    margin-top: -35px;
+    padding-left: 5px;
+    padding-top: 72px;
+    position: fixed;
+    top: 50%;
+    width: 65px;
+    z-index: 10;
+}
+/*
+ * -- EMAIL STYLES --
+ * Styles relevant to the email messages, labels, counts, and more.
+ */
+.count {
+    color: rgb(75, 113, 151);
+}
+.label,
+.label-personal,
+.label-work,
+.label-travel {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 0.5em;
+    border-radius: 3px;
+}
+.label-personal {
+    background: #ffc94c;
+}
+.label-work {
+    background: #41ccb4;
+}
+.label-travel {
+    background: #40c365;
+}
+
+
+/* Email Item Styles */
+.item {
+    padding: 0.9em 1em;
+    border-bottom: 1px solid #ddd;
+    border-left: 6px solid transparent;
+}
+    .avatar {
+        border-radius: 3px;
+        margin-right: 0.5em;
+    }
+    .name,
+    .subject {
+        margin: 0;
+    }
+    .name {
+        text-transform: uppercase;
+        color: #999;
+    }
+    .desc {
+        font-size: 80%;
+        margin: 0.4em 0;
+    }
+
+.item-selected {
+    background: #eee;
+}
+.item-unread {
+    border-left: 6px solid #1b98f8;
+}
+
+/* Email Content Styles */
+.content-header, .content-body, .content-footer {
+    padding: 1em 2em;
+}
+    .content-header {
+        border-bottom: 1px solid #ddd;
+    }
+
+        .content-title {
+            margin: 0.5em 0 0;
+        }
+        .content-subtitle {
+            font-size: 1em;
+            margin: 0;
+            font-weight: normal;
+        }
+            .content-subtitle span {
+                color: #999;
+            }
+    .content-controls {
+        margin-top: 2em;
+        text-align: right;
+    }
+        .content-controls .secondary-button {
+            margin-bottom: 0.3em;
+        }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+    }
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 40em) {
+
+    /* Move the layout over so we can fit the nav + list in on the left */
+    #layout {
+        padding-left:500px; /* "left col (nav + list)" width */
+        position: relative;
+    }
+
+    /* These are position:fixed; elements that will be in the left 500px of the screen */
+    #nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        overflow: auto;
+    }
+    #nav {
+        margin-left:-500px; /* "left col (nav + list)" width */
+        width: 180px;
+        height: 100%;
+    }
+
+    /* Show the menu items on the larger screen */
+    .nav-inner {
+        display: block;
+        padding: 2em 0;
+    }
+
+    /* Hide the "Menu" button on larger screens */
+    #nav .nav-menu-button {
+        display: none;
+    }
+
+    #main {
+        position: fixed;
+        left: 180px;
+        overflow: auto;
+        width: auto; /* so that it's not 100% */
+    }
+
+}
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 60em) {
+
+
+    /* This will now take up it's own column, so don't need position: fixed; */
+    #main {
+        margin: 0;
+        padding: 0;
+    }
+}
+
