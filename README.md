@@ -32,8 +32,12 @@ sudo server/apache-cassandra-1.2.19/bin/cassandra -f
 ```
 server/apache-tomcat-7.0.56/bin/catalina.sh run
 ```
-6. Load the ontology (NTriples format) on the page http://localhost:8080/addOrLoad 
-The file can be found at https://raw.githubusercontent.com/tdopires/musicmap/master/musical-taste-schema.nt
+6. Load the ontology (NTriples format) on the page
+http://localhost:8080/addOrLoad
+
+The file can be found at
+https://raw.githubusercontent.com/tdopires/musicmap/master/musical-taste-schema.nt
+
 
 Accessing the application
 ========
