@@ -33,10 +33,10 @@ sudo server/apache-cassandra-1.2.19/bin/cassandra -f
 ```
 server/apache-tomcat-7.0.56/bin/catalina.sh run
 ```
-7. Load the ontology (NTriples format) on the page
+7. Load the ontology (RDF/XML format) on the page
 http://localhost:8080/addOrLoad
 
-The file is the 'musical-taste-schema.nt' found at the root of this repository.
+The file is the 'musical-taste-schema.rdf' found at the root of this repository.
 It may take a while to CumulusRDF load it.
 
 
