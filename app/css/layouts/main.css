@@ -107,53 +107,30 @@ a {
     text-decoration: underline;
 }
 
-.genre-0 .label { background-color: #FFFF00; }
-.genre-1 .label { background-color: #1CE6FF; }
-.genre-2 .label { background-color: #FF34FF; }
-.genre-3 .label { background-color: #FF4A46; }
-.genre-4 .label { background-color: #008941; }
-.genre-5 .label { background-color: #006FA6; }
-.genre-6 .label { background-color: #A30059; }
-.genre-7 .label { background-color: #FFDBE5; }
-.genre-8 .label { background-color: #7A4900; }
-.genre-9 .label { background-color: #0000A6; }
-.genre-10 .label { background-color: #63FFAC; }
-.genre-11 .label { background-color: #B79762; }
-.genre-12 .label { background-color: #004D43; }
-.genre-13 .label { background-color: #8FB0FF; }
-.genre-14 .label { background-color: #997D87; }
-.genre-15 .label { background-color: #5A0007; }
-.genre-16 .label { background-color: #A3C8C9; }
-.genre-17 .label { background-color: #BF5650; }
-.genre-18 .label { background-color: #1B4400; }
-.genre-19 .label { background-color: #4FC601; }
-.genre-20 .label { background-color: #3B5DFF; }
-.genre-21 .label { background-color: #4A3B53; }
-.genre-22 .label { background-color: #FF2F80; }
-.genre-23 .label { background-color: #61615A; }
-.genre-24 .label { background-color: #BA0900; }
-.genre-25 .label { background-color: #6B7900; }
-.genre-26 .label { background-color: #00C2A0; }
-.genre-27 .label { background-color: #FFAA92; }
-.genre-28 .label { background-color: #FF90C9; }
-.genre-29 .label { background-color: #B903AA; }
-.genre-30 .label { background-color: #D16100; }
-.genre-31 .label { background-color: #FF6832; }
-.genre-32 .label { background-color: #000035; }
-.genre-33 .label { background-color: #7B4F4B; }
-.genre-34 .label { background-color: #A1C299; }
-.genre-35 .label { background-color: #300018; }
-.genre-36 .label { background-color: #0AA6D8; }
-.genre-37 .label { background-color: #013349; }
-.genre-38 .label { background-color: #00846F; }
-.genre-39 .label { background-color: #372101; }
-.genre-40 .label { background-color: #FFB500; }
-.genre-41 .label { background-color: #C2FFED; }
-.genre-42 .label { background-color: #00489C; }
-.genre-43 .label { background-color: #CC0744; }
-.genre-44 .label { background-color: #FF1A59; }
+.genre-0 .label { background-color: #32cd32; }
+.genre-1 .label { background-color: #8a2be2; }
+.genre-2 .label { background-color: #a52a2a; }
+.genre-3 .label { background-color: #ff7f50; }
+.genre-4 .label { background-color: #4169e1; }
+.genre-5 .label { background-color: #ff0000; }
+.genre-6 .label { background-color: #800080; }
+.genre-7 .label { background-color: #ff00ff; }
+.genre-8 .label { background-color: #008000; }
+.genre-9 .label { background-color: #6b8e23; }
+.genre-10 .label { background-color: #808000; }
+.genre-11 .label { background-color: #ffff00; }
+.genre-12 .label { background-color: #000080; }
+.genre-13 .label { background-color: #0000ff; }
+.genre-14 .label { background-color: #008080; }
+.genre-15 .label { background-color: #00008b; }
+.genre-16 .label { background-color: #008b8b; }
+.genre-17 .label { background-color: #b8860b; }
+.genre-18 .label { background-color: #9932cc; }
+.genre-19 .label { background-color: #adff2f; }
+.genre-20 .label { background-color: #ffa500; }
 
-.genre:active ,
+.genre:active,
+.genre:focus,
 .genre.active {
     background: rgb(20, 95, 102);
 }
@@ -163,6 +140,9 @@ a {
     left: 230px;
     position: fixed;
     z-index: 10;
+}
+.genre-selected-title h1 {
+    margin-bottom: 5px;
 }
 
 #loading {
@@ -238,7 +218,7 @@ a {
 }
 
 /* Email Content Styles */
-.content-header, .content-body, .content-footer {
+.content-header, .content-footer {
     padding: 1em 2em;
 }
     .content-header {

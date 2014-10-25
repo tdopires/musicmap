@@ -46,12 +46,11 @@
 
             <div class="pure-menu pure-menu-open">
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="https://github.com/tdopires/musicmap">The Project</a></li>
+                    <li><a href="https://github.com/tdopires/musicmap">About</a></li>
 
                     <li class="pure-menu-heading">Download</li>
-                    <li><a href="#">RDF/XML</a></li>
-                    <li><a href="#">Turtle</a></li>
+                    <li><a href="https://raw.githubusercontent.com/tdopires/musicmap/master/musical-taste-schema.rdf">RDF/XML</a></li>
+                    <li><a href="https://raw.githubusercontent.com/tdopires/musicmap/master/musical-taste-schema.ttl">Turtle</a></li>
 
                     <li class="pure-menu-heading">Music Genres</li>
                     <li><a href="#" class="genre genre-0"><span class="label"></span>Alternative Rock</a></li>
@@ -59,22 +58,22 @@
                     <li><a href="#" class="genre genre-2"><span class="label"></span>Classic Rock</a></li>
                     <li><a href="#" class="genre genre-3"><span class="label"></span>Country</a></li>
                     <li><a href="#" class="genre genre-4"><span class="label"></span>Dance</a></li>
-                    <li><a href="#" class="genre genre-7"><span class="label"></span>Dubstep</a></li>
-                    <li><a href="#" class="genre genre-8"><span class="label"></span>Electronic</a></li>
-                    <li><a href="#" class="genre genre-9"><span class="label"></span>Folk</a></li>
-                    <li><a href="#" class="genre genre-12"><span class="label"></span>Heavy Metal</a></li>
-                    <li><a href="#" class="genre genre-13"><span class="label"></span>Hip Hop</a></li>
-                    <li><a href="#" class="genre genre-18"><span class="label"></span>Indie</a></li>
-                    <li><a href="#" class="genre genre-19"><span class="label"></span>Indie Pop</a></li>
-                    <li><a href="#" class="genre genre-21"><span class="label"></span>Indie Rock</a></li>
-                    <li><a href="#" class="genre genre-23"><span class="label"></span>Metal</a></li>
-                    <li><a href="#" class="genre genre-25"><span class="label"></span>Pop</a></li>
-                    <li><a href="#" class="genre genre-30"><span class="label"></span>Pop Rock</a></li>
-                    <li><a href="#" class="genre genre-33"><span class="label"></span>Punk</a></li>
-                    <li><a href="#" class="genre genre-35"><span class="label"></span>Punk Rock</a></li>
-                    <li><a href="#" class="genre genre-36"><span class="label"></span>Rap</a></li>
-                    <li><a href="#" class="genre genre-37"><span class="label"></span>Rock</a></li>
-                    <li><a href="#" class="genre genre-41"><span class="label"></span>Thrash Metal</a></li>
+                    <li><a href="#" class="genre genre-5"><span class="label"></span>Dubstep</a></li>
+                    <li><a href="#" class="genre genre-6"><span class="label"></span>Electronic</a></li>
+                    <li><a href="#" class="genre genre-7"><span class="label"></span>Folk</a></li>
+                    <li><a href="#" class="genre genre-8"><span class="label"></span>Heavy Metal</a></li>
+                    <li><a href="#" class="genre genre-9"><span class="label"></span>Hip Hop</a></li>
+                    <li><a href="#" class="genre genre-10"><span class="label"></span>Indie</a></li>
+                    <li><a href="#" class="genre genre-11"><span class="label"></span>Indie Pop</a></li>
+                    <li><a href="#" class="genre genre-12"><span class="label"></span>Indie Rock</a></li>
+                    <li><a href="#" class="genre genre-13"><span class="label"></span>Metal</a></li>
+                    <li><a href="#" class="genre genre-14"><span class="label"></span>Pop</a></li>
+                    <li><a href="#" class="genre genre-15"><span class="label"></span>Pop Rock</a></li>
+                    <li><a href="#" class="genre genre-16"><span class="label"></span>Punk</a></li>
+                    <li><a href="#" class="genre genre-17"><span class="label"></span>Punk Rock</a></li>
+                    <li><a href="#" class="genre genre-18"><span class="label"></span>Rap</a></li>
+                    <li><a href="#" class="genre genre-19"><span class="label"></span>Rock</a></li>
+                    <li><a href="#" class="genre genre-20"><span class="label"></span>Thrash Metal</a></li>
                 </ul>
             </div>
         </div>
@@ -84,9 +83,14 @@
     <div id="main" class="pure-u-1">
         <div class="content">
             <div class="content-body">
-                <h1 class="genre-selected-title"></h1>
+                <div class="genre-selected-title">
+                    <h1></h1>
+                    <div>
+                        <input class="carousel-active" type="checkbox" checked="checked"></input> Change automatically
+                    </div>
+                </div>
                 <div id="loading">Loading</div>
-            	<div id="regions_div" style="width: 1200px; height: 760px;"></div>
+            	<div id="regions_div" style="width: 1300px; height: 800px;"></div>
             </div>
         </div>
     </div>
