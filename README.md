@@ -21,7 +21,7 @@ The installation of this could be done as follow (including the Unix commands):
 ```
  tar -zxvf server/apache-tomcat-7.0.56.tar.gz -C server/
 ```
-4. Deploy CumulusRDF war file
+4. Deploy CumulusRDF war file (replace files if asked)
 ```
 unzip server/cumulusrdf-1.0.1.war -d server/apache-tomcat-7.0.56/webapps/ROOT/
 ```
