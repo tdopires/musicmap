@@ -2,7 +2,6 @@
 
 
 <!DOCTYPE rdf:RDF [
-    <!ENTITY mbo2 "mbo:" >
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
     <!ENTITY ontology2 "http://dbpedia.org/ontology/" >
     <!ENTITY mo "http://purl.org/ontology/mo/" >
@@ -23,7 +22,6 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:mbo2="mbo:"
      xmlns:ontology2="http://dbpedia.org/ontology/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -111,7 +109,7 @@
     <ObjectProperty rdf:about="&ontology;parentCountry">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:domain rdf:resource="&ontology2;city"/>
-        <rdfs:range rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/country"/>
     </ObjectProperty>
     
 
@@ -210,7 +208,7 @@
 
     <DatatypeProperty rdf:about="&ontology;countryCode">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:domain rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </DatatypeProperty>
     
@@ -327,9 +325,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/tdopires/ontologies/2014/9/untitled-ontology-12#dbpedia.org/ontology/country -->
+    <!-- http://dbpedia.org/ontology/country -->
 
-    <Class rdf:about="&mbo;dbpedia.org/ontology/country">
+    <Class rdf:about="http://dbpedia.org/ontology/country">
         <rdfs:subClassOf rdf:resource="http://dbpedia.org/page/Location"/>
     </Class>
     
@@ -1407,8 +1405,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_835"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_913"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_93"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_rock"/>
     </NamedIndividual>
     
 
@@ -1461,7 +1459,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6783"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_732"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_988"/>
-        <mbo2:from_genre rdf:resource="&mbo;classic_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;classic_rock"/>
     </NamedIndividual>
     
 
@@ -1513,7 +1511,7 @@
         <foaf:name>The Incredible String Band</foaf:name>
         <mo:biography rdf:resource="http://en.wikipedia.org/wiki/The_Incredible_String_Band"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_4663"/>
-        <mbo2:from_genre rdf:resource="&mbo;folk"/>
+        <mbo:from_genre rdf:resource="&mbo;folk"/>
     </NamedIndividual>
     
 
@@ -1613,7 +1611,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_827"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_912"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_994"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -1682,8 +1680,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6478"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6837"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_970"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_rock"/>
     </NamedIndividual>
     
 
@@ -1767,9 +1765,9 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_787"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_853"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_967"/>
-        <mbo2:from_genre rdf:resource="&mbo;punk"/>
-        <mbo2:from_genre rdf:resource="&mbo;punk_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;punk"/>
+        <mbo:from_genre rdf:resource="&mbo;punk_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -1865,9 +1863,9 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_765"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_845"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_920"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;pop_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -1876,7 +1874,7 @@
 
     <NamedIndividual rdf:about="http://musicbrainz.org/artist/0ee2351a-5890-494f-ba90-f17ccefeaf8d#_">
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3044"/>
-        <mbo2:from_genre rdf:resource="&mbo;funk"/>
+        <mbo:from_genre rdf:resource="&mbo;funk"/>
     </NamedIndividual>
     
 
@@ -1890,7 +1888,7 @@
         <foaf:name>Busta Rhymes</foaf:name>
         <mo:biography rdf:resource="http://en.wikipedia.org/wiki/Busta_Rhymes"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_5508"/>
-        <mbo2:from_genre rdf:resource="&mbo;rap"/>
+        <mbo:from_genre rdf:resource="&mbo;rap"/>
     </NamedIndividual>
     
 
@@ -1984,7 +1982,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_775"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_854"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_935"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -2071,10 +2069,10 @@
     <!-- http://musicbrainz.org/artist/14cd21f6-df8e-4bff-af75-0dcfeb307c5d#_ -->
 
     <NamedIndividual rdf:about="http://musicbrainz.org/artist/14cd21f6-df8e-4bff-af75-0dcfeb307c5d#_">
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_pop"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_pop"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -2167,7 +2165,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_789"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_888"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_927"/>
-        <mbo2:from_genre rdf:resource="&mbo;rap"/>
+        <mbo:from_genre rdf:resource="&mbo;rap"/>
     </NamedIndividual>
     
 
@@ -2260,8 +2258,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_824"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_87"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_925"/>
-        <mbo2:from_genre rdf:resource="&mbo;alternative_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;alternative_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -2312,7 +2310,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_814"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_892"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_981"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -2345,8 +2343,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6545"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_662"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6632"/>
-        <mbo2:from_genre rdf:resource="&mbo;classic_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;classic_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -2547,7 +2545,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6840"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_896"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_985"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -2638,8 +2636,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_859"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_910"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_996"/>
-        <mbo2:from_genre rdf:resource="&mbo;country"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;country"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -2692,8 +2690,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6857"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_803"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_889"/>
-        <mbo2:from_genre rdf:resource="&mbo;folk"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;folk"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -2837,7 +2835,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6856"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_893"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_986"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -2845,7 +2843,7 @@
     <!-- http://musicbrainz.org/artist/2d23e140-db1b-4b9b-92b7-db20c8ea970a#_ -->
 
     <NamedIndividual rdf:about="http://musicbrainz.org/artist/2d23e140-db1b-4b9b-92b7-db20c8ea970a#_">
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -2945,7 +2943,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_758"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_839"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_918"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -3042,8 +3040,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_774"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_858"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_906"/>
-        <mbo2:from_genre rdf:resource="&mbo;dance"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;dance"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -3076,7 +3074,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6480"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6521"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_72"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -3251,9 +3249,9 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_786"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_890"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_958"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_pop"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_pop"/>
     </NamedIndividual>
     
 
@@ -3266,7 +3264,7 @@
         <foaf:name>Satellites &amp; Sirens</foaf:name>
         <mo:biography rdf:resource="http://en.wikipedia.org/wiki/Satellites_%26_Sirens"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3900"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -3305,8 +3303,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6777"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6835"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_948"/>
-        <mbo2:from_genre rdf:resource="&mbo;folk"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;folk"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -3554,7 +3552,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_817"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_828"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_963"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -3733,8 +3731,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_798"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_867"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_932"/>
-        <mbo2:from_genre rdf:resource="&mbo;folk"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;folk"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -3747,7 +3745,7 @@
         <rdfs:label>Paramore</rdfs:label>
         <foaf:name>Paramore</foaf:name>
         <mo:biography rdf:resource="http://en.wikipedia.org/wiki/Paramore"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -3772,9 +3770,9 @@
     <!-- http://musicbrainz.org/artist/4665e836-2c96-4569-9462-bfea34850b69#_ -->
 
     <NamedIndividual rdf:about="http://musicbrainz.org/artist/4665e836-2c96-4569-9462-bfea34850b69#_">
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -3788,7 +3786,7 @@
         <foaf:name>The Afters</foaf:name>
         <mo:biography rdf:resource="http://en.wikipedia.org/wiki/The_Afters"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3892"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -3932,7 +3930,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_773"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_875"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_965"/>
-        <mbo2:from_genre rdf:resource="&mbo;heavy_metal"/>
+        <mbo:from_genre rdf:resource="&mbo;heavy_metal"/>
     </NamedIndividual>
     
 
@@ -4027,8 +4025,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_829"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_960"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_998"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_rock"/>
     </NamedIndividual>
     
 
@@ -4103,7 +4101,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6804"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_708"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_936"/>
-        <mbo2:from_genre rdf:resource="&mbo;folk"/>
+        <mbo:from_genre rdf:resource="&mbo;folk"/>
     </NamedIndividual>
     
 
@@ -4203,8 +4201,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_825"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_929"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_995"/>
-        <mbo2:from_genre rdf:resource="&mbo;classic_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;classic_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -4276,8 +4274,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_783"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_891"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_922"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -4304,9 +4302,9 @@
         <foaf:name>The Lemonheads</foaf:name>
         <mo:biography rdf:resource="http://en.wikipedia.org/wiki/The_Lemonheads"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3897"/>
-        <mbo2:from_genre rdf:resource="&mbo;alternative_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;alternative_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -4329,8 +4327,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6197"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6294"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6331"/>
-        <mbo2:from_genre rdf:resource="&mbo;hip_hop"/>
-        <mbo2:from_genre rdf:resource="&mbo;rap"/>
+        <mbo:from_genre rdf:resource="&mbo;hip_hop"/>
+        <mbo:from_genre rdf:resource="&mbo;rap"/>
     </NamedIndividual>
     
 
@@ -4340,8 +4338,8 @@
     <NamedIndividual rdf:about="http://musicbrainz.org/artist/58e235fc-f6ea-4614-9ed4-9855a5665ae1#_">
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_2898"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3038"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_pop"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_pop"/>
     </NamedIndividual>
     
 
@@ -4445,7 +4443,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_763"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_870"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_911"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -4465,8 +4463,8 @@
     <!-- http://musicbrainz.org/artist/5eecaf18-02ec-47af-a4f2-7831db373419#_ -->
 
     <NamedIndividual rdf:about="http://musicbrainz.org/artist/5eecaf18-02ec-47af-a4f2-7831db373419#_">
-        <mbo2:from_genre rdf:resource="&mbo;classic_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;classic_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -4511,8 +4509,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_706"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_795"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_987"/>
-        <mbo2:from_genre rdf:resource="&mbo;punk"/>
-        <mbo2:from_genre rdf:resource="&mbo;punk_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;punk"/>
+        <mbo:from_genre rdf:resource="&mbo;punk_rock"/>
     </NamedIndividual>
     
 
@@ -4521,8 +4519,8 @@
 
     <NamedIndividual rdf:about="http://musicbrainz.org/artist/63d83d01-10d0-4bd6-9ada-c57b29f354fd#_">
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3893"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_rock"/>
     </NamedIndividual>
     
 
@@ -4616,9 +4614,9 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_848"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_92"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_926"/>
-        <mbo2:from_genre rdf:resource="&mbo;heavy_metal"/>
-        <mbo2:from_genre rdf:resource="&mbo;metal"/>
-        <mbo2:from_genre rdf:resource="&mbo;thrash_metal"/>
+        <mbo:from_genre rdf:resource="&mbo;heavy_metal"/>
+        <mbo:from_genre rdf:resource="&mbo;metal"/>
+        <mbo:from_genre rdf:resource="&mbo;thrash_metal"/>
     </NamedIndividual>
     
 
@@ -4706,8 +4704,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_806"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_856"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_952"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_rock"/>
     </NamedIndividual>
     
 
@@ -4803,7 +4801,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_757"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_831"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_944"/>
-        <mbo2:from_genre rdf:resource="&mbo;classic_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;classic_rock"/>
     </NamedIndividual>
     
 
@@ -4901,8 +4899,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_769"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_826"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_921"/>
-        <mbo2:from_genre rdf:resource="&mbo;alternative_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;alternative_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -5076,7 +5074,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6869"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_799"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_938"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -5194,8 +5192,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_81"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_866"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_953"/>
-        <mbo2:from_genre rdf:resource="&mbo;alternative_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;alternative_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -5284,7 +5282,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_754"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_821"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_949"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -5433,7 +5431,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_813"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_852"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_934"/>
-        <mbo2:from_genre rdf:resource="&mbo;folk"/>
+        <mbo:from_genre rdf:resource="&mbo;folk"/>
     </NamedIndividual>
     
 
@@ -5524,7 +5522,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_842"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_946"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_992"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -5555,8 +5553,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_665"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_709"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_71"/>
-        <mbo2:from_genre rdf:resource="&mbo;alternative_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;metal"/>
+        <mbo:from_genre rdf:resource="&mbo;alternative_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;metal"/>
     </NamedIndividual>
     
 
@@ -5570,7 +5568,7 @@
         <foaf:name>The Moody Blues</foaf:name>
         <mo:biography rdf:resource="http://en.wikipedia.org/wiki/The_Moody_Blues"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_4667"/>
-        <mbo2:from_genre rdf:resource="&mbo;classic_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;classic_rock"/>
     </NamedIndividual>
     
 
@@ -5579,7 +5577,7 @@
 
     <NamedIndividual rdf:about="http://musicbrainz.org/artist/78dbdd31-1636-4aa3-a5ae-3b84b168e18c#_">
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_4664"/>
-        <mbo2:from_genre rdf:resource="&mbo;dance"/>
+        <mbo:from_genre rdf:resource="&mbo;dance"/>
     </NamedIndividual>
     
 
@@ -5595,7 +5593,7 @@
         <mo:biography rdf:resource="http://fi.wikipedia.org/wiki/Jenni_Vartiainen"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_159"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_1893"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -5687,7 +5685,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_792"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_874"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_942"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -5709,7 +5707,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_5368"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_5491"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_861"/>
-        <mbo2:from_genre rdf:resource="&mbo;rap"/>
+        <mbo:from_genre rdf:resource="&mbo;rap"/>
     </NamedIndividual>
     
 
@@ -5740,7 +5738,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6669"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6765"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6859"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -5839,7 +5837,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_820"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_914"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_94"/>
-        <mbo2:from_genre rdf:resource="&mbo;classic_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;classic_rock"/>
     </NamedIndividual>
     
 
@@ -5991,7 +5989,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_838"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_982"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_99"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -6246,7 +6244,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_811"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_878"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_969"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -6273,7 +6271,7 @@
         <rdfs:label>Moby</rdfs:label>
         <foaf:name>Moby</foaf:name>
         <mo:biography rdf:resource="http://en.wikipedia.org/wiki/Moby"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -6287,7 +6285,7 @@
         <foaf:name>Xiu Xiu</foaf:name>
         <mo:biography rdf:resource="http://en.wikipedia.org/wiki/Xiu_Xiu"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_5504"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -6385,7 +6383,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_840"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_91"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_945"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -6397,10 +6395,10 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3577"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3585"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_580"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_pop"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_pop"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -6483,8 +6481,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_816"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_902"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_984"/>
-        <mbo2:from_genre rdf:resource="&mbo;dubstep"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;dubstep"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -6581,8 +6579,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_750"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_844"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_908"/>
-        <mbo2:from_genre rdf:resource="&mbo;dance"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;dance"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -6764,7 +6762,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_612"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6636"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6782"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -6784,8 +6782,8 @@
     <!-- http://musicbrainz.org/artist/979a39b4-2df9-4767-a3ca-7940e8aff05a#_ -->
 
     <NamedIndividual rdf:about="http://musicbrainz.org/artist/979a39b4-2df9-4767-a3ca-7940e8aff05a#_">
-        <mbo2:from_genre rdf:resource="&mbo;alternative_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;alternative_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -6952,8 +6950,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_782"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_869"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_980"/>
-        <mbo2:from_genre rdf:resource="&mbo;classic_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;classic_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -6974,7 +6972,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_5664"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_5742"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_983"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -6982,7 +6980,7 @@
     <!-- http://musicbrainz.org/artist/a3352eff-cde0-4f15-b44a-6f5c3e9cf079#_ -->
 
     <NamedIndividual rdf:about="http://musicbrainz.org/artist/a3352eff-cde0-4f15-b44a-6f5c3e9cf079#_">
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -7007,7 +7005,7 @@
         <rdfs:label>Slipknot</rdfs:label>
         <foaf:name>Slipknot</foaf:name>
         <mo:biography rdf:resource="http://en.wikipedia.org/wiki/Slipknot_(band)"/>
-        <mbo2:from_genre rdf:resource="&mbo;metal"/>
+        <mbo:from_genre rdf:resource="&mbo;metal"/>
     </NamedIndividual>
     
 
@@ -7119,8 +7117,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_84"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_923"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_990"/>
-        <mbo2:from_genre rdf:resource="&mbo;alternative_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;alternative_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -7153,7 +7151,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6552"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6659"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6865"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -7176,7 +7174,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_5447"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_5562"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_834"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -7275,8 +7273,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_83"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_917"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_993"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_rock"/>
     </NamedIndividual>
     
 
@@ -7328,8 +7326,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6666"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6858"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_73"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_pop"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_pop"/>
     </NamedIndividual>
     
 
@@ -7406,8 +7404,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6864"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_882"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_977"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_rock"/>
     </NamedIndividual>
     
 
@@ -7506,8 +7504,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_772"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_833"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_939"/>
-        <mbo2:from_genre rdf:resource="&mbo;classic_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;classic_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -7596,8 +7594,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_785"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_850"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_97"/>
-        <mbo2:from_genre rdf:resource="&mbo;classic_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;classic_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -7617,8 +7615,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3763"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3846"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_508"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_rock"/>
     </NamedIndividual>
     
 
@@ -7657,7 +7655,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6329"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6442"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6503"/>
-        <mbo2:from_genre rdf:resource="&mbo;rap"/>
+        <mbo:from_genre rdf:resource="&mbo;rap"/>
     </NamedIndividual>
     
 
@@ -7741,8 +7739,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_894"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_951"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_989"/>
-        <mbo2:from_genre rdf:resource="&mbo;blues"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;blues"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -7768,7 +7766,7 @@
         <foaf:name>Beanie Sigel</foaf:name>
         <mo:biography rdf:resource="http://en.wikipedia.org/wiki/Beanie_Sigel"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_5507"/>
-        <mbo2:from_genre rdf:resource="&mbo;rap"/>
+        <mbo:from_genre rdf:resource="&mbo;rap"/>
     </NamedIndividual>
     
 
@@ -7844,9 +7842,9 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_738"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_887"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_975"/>
-        <mbo2:from_genre rdf:resource="&mbo;alternative_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;alternative_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -7943,9 +7941,9 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_86"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_916"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_997"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_pop"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_pop"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -8052,7 +8050,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_759"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_881"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_915"/>
-        <mbo2:from_genre rdf:resource="&mbo;rap"/>
+        <mbo:from_genre rdf:resource="&mbo;rap"/>
     </NamedIndividual>
     
 
@@ -8078,8 +8076,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6225"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_693"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_808"/>
-        <mbo2:from_genre rdf:resource="&mbo;alternative_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;alternative_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -8142,7 +8140,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6842"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_901"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_973"/>
-        <mbo2:from_genre rdf:resource="&mbo;classic_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;classic_rock"/>
     </NamedIndividual>
     
 
@@ -8251,9 +8249,9 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_79"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_871"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_966"/>
-        <mbo2:from_genre rdf:resource="&mbo;alternative_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;alternative_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;pop_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -8320,7 +8318,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6779"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6845"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_961"/>
-        <mbo2:from_genre rdf:resource="&mbo;blues"/>
+        <mbo:from_genre rdf:resource="&mbo;blues"/>
     </NamedIndividual>
     
 
@@ -8400,8 +8398,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6860"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_807"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_880"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -8498,8 +8496,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_752"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_851"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_930"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -8594,7 +8592,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_770"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_855"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_907"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -8672,7 +8670,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_864"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_96"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_976"/>
-        <mbo2:from_genre rdf:resource="&mbo;metal"/>
+        <mbo:from_genre rdf:resource="&mbo;metal"/>
     </NamedIndividual>
     
 
@@ -8772,8 +8770,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_818"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_90"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_905"/>
-        <mbo2:from_genre rdf:resource="&mbo;alternative_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;alternative_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -8794,7 +8792,7 @@
 
     <NamedIndividual rdf:about="http://musicbrainz.org/artist/ccd62ad6-0e56-4c8a-870e-ce5af06ee314#_">
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3042"/>
-        <mbo2:from_genre rdf:resource="&mbo;classical"/>
+        <mbo:from_genre rdf:resource="&mbo;classical"/>
     </NamedIndividual>
     
 
@@ -8906,8 +8904,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6307"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6348"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6522"/>
-        <mbo2:from_genre rdf:resource="&mbo;hip_hop"/>
-        <mbo2:from_genre rdf:resource="&mbo;rap"/>
+        <mbo:from_genre rdf:resource="&mbo;hip_hop"/>
+        <mbo:from_genre rdf:resource="&mbo;rap"/>
     </NamedIndividual>
     
 
@@ -9006,7 +9004,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_837"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_9"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_950"/>
-        <mbo2:from_genre rdf:resource="&mbo;blues"/>
+        <mbo:from_genre rdf:resource="&mbo;blues"/>
     </NamedIndividual>
     
 
@@ -9021,7 +9019,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3802"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3824"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_523"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -9109,7 +9107,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_796"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_873"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_956"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -9125,7 +9123,7 @@
         <mo:biography rdf:resource="http://fi.wikipedia.org/wiki/Apulanta"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_162"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_1901"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -9202,7 +9200,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_719"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_876"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_955"/>
-        <mbo2:from_genre rdf:resource="&mbo;country"/>
+        <mbo:from_genre rdf:resource="&mbo;country"/>
     </NamedIndividual>
     
 
@@ -9228,8 +9226,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_791"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_903"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_98"/>
-        <mbo2:from_genre rdf:resource="&mbo;alternative_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;alternative_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -9322,8 +9320,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_77"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_885"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_931"/>
-        <mbo2:from_genre rdf:resource="&mbo;folk"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;folk"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -9406,8 +9404,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_788"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_900"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_972"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_pop"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_pop"/>
     </NamedIndividual>
     
 
@@ -9425,7 +9423,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3043"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_3977"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_5196"/>
-        <mbo2:from_genre rdf:resource="&mbo;classical"/>
+        <mbo:from_genre rdf:resource="&mbo;classical"/>
     </NamedIndividual>
     
 
@@ -9454,7 +9452,7 @@
         <mo:biography rdf:resource="http://fi.wikipedia.org/wiki/Haloo_Helsinki!"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_155"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_1890"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -9502,8 +9500,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6781"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6847"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_898"/>
-        <mbo2:from_genre rdf:resource="&mbo;classic_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;classic_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -9528,7 +9526,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6276"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6342"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6464"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -9625,9 +9623,9 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6846"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_863"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_978"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;indie_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -9808,7 +9806,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_849"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_947"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_999"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -9821,7 +9819,7 @@
         <rdfs:label>Michael Jackson</rdfs:label>
         <foaf:name>Michael Jackson</foaf:name>
         <mo:biography rdf:resource="http://en.wikipedia.org/wiki/Michael_Jackson"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -9913,7 +9911,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_781"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_865"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_928"/>
-        <mbo2:from_genre rdf:resource="&mbo;pop"/>
+        <mbo:from_genre rdf:resource="&mbo;pop"/>
     </NamedIndividual>
     
 
@@ -10005,8 +10003,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_82"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_846"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_957"/>
-        <mbo2:from_genre rdf:resource="&mbo;alternative_rock"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;alternative_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -10088,7 +10086,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_776"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_895"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_959"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -10168,7 +10166,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6833"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_862"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_962"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
     </NamedIndividual>
     
 
@@ -10265,8 +10263,8 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_823"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_919"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_991"/>
-        <mbo2:from_genre rdf:resource="&mbo;electronic"/>
-        <mbo2:from_genre rdf:resource="&mbo;indie"/>
+        <mbo:from_genre rdf:resource="&mbo;electronic"/>
+        <mbo:from_genre rdf:resource="&mbo;indie"/>
     </NamedIndividual>
     
 
@@ -10305,7 +10303,7 @@
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6245"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_6291"/>
         <mbo:top_player_in rdf:resource="&mbo;Relation_Artist_Location_727"/>
-        <mbo2:from_genre rdf:resource="&mbo;punk_rock"/>
+        <mbo:from_genre rdf:resource="&mbo;punk_rock"/>
     </NamedIndividual>
     
 
@@ -10318,7 +10316,7 @@
         <rdfs:label>Kent</rdfs:label>
         <foaf:name>Kent</foaf:name>
         <mo:biography rdf:resource="http://fr.wikipedia.org/wiki/Kent_(chanteur)"/>
-        <mbo2:from_genre rdf:resource="&mbo;rock"/>
+        <mbo:from_genre rdf:resource="&mbo;rock"/>
     </NamedIndividual>
     
 
@@ -11256,7 +11254,7 @@
     <!-- http://www.geonames.org/countries/AT/austria.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/AT/austria.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Austria</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">AT</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11267,7 +11265,7 @@
     <!-- http://www.geonames.org/countries/BE/belgium.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/BE/belgium.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Belgium</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">BE</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11278,7 +11276,7 @@
     <!-- http://www.geonames.org/countries/BG/bulgaria.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/BG/bulgaria.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Bulgaria</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">BG</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11289,7 +11287,7 @@
     <!-- http://www.geonames.org/countries/CH/switzerland.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/CH/switzerland.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Switzerland</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">CH</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11300,7 +11298,7 @@
     <!-- http://www.geonames.org/countries/CZ/czech-republic.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/CZ/czech-republic.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Czech Republic</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">CZ</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11311,7 +11309,7 @@
     <!-- http://www.geonames.org/countries/DE/germany.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/DE/germany.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Germany</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">DE</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11322,7 +11320,7 @@
     <!-- http://www.geonames.org/countries/DK/denmark.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/DK/denmark.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Denmark</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">DK</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11333,7 +11331,7 @@
     <!-- http://www.geonames.org/countries/EE/estonia.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/EE/estonia.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Estonia</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">EE</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11344,7 +11342,7 @@
     <!-- http://www.geonames.org/countries/ES/spain.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/ES/spain.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Spain</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">ES</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11355,7 +11353,7 @@
     <!-- http://www.geonames.org/countries/FI/finland.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/FI/finland.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Finland</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">FI</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11366,7 +11364,7 @@
     <!-- http://www.geonames.org/countries/FR/france.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/FR/france.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">France</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">FR</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11377,7 +11375,7 @@
     <!-- http://www.geonames.org/countries/GB/united-kingdom.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/GB/united-kingdom.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">United Kingdom</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">GB</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11388,7 +11386,7 @@
     <!-- http://www.geonames.org/countries/GR/greece.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/GR/greece.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Greece</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">GR</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11399,7 +11397,7 @@
     <!-- http://www.geonames.org/countries/HR/croatia.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/HR/croatia.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Croatia</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">HR</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11410,7 +11408,7 @@
     <!-- http://www.geonames.org/countries/HU/hungary.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/HU/hungary.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Hungary</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">HU</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11421,7 +11419,7 @@
     <!-- http://www.geonames.org/countries/IE/ireland.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/IE/ireland.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Ireland</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">IE</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11432,7 +11430,7 @@
     <!-- http://www.geonames.org/countries/IS/iceland.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/IS/iceland.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Iceland</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">IS</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11443,7 +11441,7 @@
     <!-- http://www.geonames.org/countries/IT/italy.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/IT/italy.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Italy</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">IT</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11454,7 +11452,7 @@
     <!-- http://www.geonames.org/countries/LU/luxembourg.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/LU/luxembourg.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Luxembourg</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">LU</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11465,7 +11463,7 @@
     <!-- http://www.geonames.org/countries/MC/monaco.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/MC/monaco.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Monaco</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">MC</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11476,7 +11474,7 @@
     <!-- http://www.geonames.org/countries/NL/netherlands.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/NL/netherlands.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Netherlands</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">NL</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11487,7 +11485,7 @@
     <!-- http://www.geonames.org/countries/NO/norway.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/NO/norway.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Norway</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">NO</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11498,7 +11496,7 @@
     <!-- http://www.geonames.org/countries/PL/poland.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/PL/poland.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Poland</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">PL</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11509,7 +11507,7 @@
     <!-- http://www.geonames.org/countries/PT/portugal.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/PT/portugal.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Portugal</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">PT</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11520,7 +11518,7 @@
     <!-- http://www.geonames.org/countries/RO/romania.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/RO/romania.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Romania</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">RO</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11531,7 +11529,7 @@
     <!-- http://www.geonames.org/countries/RS/serbia.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/RS/serbia.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Serbia</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">RS</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11542,7 +11540,7 @@
     <!-- http://www.geonames.org/countries/RU/russia.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/RU/russia.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Russia</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">RU</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11553,7 +11551,7 @@
     <!-- http://www.geonames.org/countries/SE/sweden.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/SE/sweden.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Sweden</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">SE</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11564,7 +11562,7 @@
     <!-- http://www.geonames.org/countries/SI/slovenia.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/SI/slovenia.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Slovenia</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">SI</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11575,7 +11573,7 @@
     <!-- http://www.geonames.org/countries/SK/slovakia.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/SK/slovakia.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Slovakia</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">SK</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
@@ -11586,7 +11584,7 @@
     <!-- http://www.geonames.org/countries/UA/ukraine.html -->
 
     <NamedIndividual rdf:about="http://www.geonames.org/countries/UA/ukraine.html">
-        <rdf:type rdf:resource="&mbo;dbpedia.org/ontology/country"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/country"/>
         <rdfs:label rdf:datatype="&xsd;string">Ukraine</rdfs:label>
         <ontology:countryCode rdf:datatype="&xsd;string">UA</ontology:countryCode>
         <ontology2:isPartOf rdf:resource="http://www.geonames.org/6255148/"/>
