@@ -6,10 +6,10 @@ def call_reqs(i, len_all_urls, inner_urls, genres_set, artist_genres):
     reqs = [ua[0] for ua in inner_urls]
     artists = [ua[1] for ua in inner_urls]
     
-    sys.stdout.write(datetime.datetime.now().strftime('%d-%m-%Y-%H:%M:%S') + ' - ' + str(i) + '/' + str(len_all_urls) + ' ')
+    #sys.stdout.write(datetime.datetime.now().strftime('%d-%m-%Y-%H:%M:%S') + ' - ' + str(i) + '/' + str(len_all_urls) + ' ')
 
     resps = grequests.map(reqs)
-    print '!'
+    #print '!'
 
     for j, resp in enumerate(resps):
         if not resp:
@@ -22,10 +22,10 @@ def call_reqs(i, len_all_urls, inner_urls, genres_set, artist_genres):
                 for genre in genres:
                     genres_set.add(genre)
 
-                artist_genres[artists[j]] = genres
+                artist_genres[artists[j].lower()] = genres
                 
-        else:
-            print unicode(artists[j], 'utf-8') + ' data could not be retrieved...\n\n' + resp.text
+        #else:
+            #print unicode(artists[j], 'utf-8') + ' data could not be retrieved...\n\n' + resp.text
 
 
 def main(argv=None):
@@ -43,12 +43,12 @@ def main(argv=None):
 
     all_urls = []
     inner_urls = []
-    with open('artists.txt', 'r') as input_file:
+    with open('main-artists.txt', 'r') as input_file:
         
         artists = input_file.readlines()
         i = 0
         len_all_urls = (len(artists) / 100) + 1
-        print 'We are going to make parallel requests ' + str(len_all_urls) + ' times'
+        #print 'We are going to make parallel requests ' + str(len_all_urls) + ' times'
 
         for artist in artists:
             artist = artist.replace('\n', '').strip()
@@ -66,21 +66,27 @@ def main(argv=None):
             call_reqs(i, len_all_urls, inner_urls, genres_set, artist_genres)
             inner_urls = []
 
-
+        
+        
     #for genre in genres_set:
     #    print 'mbo:' + genre.replace(' ', '_').lower() + ' rdf:type <http://purl.org/ontology/mo/Genre> , :NamedIndividual ; '
     #    print '                rdfs:label "' + genre.title() + '"^^xsd:string .'
 
-    for artist_name in artist_genres.keys():
+    
+    for artist_name in artists_uris.keys():
         artist_uri = artists_uris.get(artist_name.lower())
-        if artist_uri:
-            genres = artist_genres[artist_name]
+        
+        genres = artist_genres.get(artist_name.lower())
 
+        if genres:   
             for genre in genres:
                 n_genre = genre.replace('/', '_').replace('-', '_')
                 if n_genre.title() in ["Folk Rock", "Dance", "Heavy Metal", "Classic Rock", "Alternative Rock", "Mpb", "Electrohouse", "Folk", "Indie Rock", "Indie Pop", "Instrumental", "Metalcore", "Indie", "Punk Rock", "Salsa", "Opera", "Trap", "Rock", "Dubstep", "Blues", "Techno", "Pop Rock", "Gospel", "Punk", "Hard Rock", "Electronic", "Forro", "Classical", "Death Metal", "Samba", "Rap", "Trance", "Hip-Hop", "Metal", "Jazz", "Hip Hop", "Country", "Pop", "Funk", "Sertanejo", "Ska", "Thrash Metal", "Orchestral", "Bossa Nova", "Reggae"]:
                     print '<' + artist_uri + '> <mbo:from_genre> mbo:' + genre.replace(' ', '_').lower() + ' .'
         
+            
+
+
 
 if __name__ == "__main__":
     sys.exit(main())
