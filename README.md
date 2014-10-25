@@ -36,8 +36,8 @@ server/apache-tomcat-7.0.56/bin/catalina.sh run
 7. Load the ontology (NTriples format) on the page
 http://localhost:8080/addOrLoad
 
-The file can be found at
-https://raw.githubusercontent.com/tdopires/musicmap/master/musical-taste-schema.nt
+The file is the 'musical-taste-schema.nt' found at the root of this repository.
+It may take a while to CumulusRDF load it.
 
 
 Accessing the application
