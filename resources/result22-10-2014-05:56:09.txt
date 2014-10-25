@@ -1,0 +1,457 @@
+
+
+# D'Influence
+<http://musicbrainz.org/recording/3a549e40-dcc6-4990-a7ee-030352fae21d#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/c0177707-1b90-4116-bb92-9347ea067077#_>	<http://purl.org/dc/elements/1.1/title>	"Magic" .
+<http://musicbrainz.org/release/4bf9c03e-50f3-4436-a208-40c6d84a604e#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/release/eaf6f87f-c026-4595-a06f-72832f3b7d86#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/7aa03b7e-da9d-4944-8607-c93ee80d4da8#_> .
+<http://musicbrainz.org/recording/b4d5eaf9-033e-4c4f-8e79-76b76614b23a#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/eaf6f87f-c026-4595-a06f-72832f3b7d86#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Prayer 4 Unity"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/864aa2df-33e4-4668-ab83-cb84ffe78bc9#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Good Life" .
+<http://musicbrainz.org/recording/8565f415-bf94-4aac-90c1-23991283e781#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/fc1e08f7-2f95-4532-9269-c060201a6d8e#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Break Up" .
+<http://musicbrainz.org/release/f12abfdf-0959-4185-8df4-a0397f2399a0#_>	<http://purl.org/dc/elements/1.1/title>	"London"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/f12abfdf-0959-4185-8df4-a0397f2399a0#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"London"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/45cd8f3b-d655-4602-a2f3-07740c758a4b#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/artist/2c8a8574-4712-4197-832f-b3038d97c79a#_>	<http://purl.org/ontology/mo/biography>	<http://en.wikipedia.org/wiki/D\u0027Influence> .
+<http://musicbrainz.org/release/eaf6f87f-c026-4595-a06f-72832f3b7d86#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/0e65adf9-c8bb-4d1c-b5be-37a5746ca71d#_> .
+<http://musicbrainz.org/recording/68af37d4-b566-4bba-bd8e-373476584428#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Running Away" .
+<http://musicbrainz.org/recording/037d78a7-16b1-4c88-bdc7-840112dff8db#_>	<http://purl.org/dc/elements/1.1/title>	"Falling" .
+<http://musicbrainz.org/recording/68af37d4-b566-4bba-bd8e-373476584428#_>	<http://purl.org/dc/elements/1.1/title>	"Running Away" .
+<http://musicbrainz.org/release/f12abfdf-0959-4185-8df4-a0397f2399a0#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/recording/3a549e40-dcc6-4990-a7ee-030352fae21d#_>	<http://purl.org/dc/elements/1.1/title>	"Loving You - You're Special" .
+<http://musicbrainz.org/recording/45cd8f3b-d655-4602-a2f3-07740c758a4b#_>	<http://purl.org/dc/elements/1.1/title>	"Hold On" .
+<http://musicbrainz.org/release/eaf6f87f-c026-4595-a06f-72832f3b7d86#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/a13623db-4193-44ae-aaaf-da629bc27934#_> .
+<http://musicbrainz.org/recording/be03aa27-4b47-42cc-99e6-66e00d517c98#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/f12abfdf-0959-4185-8df4-a0397f2399a0#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/7c42d744-f929-447b-94c9-1de5d7a2a674#_> .
+<http://musicbrainz.org/recording/67bd6b36-85b1-4f27-b443-990d924163fe#_>	<http://purl.org/dc/elements/1.1/title>	"Midnight" .
+<http://musicbrainz.org/release/eaf6f87f-c026-4595-a06f-72832f3b7d86#_>	<http://purl.org/ontology/mo/track_count>	"12"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/release/4bf9c03e-50f3-4436-a208-40c6d84a604e#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/2c8a8574-4712-4197-832f-b3038d97c79a#_> .
+<http://musicbrainz.org/recording/8565f415-bf94-4aac-90c1-23991283e781#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Falling" .
+<http://musicbrainz.org/recording/5eb6606a-256c-4663-8ec6-06bc996090a6#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"You're All I Need" .
+<http://musicbrainz.org/recording/5eb6606a-256c-4663-8ec6-06bc996090a6#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/fc1e08f7-2f95-4532-9269-c060201a6d8e#_>	<http://purl.org/dc/elements/1.1/title>	"Break Up" .
+<http://musicbrainz.org/release/4bf9c03e-50f3-4436-a208-40c6d84a604e#_>	<http://purl.org/dc/elements/1.1/title>	"London"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/eaf6f87f-c026-4595-a06f-72832f3b7d86#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/67bd6b36-85b1-4f27-b443-990d924163fe#_> .
+<http://musicbrainz.org/recording/a13623db-4193-44ae-aaaf-da629bc27934#_>	<http://purl.org/dc/elements/1.1/title>	"Simmer Down" .
+<http://musicbrainz.org/release/221fe7c4-991e-4c78-8d2b-b164892fd6cc#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/57a15205-2c80-4b71-a88d-95ea1f08e22f#_> .
+<http://musicbrainz.org/release/221fe7c4-991e-4c78-8d2b-b164892fd6cc#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/be03aa27-4b47-42cc-99e6-66e00d517c98#_> .
+<http://musicbrainz.org/release/221fe7c4-991e-4c78-8d2b-b164892fd6cc#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/037d78a7-16b1-4c88-bdc7-840112dff8db#_> .
+<http://musicbrainz.org/release/f12abfdf-0959-4185-8df4-a0397f2399a0#_>	<http://purl.org/ontology/mo/track_count>	"12"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/release/eaf6f87f-c026-4595-a06f-72832f3b7d86#_>	<http://purl.org/dc/elements/1.1/title>	"Prayer 4 Unity"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/7c42d744-f929-447b-94c9-1de5d7a2a674#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/67bd6b36-85b1-4f27-b443-990d924163fe#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Midnight" .
+<http://musicbrainz.org/recording/bf3a775a-d8bc-41ce-a457-43a64e3db9b9#_>	<http://purl.org/dc/elements/1.1/title>	"I Will" .
+<http://musicbrainz.org/release/eaf6f87f-c026-4595-a06f-72832f3b7d86#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/5eb6606a-256c-4663-8ec6-06bc996090a6#_> .
+<http://musicbrainz.org/release/4bf9c03e-50f3-4436-a208-40c6d84a604e#_>	<http://purl.org/ontology/mo/track_count>	"12"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/recording/b4d5eaf9-033e-4c4f-8e79-76b76614b23a#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Running Away" .
+<http://musicbrainz.org/release/221fe7c4-991e-4c78-8d2b-b164892fd6cc#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"London"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/57a15205-2c80-4b71-a88d-95ea1f08e22f#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Magic" .
+<http://musicbrainz.org/recording/c0177707-1b90-4116-bb92-9347ea067077#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/221fe7c4-991e-4c78-8d2b-b164892fd6cc#_>	<http://purl.org/dc/elements/1.1/title>	"London"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/864aa2df-33e4-4668-ab83-cb84ffe78bc9#_>	<http://purl.org/dc/elements/1.1/title>	"Good Life" .
+<http://musicbrainz.org/release/f12abfdf-0959-4185-8df4-a0397f2399a0#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/c0177707-1b90-4116-bb92-9347ea067077#_> .
+<http://musicbrainz.org/recording/5eb6606a-256c-4663-8ec6-06bc996090a6#_>	<http://purl.org/dc/elements/1.1/title>	"You're All I Need" .
+<http://musicbrainz.org/recording/7aa03b7e-da9d-4944-8607-c93ee80d4da8#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Should I?" .
+<http://musicbrainz.org/recording/68af37d4-b566-4bba-bd8e-373476584428#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/7c42d744-f929-447b-94c9-1de5d7a2a674#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Good Life" .
+<http://musicbrainz.org/artist/2c8a8574-4712-4197-832f-b3038d97c79a#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"D'Influence" .
+<http://musicbrainz.org/recording/a13623db-4193-44ae-aaaf-da629bc27934#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Simmer Down" .
+<http://musicbrainz.org/recording/45cd8f3b-d655-4602-a2f3-07740c758a4b#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Hold On" .
+<http://musicbrainz.org/recording/7dd5512e-a8b8-48d9-9c80-b355e13dabb0#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Afrojam" .
+<http://musicbrainz.org/recording/7aa03b7e-da9d-4944-8607-c93ee80d4da8#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/221fe7c4-991e-4c78-8d2b-b164892fd6cc#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/2c8a8574-4712-4197-832f-b3038d97c79a#_> .
+<http://musicbrainz.org/recording/7aa03b7e-da9d-4944-8607-c93ee80d4da8#_>	<http://purl.org/dc/elements/1.1/title>	"Should I?" .
+<http://musicbrainz.org/release/f12abfdf-0959-4185-8df4-a0397f2399a0#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/2c8a8574-4712-4197-832f-b3038d97c79a#_> .
+<http://musicbrainz.org/release/eaf6f87f-c026-4595-a06f-72832f3b7d86#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/bf3a775a-d8bc-41ce-a457-43a64e3db9b9#_> .
+<http://musicbrainz.org/release/eaf6f87f-c026-4595-a06f-72832f3b7d86#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/recording/bf3a775a-d8bc-41ce-a457-43a64e3db9b9#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/037d78a7-16b1-4c88-bdc7-840112dff8db#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Falling" .
+<http://musicbrainz.org/recording/8565f415-bf94-4aac-90c1-23991283e781#_>	<http://purl.org/dc/elements/1.1/title>	"Falling" .
+<http://musicbrainz.org/recording/57a15205-2c80-4b71-a88d-95ea1f08e22f#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/4bf9c03e-50f3-4436-a208-40c6d84a604e#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/7c42d744-f929-447b-94c9-1de5d7a2a674#_> .
+<http://musicbrainz.org/release/eaf6f87f-c026-4595-a06f-72832f3b7d86#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/fc1e08f7-2f95-4532-9269-c060201a6d8e#_> .
+<http://musicbrainz.org/recording/57a15205-2c80-4b71-a88d-95ea1f08e22f#_>	<http://purl.org/dc/elements/1.1/title>	"Magic" .
+<http://musicbrainz.org/recording/864aa2df-33e4-4668-ab83-cb84ffe78bc9#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/7dd5512e-a8b8-48d9-9c80-b355e13dabb0#_>	<http://purl.org/dc/elements/1.1/title>	"Afrojam" .
+<http://musicbrainz.org/recording/037d78a7-16b1-4c88-bdc7-840112dff8db#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/0e65adf9-c8bb-4d1c-b5be-37a5746ca71d#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/7dd5512e-a8b8-48d9-9c80-b355e13dabb0#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/221fe7c4-991e-4c78-8d2b-b164892fd6cc#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/3a549e40-dcc6-4990-a7ee-030352fae21d#_> .
+<http://musicbrainz.org/recording/bf3a775a-d8bc-41ce-a457-43a64e3db9b9#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"I Will" .
+<http://musicbrainz.org/release/221fe7c4-991e-4c78-8d2b-b164892fd6cc#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/864aa2df-33e4-4668-ab83-cb84ffe78bc9#_> .
+<http://musicbrainz.org/recording/c0177707-1b90-4116-bb92-9347ea067077#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Magic" .
+<http://musicbrainz.org/release/eaf6f87f-c026-4595-a06f-72832f3b7d86#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/7dd5512e-a8b8-48d9-9c80-b355e13dabb0#_> .
+<http://musicbrainz.org/recording/fc1e08f7-2f95-4532-9269-c060201a6d8e#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/b4d5eaf9-033e-4c4f-8e79-76b76614b23a#_>	<http://purl.org/dc/elements/1.1/title>	"Running Away" .
+<http://musicbrainz.org/release/4bf9c03e-50f3-4436-a208-40c6d84a604e#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"London"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/4bf9c03e-50f3-4436-a208-40c6d84a604e#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/b4d5eaf9-033e-4c4f-8e79-76b76614b23a#_> .
+<http://musicbrainz.org/recording/a13623db-4193-44ae-aaaf-da629bc27934#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/0e65adf9-c8bb-4d1c-b5be-37a5746ca71d#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Waiting" .
+<http://musicbrainz.org/recording/be03aa27-4b47-42cc-99e6-66e00d517c98#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Hold On" .
+<http://musicbrainz.org/release/4bf9c03e-50f3-4436-a208-40c6d84a604e#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/8565f415-bf94-4aac-90c1-23991283e781#_> .
+<http://musicbrainz.org/release/4bf9c03e-50f3-4436-a208-40c6d84a604e#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/45cd8f3b-d655-4602-a2f3-07740c758a4b#_> .
+<http://musicbrainz.org/artist/2c8a8574-4712-4197-832f-b3038d97c79a#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicGroup> .
+<http://musicbrainz.org/recording/0e65adf9-c8bb-4d1c-b5be-37a5746ca71d#_>	<http://purl.org/dc/elements/1.1/title>	"Waiting" .
+<http://musicbrainz.org/recording/7c42d744-f929-447b-94c9-1de5d7a2a674#_>	<http://purl.org/dc/elements/1.1/title>	"Good Life" .
+<http://musicbrainz.org/artist/2c8a8574-4712-4197-832f-b3038d97c79a#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicArtist> .
+<http://musicbrainz.org/release/eaf6f87f-c026-4595-a06f-72832f3b7d86#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/2c8a8574-4712-4197-832f-b3038d97c79a#_> .
+<http://musicbrainz.org/release/f12abfdf-0959-4185-8df4-a0397f2399a0#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/b4d5eaf9-033e-4c4f-8e79-76b76614b23a#_> .
+<http://musicbrainz.org/release/f12abfdf-0959-4185-8df4-a0397f2399a0#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/8565f415-bf94-4aac-90c1-23991283e781#_> .
+<http://musicbrainz.org/recording/3a549e40-dcc6-4990-a7ee-030352fae21d#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Loving You - You're Special" .
+<http://musicbrainz.org/release/4bf9c03e-50f3-4436-a208-40c6d84a604e#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/c0177707-1b90-4116-bb92-9347ea067077#_> .
+<http://musicbrainz.org/recording/be03aa27-4b47-42cc-99e6-66e00d517c98#_>	<http://purl.org/dc/elements/1.1/title>	"Hold On" .
+<http://musicbrainz.org/release/221fe7c4-991e-4c78-8d2b-b164892fd6cc#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/release/221fe7c4-991e-4c78-8d2b-b164892fd6cc#_>	<http://purl.org/ontology/mo/track_count>	"15"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/artist/2c8a8574-4712-4197-832f-b3038d97c79a#_>	<http://xmlns.com/foaf/0.1/name>	"D'Influence" .
+<http://musicbrainz.org/recording/67bd6b36-85b1-4f27-b443-990d924163fe#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/f12abfdf-0959-4185-8df4-a0397f2399a0#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/45cd8f3b-d655-4602-a2f3-07740c758a4b#_> .
+<http://musicbrainz.org/release/221fe7c4-991e-4c78-8d2b-b164892fd6cc#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/68af37d4-b566-4bba-bd8e-373476584428#_> .
+
+
+# Deep Banana Blackout
+<http://musicbrainz.org/release/0caa38b7-8edb-4d87-9b80-c808e7dd1a40#_>	<http://purl.org/ontology/mo/track_count>	"12"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/recording/2883149f-c69b-4838-b812-7ad835bffbb6#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Anesthetic Highway" .
+<http://musicbrainz.org/release/0caa38b7-8edb-4d87-9b80-c808e7dd1a40#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/ec6c12b1-7396-470c-a8c8-cf0663685b10#_> .
+<http://musicbrainz.org/release/0caa38b7-8edb-4d87-9b80-c808e7dd1a40#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/eb2a11b6-098b-484c-a023-539a5828eef7#_> .
+<http://musicbrainz.org/release/0b1e70d1-e970-4d47-a387-f81e99fcd375#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/b6c145d0-aee0-4031-8081-93620dc8058d#_> .
+<http://musicbrainz.org/recording/ee44c576-15e3-4eb9-87f2-2c585a762457#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/2883149f-c69b-4838-b812-7ad835bffbb6#_>	<http://purl.org/dc/elements/1.1/title>	"Anesthetic Highway" .
+<http://musicbrainz.org/release/0b1e70d1-e970-4d47-a387-f81e99fcd375#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/ec6c12b1-7396-470c-a8c8-cf0663685b10#_> .
+<http://musicbrainz.org/artist/ec6c12b1-7396-470c-a8c8-cf0663685b10#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Deep Banana Blackout" .
+<http://musicbrainz.org/recording/ee44c576-15e3-4eb9-87f2-2c585a762457#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Mama's Boy" .
+<http://musicbrainz.org/recording/eb2a11b6-098b-484c-a023-539a5828eef7#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Big Thing" .
+<http://musicbrainz.org/recording/b6c145d0-aee0-4031-8081-93620dc8058d#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Get'chall in the Mood" .
+<http://musicbrainz.org/recording/2883149f-c69b-4838-b812-7ad835bffbb6#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/0caa38b7-8edb-4d87-9b80-c808e7dd1a40#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/release/0b1e70d1-e970-4d47-a387-f81e99fcd375#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/ee44c576-15e3-4eb9-87f2-2c585a762457#_> .
+<http://musicbrainz.org/recording/b6c145d0-aee0-4031-8081-93620dc8058d#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/artist/ec6c12b1-7396-470c-a8c8-cf0663685b10#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicArtist> .
+<http://musicbrainz.org/recording/48aa0a4c-06a4-4783-ac01-46e10f6507f1#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/0caa38b7-8edb-4d87-9b80-c808e7dd1a40#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Feel the Peel"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/0b1e70d1-e970-4d47-a387-f81e99fcd375#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/release/0b1e70d1-e970-4d47-a387-f81e99fcd375#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/48aa0a4c-06a4-4783-ac01-46e10f6507f1#_> .
+<http://musicbrainz.org/release/0b1e70d1-e970-4d47-a387-f81e99fcd375#_>	<http://purl.org/ontology/mo/track_count>	"13"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/recording/ee44c576-15e3-4eb9-87f2-2c585a762457#_>	<http://purl.org/dc/elements/1.1/title>	"Mama's Boy" .
+<http://musicbrainz.org/release/0b1e70d1-e970-4d47-a387-f81e99fcd375#_>	<http://purl.org/dc/elements/1.1/title>	"Live in the Thousand Islands"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/artist/ec6c12b1-7396-470c-a8c8-cf0663685b10#_>	<http://purl.org/ontology/mo/biography>	<http://en.wikipedia.org/wiki/Deep_Banana_Blackout> .
+<http://musicbrainz.org/release/0b1e70d1-e970-4d47-a387-f81e99fcd375#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/2883149f-c69b-4838-b812-7ad835bffbb6#_> .
+<http://musicbrainz.org/recording/eb2a11b6-098b-484c-a023-539a5828eef7#_>	<http://purl.org/dc/elements/1.1/title>	"Big Thing" .
+<http://musicbrainz.org/artist/ec6c12b1-7396-470c-a8c8-cf0663685b10#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicGroup> .
+<http://musicbrainz.org/release/0caa38b7-8edb-4d87-9b80-c808e7dd1a40#_>	<http://purl.org/dc/elements/1.1/title>	"Feel the Peel"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/eb2a11b6-098b-484c-a023-539a5828eef7#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/b6c145d0-aee0-4031-8081-93620dc8058d#_>	<http://purl.org/dc/elements/1.1/title>	"Get'chall in the Mood" .
+<http://musicbrainz.org/release/0b1e70d1-e970-4d47-a387-f81e99fcd375#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Live in the Thousand Islands"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/48aa0a4c-06a4-4783-ac01-46e10f6507f1#_>	<http://purl.org/dc/elements/1.1/title>	"TUG" .
+<http://musicbrainz.org/artist/ec6c12b1-7396-470c-a8c8-cf0663685b10#_>	<http://xmlns.com/foaf/0.1/name>	"Deep Banana Blackout" .
+<http://musicbrainz.org/recording/48aa0a4c-06a4-4783-ac01-46e10f6507f1#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"TUG" .
+
+
+# Junkyard
+<http://musicbrainz.org/artist/0388b116-a688-4122-bfb7-ca9a1f4aef1a#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Junkyard" .
+<http://musicbrainz.org/release/5f3e502d-ad3a-4034-b4cd-0d82038ea1c7#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/release/9634f502-e020-40ea-a379-4eaa8adeb317#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/0388b116-a688-4122-bfb7-ca9a1f4aef1a#_> .
+<http://musicbrainz.org/artist/0388b116-a688-4122-bfb7-ca9a1f4aef1a#_>	<http://purl.org/ontology/mo/biography>	<http://en.wikipedia.org/wiki/Junkyard_(band)> .
+<http://musicbrainz.org/recording/0a90dabf-eaa2-4f12-9482-76caa7592e49#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/9634f502-e020-40ea-a379-4eaa8adeb317#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/recording/0a5e2d62-24db-43ba-be81-899052a96fe0#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/artist/0388b116-a688-4122-bfb7-ca9a1f4aef1a#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicGroup> .
+<http://musicbrainz.org/recording/0a90dabf-eaa2-4f12-9482-76caa7592e49#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Nowhere to Go but Down" .
+<http://musicbrainz.org/recording/0a5e2d62-24db-43ba-be81-899052a96fe0#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Can't Hold Back" .
+<http://musicbrainz.org/release/5f3e502d-ad3a-4034-b4cd-0d82038ea1c7#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/0a90dabf-eaa2-4f12-9482-76caa7592e49#_> .
+<http://musicbrainz.org/recording/8569f32d-e107-444e-82f3-f21884189371#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Hands Off" .
+<http://musicbrainz.org/artist/0388b116-a688-4122-bfb7-ca9a1f4aef1a#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicArtist> .
+<http://musicbrainz.org/recording/0a90dabf-eaa2-4f12-9482-76caa7592e49#_>	<http://purl.org/dc/elements/1.1/title>	"Nowhere to Go but Down" .
+<http://musicbrainz.org/release/5f3e502d-ad3a-4034-b4cd-0d82038ea1c7#_>	<http://purl.org/dc/elements/1.1/title>	"Sixes, Sevens & Nines"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/8569f32d-e107-444e-82f3-f21884189371#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/5f3e502d-ad3a-4034-b4cd-0d82038ea1c7#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/0388b116-a688-4122-bfb7-ca9a1f4aef1a#_> .
+<http://musicbrainz.org/release/9634f502-e020-40ea-a379-4eaa8adeb317#_>	<http://purl.org/ontology/mo/track_count>	"10"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/release/9634f502-e020-40ea-a379-4eaa8adeb317#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Junkyard"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/9634f502-e020-40ea-a379-4eaa8adeb317#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/2eafaa77-1a39-4bbc-a212-4a38c97c6aec#_> .
+<http://musicbrainz.org/recording/2eafaa77-1a39-4bbc-a212-4a38c97c6aec#_>	<http://purl.org/dc/elements/1.1/title>	"Long Way Home" .
+<http://musicbrainz.org/recording/2eafaa77-1a39-4bbc-a212-4a38c97c6aec#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/8569f32d-e107-444e-82f3-f21884189371#_>	<http://purl.org/dc/elements/1.1/title>	"Hands Off" .
+<http://musicbrainz.org/artist/0388b116-a688-4122-bfb7-ca9a1f4aef1a#_>	<http://xmlns.com/foaf/0.1/name>	"Junkyard" .
+<http://musicbrainz.org/release/5f3e502d-ad3a-4034-b4cd-0d82038ea1c7#_>	<http://purl.org/ontology/mo/track_count>	"10"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/release/9634f502-e020-40ea-a379-4eaa8adeb317#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/0a5e2d62-24db-43ba-be81-899052a96fe0#_> .
+<http://musicbrainz.org/recording/0a5e2d62-24db-43ba-be81-899052a96fe0#_>	<http://purl.org/dc/elements/1.1/title>	"Can't Hold Back" .
+<http://musicbrainz.org/recording/2eafaa77-1a39-4bbc-a212-4a38c97c6aec#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Long Way Home" .
+<http://musicbrainz.org/release/5f3e502d-ad3a-4034-b4cd-0d82038ea1c7#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Sixes, Sevens & Nines"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/9634f502-e020-40ea-a379-4eaa8adeb317#_>	<http://purl.org/dc/elements/1.1/title>	"Junkyard"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/9634f502-e020-40ea-a379-4eaa8adeb317#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/8569f32d-e107-444e-82f3-f21884189371#_> .
+
+
+# Robert Randolph & The Family Band
+<http://musicbrainz.org/recording/b9013053-1b09-474c-9fc9-3ef93c7483d9#_>	<http://purl.org/dc/elements/1.1/title>	"I Don't Know What You Come to Do" .
+<http://musicbrainz.org/recording/80bf14fb-8d80-4e48-8a09-16d1a9be0fc5#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Going in the Right Direction" .
+<http://musicbrainz.org/recording/e341fdb3-2d9a-41b0-985f-74ef3a0eaef7#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/b9013053-1b09-474c-9fc9-3ef93c7483d9#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/80bf14fb-8d80-4e48-8a09-16d1a9be0fc5#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/artist/ff27816c-b641-4087-8ac2-89a923f4af42#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicGroup> .
+<http://musicbrainz.org/recording/42a94551-17d5-4e69-beb8-b9fb3e91f576#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/37968a1c-dc90-403c-978c-37e90112a613#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Problems" .
+<http://musicbrainz.org/recording/42a94551-17d5-4e69-beb8-b9fb3e91f576#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Voodoo Chile" .
+<http://musicbrainz.org/artist/ff27816c-b641-4087-8ac2-89a923f4af42#_>	<http://xmlns.com/foaf/0.1/name>	"Robert Randolph & The Family Band" .
+<http://musicbrainz.org/release/ae22beda-d926-48fe-bd5c-4994b82e62f5#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/42a94551-17d5-4e69-beb8-b9fb3e91f576#_> .
+<http://musicbrainz.org/release/f254e73d-4a6d-406a-823e-642afce798e8#_>	<http://purl.org/dc/elements/1.1/title>	"Unclassified"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/f254e73d-4a6d-406a-823e-642afce798e8#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/e341fdb3-2d9a-41b0-985f-74ef3a0eaef7#_> .
+<http://musicbrainz.org/release/ae22beda-d926-48fe-bd5c-4994b82e62f5#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/ff27816c-b641-4087-8ac2-89a923f4af42#_> .
+<http://musicbrainz.org/artist/ff27816c-b641-4087-8ac2-89a923f4af42#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicArtist> .
+<http://musicbrainz.org/release/ae22beda-d926-48fe-bd5c-4994b82e62f5#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"2002-06-22"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/55763994-f784-4b77-bc84-02278cc80919#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/b9013053-1b09-474c-9fc9-3ef93c7483d9#_> .
+<http://musicbrainz.org/release/f254e73d-4a6d-406a-823e-642afce798e8#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/37968a1c-dc90-403c-978c-37e90112a613#_> .
+<http://musicbrainz.org/release/ae22beda-d926-48fe-bd5c-4994b82e62f5#_>	<http://purl.org/ontology/mo/track_count>	"7"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/release/f254e73d-4a6d-406a-823e-642afce798e8#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/ff27816c-b641-4087-8ac2-89a923f4af42#_> .
+<http://musicbrainz.org/recording/80bf14fb-8d80-4e48-8a09-16d1a9be0fc5#_>	<http://purl.org/dc/elements/1.1/title>	"Going in the Right Direction" .
+<http://musicbrainz.org/release/f254e73d-4a6d-406a-823e-642afce798e8#_>	<http://purl.org/ontology/mo/track_count>	"11"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/artist/ff27816c-b641-4087-8ac2-89a923f4af42#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Robert Randolph & The Family Band" .
+<http://musicbrainz.org/recording/7d59bc60-33a0-4c56-9921-e16cf6768000#_>	<http://purl.org/dc/elements/1.1/title>	"Smile" .
+<http://musicbrainz.org/recording/58370707-0bef-41af-8e64-425ddb21cc78#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/55763994-f784-4b77-bc84-02278cc80919#_>	<http://purl.org/ontology/mo/track_count>	"6"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/recording/7d59bc60-33a0-4c56-9921-e16cf6768000#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/55763994-f784-4b77-bc84-02278cc80919#_>	<http://purl.org/dc/elements/1.1/title>	"Live at the Wetlands"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/e341fdb3-2d9a-41b0-985f-74ef3a0eaef7#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Run for Your Life" .
+<http://musicbrainz.org/release/f254e73d-4a6d-406a-823e-642afce798e8#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/7d59bc60-33a0-4c56-9921-e16cf6768000#_> .
+<http://musicbrainz.org/release/f254e73d-4a6d-406a-823e-642afce798e8#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Unclassified"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/artist/ff27816c-b641-4087-8ac2-89a923f4af42#_>	<http://purl.org/ontology/mo/biography>	<http://en.wikipedia.org/wiki/Robert_Randolph_and_the_Family_Band> .
+<http://musicbrainz.org/recording/b9013053-1b09-474c-9fc9-3ef93c7483d9#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"I Don't Know What You Come to Do" .
+<http://musicbrainz.org/recording/42a94551-17d5-4e69-beb8-b9fb3e91f576#_>	<http://purl.org/dc/elements/1.1/title>	"Voodoo Chile" .
+<http://musicbrainz.org/recording/58370707-0bef-41af-8e64-425ddb21cc78#_>	<http://purl.org/dc/elements/1.1/title>	"Ted's Jam" .
+<http://musicbrainz.org/release/ae22beda-d926-48fe-bd5c-4994b82e62f5#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/recording/7d59bc60-33a0-4c56-9921-e16cf6768000#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Smile" .
+<http://musicbrainz.org/release/55763994-f784-4b77-bc84-02278cc80919#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/release/ae22beda-d926-48fe-bd5c-4994b82e62f5#_>	<http://purl.org/dc/elements/1.1/title>	"2002-06-22"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/e341fdb3-2d9a-41b0-985f-74ef3a0eaef7#_>	<http://purl.org/dc/elements/1.1/title>	"Run for Your Life" .
+<http://musicbrainz.org/recording/37968a1c-dc90-403c-978c-37e90112a613#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/55763994-f784-4b77-bc84-02278cc80919#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/58370707-0bef-41af-8e64-425ddb21cc78#_> .
+<http://musicbrainz.org/release/55763994-f784-4b77-bc84-02278cc80919#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Live at the Wetlands"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/f254e73d-4a6d-406a-823e-642afce798e8#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/recording/37968a1c-dc90-403c-978c-37e90112a613#_>	<http://purl.org/dc/elements/1.1/title>	"Problems" .
+<http://musicbrainz.org/recording/58370707-0bef-41af-8e64-425ddb21cc78#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Ted's Jam" .
+<http://musicbrainz.org/release/55763994-f784-4b77-bc84-02278cc80919#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/ff27816c-b641-4087-8ac2-89a923f4af42#_> .
+<http://musicbrainz.org/release/f254e73d-4a6d-406a-823e-642afce798e8#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/80bf14fb-8d80-4e48-8a09-16d1a9be0fc5#_> .
+
+
+# Six Cents and Natalie
+<http://musicbrainz.org/recording/0fabd9ba-037e-4843-9045-d7d2318230fa#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/8fa214df-93a6-4383-9a9f-f33fcf77691e#_>	<http://purl.org/ontology/mo/track_count>	"25"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/recording/bf6ff454-e38a-4c7d-ac09-c8ce9866e3eb#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/artist/a60b0ec2-4b37-484b-bbe5-3a6104dc2172#_>	<http://xmlns.com/foaf/0.1/name>	"Six Cents and Natalie" .
+<http://musicbrainz.org/release/8fa214df-93a6-4383-9a9f-f33fcf77691e#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/04f103d8-43a0-42b4-8179-96eaeced12e8#_> .
+<http://musicbrainz.org/recording/6af7360c-4093-48a2-9285-df08e00ee8ff#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Your Swimming Suit" .
+<http://musicbrainz.org/recording/04f103d8-43a0-42b4-8179-96eaeced12e8#_>	<http://purl.org/dc/elements/1.1/title>	"Molly Dodd" .
+<http://musicbrainz.org/release/8fa214df-93a6-4383-9a9f-f33fcf77691e#_>	<http://purl.org/dc/elements/1.1/title>	"When Punk Fell to Earth"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/6af7360c-4093-48a2-9285-df08e00ee8ff#_>	<http://purl.org/dc/elements/1.1/title>	"Your Swimming Suit" .
+<http://musicbrainz.org/recording/20705312-aa5a-4fb0-8fd6-629c79638fca#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Sea Side Cafe" .
+<http://musicbrainz.org/release/8fa214df-93a6-4383-9a9f-f33fcf77691e#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/recording/04f103d8-43a0-42b4-8179-96eaeced12e8#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/0fabd9ba-037e-4843-9045-d7d2318230fa#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Manufactured Drums Sounds" .
+<http://musicbrainz.org/artist/a60b0ec2-4b37-484b-bbe5-3a6104dc2172#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/SoloMusicArtist> .
+<http://musicbrainz.org/recording/20705312-aa5a-4fb0-8fd6-629c79638fca#_>	<http://purl.org/dc/elements/1.1/title>	"Sea Side Cafe" .
+<http://musicbrainz.org/recording/bf6ff454-e38a-4c7d-ac09-c8ce9866e3eb#_>	<http://purl.org/dc/elements/1.1/title>	"Your Class" .
+<http://musicbrainz.org/release/8fa214df-93a6-4383-9a9f-f33fcf77691e#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/a60b0ec2-4b37-484b-bbe5-3a6104dc2172#_> .
+<http://musicbrainz.org/release/8fa214df-93a6-4383-9a9f-f33fcf77691e#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/0fabd9ba-037e-4843-9045-d7d2318230fa#_> .
+<http://musicbrainz.org/release/8fa214df-93a6-4383-9a9f-f33fcf77691e#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/6af7360c-4093-48a2-9285-df08e00ee8ff#_> .
+<http://musicbrainz.org/artist/a60b0ec2-4b37-484b-bbe5-3a6104dc2172#_>	<http://purl.org/ontology/mo/biography>	<http://en.wikipedia.org/wiki/Six_Cents_and_Natalie> .
+<http://musicbrainz.org/artist/a60b0ec2-4b37-484b-bbe5-3a6104dc2172#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Six Cents and Natalie" .
+<http://musicbrainz.org/recording/04f103d8-43a0-42b4-8179-96eaeced12e8#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Molly Dodd" .
+<http://musicbrainz.org/release/8fa214df-93a6-4383-9a9f-f33fcf77691e#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"When Punk Fell to Earth"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/8fa214df-93a6-4383-9a9f-f33fcf77691e#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/20705312-aa5a-4fb0-8fd6-629c79638fca#_> .
+<http://musicbrainz.org/release/8fa214df-93a6-4383-9a9f-f33fcf77691e#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/bf6ff454-e38a-4c7d-ac09-c8ce9866e3eb#_> .
+<http://musicbrainz.org/recording/20705312-aa5a-4fb0-8fd6-629c79638fca#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/6af7360c-4093-48a2-9285-df08e00ee8ff#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/artist/a60b0ec2-4b37-484b-bbe5-3a6104dc2172#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicArtist> .
+<http://musicbrainz.org/recording/0fabd9ba-037e-4843-9045-d7d2318230fa#_>	<http://purl.org/dc/elements/1.1/title>	"Manufactured Drums Sounds" .
+<http://musicbrainz.org/recording/bf6ff454-e38a-4c7d-ac09-c8ce9866e3eb#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Your Class" .
+
+
+# Grand Incredible
+<http://musicbrainz.org/release/ef5f3237-0901-48ce-9c5d-9f69f34973b9#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/artist/6e847b72-e6c1-46be-8ded-35e8cb1cfdb9#_>	<http://purl.org/ontology/mo/biography>	<http://en.wikipedia.org/wiki/Grand_Incredible> .
+<http://musicbrainz.org/artist/6e847b72-e6c1-46be-8ded-35e8cb1cfdb9#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicArtist> .
+<http://musicbrainz.org/recording/a06ab638-b51f-42a8-80a0-f632c9d4b8dd#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/a06ab638-b51f-42a8-80a0-f632c9d4b8dd#_>	<http://purl.org/dc/elements/1.1/title>	"Rock Your Face Off" .
+<http://musicbrainz.org/recording/88d090d6-af1a-488e-9090-9abea03d6a98#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Anti-Prom" .
+<http://musicbrainz.org/release/ef5f3237-0901-48ce-9c5d-9f69f34973b9#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/6f8f23ff-81d8-41dd-88ec-239721416d21#_> .
+<http://musicbrainz.org/recording/88d090d6-af1a-488e-9090-9abea03d6a98#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/fa9c8c91-3fa6-43b8-bea6-2182e228eb8a#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/61c3b763-e69c-4271-82d8-c355198f2430#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Big Is the New Small" .
+<http://musicbrainz.org/recording/61c3b763-e69c-4271-82d8-c355198f2430#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/61c3b763-e69c-4271-82d8-c355198f2430#_>	<http://purl.org/dc/elements/1.1/title>	"Big Is the New Small" .
+<http://musicbrainz.org/recording/240c2654-84c0-43d9-8a8c-60b78ee93fb4#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Most Beautiful Soul" .
+<http://musicbrainz.org/artist/6e847b72-e6c1-46be-8ded-35e8cb1cfdb9#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicGroup> .
+<http://musicbrainz.org/release/ef5f3237-0901-48ce-9c5d-9f69f34973b9#_>	<http://purl.org/ontology/mo/track_count>	"17"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/recording/240c2654-84c0-43d9-8a8c-60b78ee93fb4#_>	<http://purl.org/dc/elements/1.1/title>	"Most Beautiful Soul" .
+<http://musicbrainz.org/release/ef5f3237-0901-48ce-9c5d-9f69f34973b9#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/fa9c8c91-3fa6-43b8-bea6-2182e228eb8a#_> .
+<http://musicbrainz.org/release/ef5f3237-0901-48ce-9c5d-9f69f34973b9#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/240c2654-84c0-43d9-8a8c-60b78ee93fb4#_> .
+<http://musicbrainz.org/recording/7cb5b08a-efa5-42d6-a2f9-85e7c2b9be57#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/ef5f3237-0901-48ce-9c5d-9f69f34973b9#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/6e847b72-e6c1-46be-8ded-35e8cb1cfdb9#_> .
+<http://musicbrainz.org/recording/fa9c8c91-3fa6-43b8-bea6-2182e228eb8a#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Here We Go" .
+<http://musicbrainz.org/recording/6f8f23ff-81d8-41dd-88ec-239721416d21#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Los Lakers Por Vida" .
+<http://musicbrainz.org/recording/6f8f23ff-81d8-41dd-88ec-239721416d21#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/ef5f3237-0901-48ce-9c5d-9f69f34973b9#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/a06ab638-b51f-42a8-80a0-f632c9d4b8dd#_> .
+<http://musicbrainz.org/recording/7cb5b08a-efa5-42d6-a2f9-85e7c2b9be57#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Time After Time" .
+<http://musicbrainz.org/release/ef5f3237-0901-48ce-9c5d-9f69f34973b9#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/7cb5b08a-efa5-42d6-a2f9-85e7c2b9be57#_> .
+<http://musicbrainz.org/recording/240c2654-84c0-43d9-8a8c-60b78ee93fb4#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/artist/6e847b72-e6c1-46be-8ded-35e8cb1cfdb9#_>	<http://xmlns.com/foaf/0.1/name>	"Grand Incredible" .
+<http://musicbrainz.org/artist/6e847b72-e6c1-46be-8ded-35e8cb1cfdb9#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Grand Incredible" .
+<http://musicbrainz.org/release/ef5f3237-0901-48ce-9c5d-9f69f34973b9#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/61c3b763-e69c-4271-82d8-c355198f2430#_> .
+<http://musicbrainz.org/recording/6f8f23ff-81d8-41dd-88ec-239721416d21#_>	<http://purl.org/dc/elements/1.1/title>	"Los Lakers Por Vida" .
+<http://musicbrainz.org/recording/7cb5b08a-efa5-42d6-a2f9-85e7c2b9be57#_>	<http://purl.org/dc/elements/1.1/title>	"Time After Time" .
+<http://musicbrainz.org/recording/88d090d6-af1a-488e-9090-9abea03d6a98#_>	<http://purl.org/dc/elements/1.1/title>	"Anti-Prom" .
+<http://musicbrainz.org/recording/fa9c8c91-3fa6-43b8-bea6-2182e228eb8a#_>	<http://purl.org/dc/elements/1.1/title>	"Here We Go" .
+<http://musicbrainz.org/release/ef5f3237-0901-48ce-9c5d-9f69f34973b9#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"G. I. Gantic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/ef5f3237-0901-48ce-9c5d-9f69f34973b9#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/88d090d6-af1a-488e-9090-9abea03d6a98#_> .
+<http://musicbrainz.org/release/ef5f3237-0901-48ce-9c5d-9f69f34973b9#_>	<http://purl.org/dc/elements/1.1/title>	"G. I. Gantic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/a06ab638-b51f-42a8-80a0-f632c9d4b8dd#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Rock Your Face Off" .
+
+
+# TKA
+<http://musicbrainz.org/recording/3996ee5c-4f07-4d92-b3d8-83483a5414bd#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"One Way Love" .
+<http://musicbrainz.org/release/8a37fc07-b12d-462a-8154-41b85bc3a499#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/6585bf9f-f68c-4c47-8c83-75a8d52cb524#_> .
+<http://musicbrainz.org/release/70149c72-15ad-4bfc-9504-83c972717017#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/83a79452-dcb0-48d3-a7ea-2e0af86d7ebd#_> .
+<http://musicbrainz.org/recording/f3d1d525-3916-4759-bec7-ed66116aa021#_>	<http://purl.org/dc/elements/1.1/title>	"Crash (Have Some Fun)" .
+<http://musicbrainz.org/release/70149c72-15ad-4bfc-9504-83c972717017#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Louder Than Love"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/artist/83a79452-dcb0-48d3-a7ea-2e0af86d7ebd#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicGroup> .
+<http://musicbrainz.org/artist/83a79452-dcb0-48d3-a7ea-2e0af86d7ebd#_>	<http://xmlns.com/foaf/0.1/name>	"TKA" .
+<http://musicbrainz.org/release/41f4d46a-f8f4-4744-b973-f153361b8b73#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/4de841d2-8511-47e6-9666-1c4969f45f3b#_> .
+<http://musicbrainz.org/recording/f3d1d525-3916-4759-bec7-ed66116aa021#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Crash (Have Some Fun)" .
+<http://musicbrainz.org/recording/6585bf9f-f68c-4c47-8c83-75a8d52cb524#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/41f4d46a-f8f4-4744-b973-f153361b8b73#_>	<http://purl.org/ontology/mo/track_count>	"9"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/release/41f4d46a-f8f4-4744-b973-f153361b8b73#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/recording/e8115d7e-b96b-48db-babf-01f37cccd3ed#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/70149c72-15ad-4bfc-9504-83c972717017#_>	<http://purl.org/dc/elements/1.1/title>	"Louder Than Love"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/8453c96b-5b53-4387-9fa8-60c4161873c1#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Crash (Have Some Fun)" .
+<http://musicbrainz.org/recording/4de841d2-8511-47e6-9666-1c4969f45f3b#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/artist/83a79452-dcb0-48d3-a7ea-2e0af86d7ebd#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"TKA" .
+<http://musicbrainz.org/release/8a37fc07-b12d-462a-8154-41b85bc3a499#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Greatest Hits"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/8a37fc07-b12d-462a-8154-41b85bc3a499#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/recording/e8115d7e-b96b-48db-babf-01f37cccd3ed#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"It's Got to Be Love" .
+<http://musicbrainz.org/release/8a37fc07-b12d-462a-8154-41b85bc3a499#_>	<http://purl.org/dc/elements/1.1/title>	"Greatest Hits"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/41f4d46a-f8f4-4744-b973-f153361b8b73#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/3996ee5c-4f07-4d92-b3d8-83483a5414bd#_> .
+<http://musicbrainz.org/release/8a37fc07-b12d-462a-8154-41b85bc3a499#_>	<http://purl.org/ontology/mo/track_count>	"14"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/release/70149c72-15ad-4bfc-9504-83c972717017#_>	<http://purl.org/ontology/mo/track_count>	"10"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/recording/c64f5108-e306-407f-a221-984f535d766e#_>	<http://purl.org/dc/elements/1.1/title>	"X-Ray Vision" .
+<http://musicbrainz.org/release/8a37fc07-b12d-462a-8154-41b85bc3a499#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/f3d1d525-3916-4759-bec7-ed66116aa021#_> .
+<http://musicbrainz.org/recording/6585bf9f-f68c-4c47-8c83-75a8d52cb524#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Maria" .
+<http://musicbrainz.org/recording/6585bf9f-f68c-4c47-8c83-75a8d52cb524#_>	<http://purl.org/dc/elements/1.1/title>	"Maria" .
+<http://musicbrainz.org/recording/e8115d7e-b96b-48db-babf-01f37cccd3ed#_>	<http://purl.org/dc/elements/1.1/title>	"It's Got to Be Love" .
+<http://musicbrainz.org/recording/c64f5108-e306-407f-a221-984f535d766e#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"X-Ray Vision" .
+<http://musicbrainz.org/release/70149c72-15ad-4bfc-9504-83c972717017#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/recording/6b358067-dd48-499e-b7a8-98f8bbf20318#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"One Way Love" .
+<http://musicbrainz.org/recording/6b358067-dd48-499e-b7a8-98f8bbf20318#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/c64f5108-e306-407f-a221-984f535d766e#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/4de841d2-8511-47e6-9666-1c4969f45f3b#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Someone in the Dark" .
+<http://musicbrainz.org/recording/3996ee5c-4f07-4d92-b3d8-83483a5414bd#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/8453c96b-5b53-4387-9fa8-60c4161873c1#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/4de841d2-8511-47e6-9666-1c4969f45f3b#_>	<http://purl.org/dc/elements/1.1/title>	"Someone in the Dark" .
+<http://musicbrainz.org/recording/f3d1d525-3916-4759-bec7-ed66116aa021#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/41f4d46a-f8f4-4744-b973-f153361b8b73#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/c64f5108-e306-407f-a221-984f535d766e#_> .
+<http://musicbrainz.org/artist/83a79452-dcb0-48d3-a7ea-2e0af86d7ebd#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicArtist> .
+<http://musicbrainz.org/release/70149c72-15ad-4bfc-9504-83c972717017#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/8453c96b-5b53-4387-9fa8-60c4161873c1#_> .
+<http://musicbrainz.org/artist/83a79452-dcb0-48d3-a7ea-2e0af86d7ebd#_>	<http://purl.org/ontology/mo/biography>	<http://en.wikipedia.org/wiki/TKA> .
+<http://musicbrainz.org/release/41f4d46a-f8f4-4744-b973-f153361b8b73#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Scars of Love"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/41f4d46a-f8f4-4744-b973-f153361b8b73#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/83a79452-dcb0-48d3-a7ea-2e0af86d7ebd#_> .
+<http://musicbrainz.org/release/8a37fc07-b12d-462a-8154-41b85bc3a499#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/6b358067-dd48-499e-b7a8-98f8bbf20318#_> .
+<http://musicbrainz.org/release/8a37fc07-b12d-462a-8154-41b85bc3a499#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/83a79452-dcb0-48d3-a7ea-2e0af86d7ebd#_> .
+<http://musicbrainz.org/recording/6b358067-dd48-499e-b7a8-98f8bbf20318#_>	<http://purl.org/dc/elements/1.1/title>	"One Way Love" .
+<http://musicbrainz.org/release/41f4d46a-f8f4-4744-b973-f153361b8b73#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/e8115d7e-b96b-48db-babf-01f37cccd3ed#_> .
+<http://musicbrainz.org/recording/3996ee5c-4f07-4d92-b3d8-83483a5414bd#_>	<http://purl.org/dc/elements/1.1/title>	"One Way Love" .
+<http://musicbrainz.org/release/41f4d46a-f8f4-4744-b973-f153361b8b73#_>	<http://purl.org/dc/elements/1.1/title>	"Scars of Love"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/8453c96b-5b53-4387-9fa8-60c4161873c1#_>	<http://purl.org/dc/elements/1.1/title>	"Crash (Have Some Fun)" .
+
+
+# Books on Tape
+<http://musicbrainz.org/release/80687df3-523d-4652-8850-929b580af71f#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/6271161a-a0a1-439e-9653-04525a5683d7#_> .
+<http://musicbrainz.org/recording/677460da-6e14-4055-a8b0-0051bc5092ac#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/80687df3-523d-4652-8850-929b580af71f#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Sings the Blues"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/6271161a-a0a1-439e-9653-04525a5683d7#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Frisson" .
+<http://musicbrainz.org/release/6935d18d-7a2b-3040-8e4b-c8c8a9ebab6d#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/ceb9b940-53f0-49c0-93c9-8936d596424c#_> .
+<http://musicbrainz.org/release/1e9fbfc4-e7d2-418d-b190-ada9db31b61b#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/recording/f46d3969-673a-4287-8497-33ff102b6a3b#_>	<http://purl.org/dc/elements/1.1/title>	"See You in Tokyo" .
+<http://musicbrainz.org/recording/c984001b-3ee7-44fe-b1ae-acf0693758e5#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Wake Up Call" .
+<http://musicbrainz.org/release/6935d18d-7a2b-3040-8e4b-c8c8a9ebab6d#_>	<http://purl.org/dc/elements/1.1/title>	"Sings the Blues"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/80687df3-523d-4652-8850-929b580af71f#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/recording/8da8d4cb-e320-4370-be67-808137a2a6dc#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Terranaut" .
+<http://musicbrainz.org/recording/6271161a-a0a1-439e-9653-04525a5683d7#_>	<http://purl.org/dc/elements/1.1/title>	"Frisson" .
+<http://musicbrainz.org/release/6935d18d-7a2b-3040-8e4b-c8c8a9ebab6d#_>	<http://purl.org/ontology/mo/track_count>	"16"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/release/80687df3-523d-4652-8850-929b580af71f#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/f46d3969-673a-4287-8497-33ff102b6a3b#_> .
+<http://musicbrainz.org/recording/1e84fd97-0dec-4077-9106-34d0d39cf28f#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Bicycle Beat" .
+<http://musicbrainz.org/recording/6271161a-a0a1-439e-9653-04525a5683d7#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/6935d18d-7a2b-3040-8e4b-c8c8a9ebab6d#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/1e84fd97-0dec-4077-9106-34d0d39cf28f#_> .
+<http://musicbrainz.org/release/1e9fbfc4-e7d2-418d-b190-ada9db31b61b#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/8da8d4cb-e320-4370-be67-808137a2a6dc#_> .
+<http://musicbrainz.org/recording/1e84fd97-0dec-4077-9106-34d0d39cf28f#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/82fd5007-8303-444e-b294-51b08a274a08#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Shake That" .
+<http://musicbrainz.org/artist/ceb9b940-53f0-49c0-93c9-8936d596424c#_>	<http://xmlns.com/foaf/0.1/name>	"Books on Tape" .
+<http://musicbrainz.org/recording/633c8fdf-90fb-4dd8-871e-10eb9b5adc8d#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Circus Animal Battle Rap (instrumental)" .
+<http://musicbrainz.org/release/80687df3-523d-4652-8850-929b580af71f#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/8253cd7f-32ba-406d-9393-1333cd39bdfc#_> .
+<http://musicbrainz.org/recording/633c8fdf-90fb-4dd8-871e-10eb9b5adc8d#_>	<http://purl.org/dc/elements/1.1/title>	"Circus Animal Battle Rap (instrumental)" .
+<http://musicbrainz.org/release/6935d18d-7a2b-3040-8e4b-c8c8a9ebab6d#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/f46d3969-673a-4287-8497-33ff102b6a3b#_> .
+<http://musicbrainz.org/recording/c984001b-3ee7-44fe-b1ae-acf0693758e5#_>	<http://purl.org/dc/elements/1.1/title>	"Wake Up Call" .
+<http://musicbrainz.org/release/6935d18d-7a2b-3040-8e4b-c8c8a9ebab6d#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Sings the Blues"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/633c8fdf-90fb-4dd8-871e-10eb9b5adc8d#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/6935d18d-7a2b-3040-8e4b-c8c8a9ebab6d#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/8253cd7f-32ba-406d-9393-1333cd39bdfc#_> .
+<http://musicbrainz.org/release/80687df3-523d-4652-8850-929b580af71f#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/633c8fdf-90fb-4dd8-871e-10eb9b5adc8d#_> .
+<http://musicbrainz.org/recording/f46d3969-673a-4287-8497-33ff102b6a3b#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/6935d18d-7a2b-3040-8e4b-c8c8a9ebab6d#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/d45852f1-c2a0-4fa1-abca-c623e406b5c5#_> .
+<http://musicbrainz.org/recording/8253cd7f-32ba-406d-9393-1333cd39bdfc#_>	<http://purl.org/dc/elements/1.1/title>	"Unlucky Bounce" .
+<http://musicbrainz.org/release/1e9fbfc4-e7d2-418d-b190-ada9db31b61b#_>	<http://purl.org/dc/elements/1.1/title>	"Throw Down Your Laptops"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/82fd5007-8303-444e-b294-51b08a274a08#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/6935d18d-7a2b-3040-8e4b-c8c8a9ebab6d#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/release/80687df3-523d-4652-8850-929b580af71f#_>	<http://purl.org/dc/elements/1.1/title>	"Sings the Blues"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/80687df3-523d-4652-8850-929b580af71f#_>	<http://purl.org/ontology/mo/track_count>	"16"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/release/6935d18d-7a2b-3040-8e4b-c8c8a9ebab6d#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/633c8fdf-90fb-4dd8-871e-10eb9b5adc8d#_> .
+<http://musicbrainz.org/release/1e9fbfc4-e7d2-418d-b190-ada9db31b61b#_>	<http://purl.org/ontology/mo/track_count>	"13"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/release/80687df3-523d-4652-8850-929b580af71f#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/d45852f1-c2a0-4fa1-abca-c623e406b5c5#_> .
+<http://musicbrainz.org/artist/ceb9b940-53f0-49c0-93c9-8936d596424c#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Books on Tape" .
+<http://musicbrainz.org/artist/ceb9b940-53f0-49c0-93c9-8936d596424c#_>	<http://purl.org/ontology/mo/biography>	<http://en.wikipedia.org/wiki/Books_on_Tape> .
+<http://musicbrainz.org/release/6935d18d-7a2b-3040-8e4b-c8c8a9ebab6d#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/6271161a-a0a1-439e-9653-04525a5683d7#_> .
+<http://musicbrainz.org/release/80687df3-523d-4652-8850-929b580af71f#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/ceb9b940-53f0-49c0-93c9-8936d596424c#_> .
+<http://musicbrainz.org/recording/c984001b-3ee7-44fe-b1ae-acf0693758e5#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/1e9fbfc4-e7d2-418d-b190-ada9db31b61b#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Throw Down Your Laptops"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/677460da-6e14-4055-a8b0-0051bc5092ac#_>	<http://purl.org/dc/elements/1.1/title>	"Replica, California" .
+<http://musicbrainz.org/release/1e9fbfc4-e7d2-418d-b190-ada9db31b61b#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/ceb9b940-53f0-49c0-93c9-8936d596424c#_> .
+<http://musicbrainz.org/recording/8253cd7f-32ba-406d-9393-1333cd39bdfc#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/artist/ceb9b940-53f0-49c0-93c9-8936d596424c#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicGroup> .
+<http://musicbrainz.org/release/1e9fbfc4-e7d2-418d-b190-ada9db31b61b#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/677460da-6e14-4055-a8b0-0051bc5092ac#_> .
+<http://musicbrainz.org/recording/8253cd7f-32ba-406d-9393-1333cd39bdfc#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Unlucky Bounce" .
+<http://musicbrainz.org/recording/677460da-6e14-4055-a8b0-0051bc5092ac#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Replica, California" .
+<http://musicbrainz.org/release/1e9fbfc4-e7d2-418d-b190-ada9db31b61b#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/c984001b-3ee7-44fe-b1ae-acf0693758e5#_> .
+<http://musicbrainz.org/recording/82fd5007-8303-444e-b294-51b08a274a08#_>	<http://purl.org/dc/elements/1.1/title>	"Shake That" .
+<http://musicbrainz.org/release/6935d18d-7a2b-3040-8e4b-c8c8a9ebab6d#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/82fd5007-8303-444e-b294-51b08a274a08#_> .
+<http://musicbrainz.org/release/80687df3-523d-4652-8850-929b580af71f#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/1e84fd97-0dec-4077-9106-34d0d39cf28f#_> .
+<http://musicbrainz.org/recording/f46d3969-673a-4287-8497-33ff102b6a3b#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"See You in Tokyo" .
+<http://musicbrainz.org/recording/d45852f1-c2a0-4fa1-abca-c623e406b5c5#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/8da8d4cb-e320-4370-be67-808137a2a6dc#_>	<http://purl.org/dc/elements/1.1/title>	"Terranaut" .
+<http://musicbrainz.org/recording/1e84fd97-0dec-4077-9106-34d0d39cf28f#_>	<http://purl.org/dc/elements/1.1/title>	"Bicycle Beat" .
+<http://musicbrainz.org/recording/d45852f1-c2a0-4fa1-abca-c623e406b5c5#_>	<http://purl.org/dc/elements/1.1/title>	"Girls up Front" .
+<http://musicbrainz.org/artist/ceb9b940-53f0-49c0-93c9-8936d596424c#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicArtist> .
+<http://musicbrainz.org/recording/8da8d4cb-e320-4370-be67-808137a2a6dc#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/80687df3-523d-4652-8850-929b580af71f#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/82fd5007-8303-444e-b294-51b08a274a08#_> .
+<http://musicbrainz.org/recording/d45852f1-c2a0-4fa1-abca-c623e406b5c5#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Girls up Front" .
+
+
+# Jokeren
+<http://musicbrainz.org/artist/4294b6db-e832-4c80-96c2-350d8dbcc4ff#_>	<http://purl.org/ontology/mo/biography>	<http://da.wikipedia.org/wiki/Jokeren_(rapper)> .
+<http://musicbrainz.org/release/f4458378-32a0-4600-a75d-84a915c125f1#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/release/f4458378-32a0-4600-a75d-84a915c125f1#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Alpha Han"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/artist/4294b6db-e832-4c80-96c2-350d8dbcc4ff#_>	<http://xmlns.com/foaf/0.1/name>	"Jokeren" .
+<http://musicbrainz.org/artist/4294b6db-e832-4c80-96c2-350d8dbcc4ff#_>	<http://purl.org/ontology/mo/biography>	<http://en.wikipedia.org/wiki/Jokeren> .
+<http://musicbrainz.org/recording/6663d492-05ce-46b1-b2f0-396630d96ef0#_>	<http://purl.org/dc/elements/1.1/title>	"Havnen" .
+<http://musicbrainz.org/release/f4458378-32a0-4600-a75d-84a915c125f1#_>	<http://purl.org/ontology/mo/track_count>	"14"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/recording/6663d492-05ce-46b1-b2f0-396630d96ef0#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Havnen" .
+<http://musicbrainz.org/release/f4458378-32a0-4600-a75d-84a915c125f1#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/bf47cb24-ac76-414a-b923-668645d57d4d#_> .
+<http://musicbrainz.org/recording/bf47cb24-ac76-414a-b923-668645d57d4d#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/ba9d0313-1bd3-4ca7-a56c-6dc35f925b71#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Livet i krybesporet" .
+<http://musicbrainz.org/release/f4458378-32a0-4600-a75d-84a915c125f1#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/6663d492-05ce-46b1-b2f0-396630d96ef0#_> .
+<http://musicbrainz.org/artist/4294b6db-e832-4c80-96c2-350d8dbcc4ff#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/SoloMusicArtist> .
+<http://musicbrainz.org/artist/4294b6db-e832-4c80-96c2-350d8dbcc4ff#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Jokeren" .
+<http://musicbrainz.org/release/f4458378-32a0-4600-a75d-84a915c125f1#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/4294b6db-e832-4c80-96c2-350d8dbcc4ff#_> .
+<http://musicbrainz.org/release/f4458378-32a0-4600-a75d-84a915c125f1#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/ba9d0313-1bd3-4ca7-a56c-6dc35f925b71#_> .
+<http://musicbrainz.org/recording/ba9d0313-1bd3-4ca7-a56c-6dc35f925b71#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/bf47cb24-ac76-414a-b923-668645d57d4d#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Somom.com" .
+<http://musicbrainz.org/recording/6663d492-05ce-46b1-b2f0-396630d96ef0#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/ba9d0313-1bd3-4ca7-a56c-6dc35f925b71#_>	<http://purl.org/dc/elements/1.1/title>	"Livet i krybesporet" .
+<http://musicbrainz.org/release/f4458378-32a0-4600-a75d-84a915c125f1#_>	<http://purl.org/dc/elements/1.1/title>	"Alpha Han"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/bf47cb24-ac76-414a-b923-668645d57d4d#_>	<http://purl.org/dc/elements/1.1/title>	"Somom.com" .
+<http://musicbrainz.org/artist/4294b6db-e832-4c80-96c2-350d8dbcc4ff#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicArtist> .

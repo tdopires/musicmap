@@ -1,0 +1,130 @@
+
+
+# DeathBoy
+<http://musicbrainz.org/recording/3f3a9606-8d57-4e8b-9a32-ceb51581399d#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/artist/41491f31-4548-454e-a58d-d2d09547f23d#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicArtist> .
+<http://musicbrainz.org/release/c3c5b57a-e5ab-404b-9902-684ca9c8765b#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/41491f31-4548-454e-a58d-d2d09547f23d#_> .
+<http://musicbrainz.org/recording/81f959e9-d666-467a-9682-f47e736cbeb3#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/7f1ad69d-65db-4ddb-87f5-54663a857049#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/recording/5178eda8-6976-4300-a1dc-75d54eee8d91#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/bf3eaf32-faff-4266-8942-5f33cc1786b0#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/11506e00-e03d-4aa4-8bba-804a9f0f0654#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Underskin" .
+<http://musicbrainz.org/recording/2b722f4e-8970-4b29-ad3a-788168d39f24#_>	<http://purl.org/dc/elements/1.1/title>	"Hell Is on the Way" .
+<http://musicbrainz.org/release/cdecb689-f69a-4038-978b-e84a45157c2a#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/41491f31-4548-454e-a58d-d2d09547f23d#_> .
+<http://musicbrainz.org/recording/8f70c1ba-4bb7-4f62-9792-8ee7b152010e#_>	<http://purl.org/dc/elements/1.1/title>	"Parasite" .
+<http://musicbrainz.org/recording/2575bb98-9d0f-4025-b708-58058f9116d8#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Parasite" .
+<http://musicbrainz.org/recording/ba124ff3-808a-4bf5-9c0c-847e7ee05494#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/7f1ad69d-65db-4ddb-87f5-54663a857049#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Music to Crash Cars To"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/81f959e9-d666-467a-9682-f47e736cbeb3#_>	<http://purl.org/dc/elements/1.1/title>	"Decimate" .
+<http://musicbrainz.org/release/c3c5b57a-e5ab-404b-9902-684ca9c8765b#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/3f3a9606-8d57-4e8b-9a32-ceb51581399d#_> .
+<http://musicbrainz.org/recording/5178eda8-6976-4300-a1dc-75d54eee8d91#_>	<http://purl.org/dc/elements/1.1/title>	"Sick World" .
+<http://musicbrainz.org/release/cdecb689-f69a-4038-978b-e84a45157c2a#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/bf3eaf32-faff-4266-8942-5f33cc1786b0#_> .
+<http://musicbrainz.org/release/cdecb689-f69a-4038-978b-e84a45157c2a#_>	<http://purl.org/dc/elements/1.1/title>	"Boxes of Tricks and Traps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/7b679b3f-ad98-4ff2-ae76-98de43f06d22#_>	<http://purl.org/dc/elements/1.1/title>	"Lost Again" .
+<http://musicbrainz.org/recording/aa024f9a-cb1f-4bb0-b95b-2513d5983c86#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Crawl Out" .
+<http://musicbrainz.org/recording/153374e9-e249-43c1-85f4-02e7946d9908#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/3f3a9606-8d57-4e8b-9a32-ceb51581399d#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"We Will Destroy (Kat5can remix)" .
+<http://musicbrainz.org/recording/81f959e9-d666-467a-9682-f47e736cbeb3#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Decimate" .
+<http://musicbrainz.org/release/c3c5b57a-e5ab-404b-9902-684ca9c8765b#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/153374e9-e249-43c1-85f4-02e7946d9908#_> .
+<http://musicbrainz.org/recording/aa024f9a-cb1f-4bb0-b95b-2513d5983c86#_>	<http://purl.org/dc/elements/1.1/title>	"Crawl Out" .
+<http://musicbrainz.org/release/9cac8647-0bf1-47f0-b741-e36e07ed6672#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/41491f31-4548-454e-a58d-d2d09547f23d#_> .
+<http://musicbrainz.org/recording/2575bb98-9d0f-4025-b708-58058f9116d8#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/7f1ad69d-65db-4ddb-87f5-54663a857049#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/81f959e9-d666-467a-9682-f47e736cbeb3#_> .
+<http://musicbrainz.org/recording/e17fe069-8855-42ff-98ce-897967f58aa9#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/7f1ad69d-65db-4ddb-87f5-54663a857049#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/41491f31-4548-454e-a58d-d2d09547f23d#_> .
+<http://musicbrainz.org/recording/7b679b3f-ad98-4ff2-ae76-98de43f06d22#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/b77e758b-b19a-4487-ab08-863a521a1e3d#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/11506e00-e03d-4aa4-8bba-804a9f0f0654#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/cdecb689-f69a-4038-978b-e84a45157c2a#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/11506e00-e03d-4aa4-8bba-804a9f0f0654#_> .
+<http://musicbrainz.org/recording/bf3eaf32-faff-4266-8942-5f33cc1786b0#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Enemy Mine" .
+<http://musicbrainz.org/release/7f1ad69d-65db-4ddb-87f5-54663a857049#_>	<http://purl.org/dc/elements/1.1/title>	"Music to Crash Cars To"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/2b722f4e-8970-4b29-ad3a-788168d39f24#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/f41ced71-1baf-4692-b56b-6e2203d9dfbc#_>	<http://purl.org/dc/elements/1.1/title>	"Music to Crash Cars To" .
+<http://musicbrainz.org/recording/5178eda8-6976-4300-a1dc-75d54eee8d91#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Sick World" .
+<http://musicbrainz.org/release/7f1ad69d-65db-4ddb-87f5-54663a857049#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/5178eda8-6976-4300-a1dc-75d54eee8d91#_> .
+<http://musicbrainz.org/release/7f1ad69d-65db-4ddb-87f5-54663a857049#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/8f70c1ba-4bb7-4f62-9792-8ee7b152010e#_> .
+<http://musicbrainz.org/recording/2575bb98-9d0f-4025-b708-58058f9116d8#_>	<http://purl.org/dc/elements/1.1/title>	"Parasite" .
+<http://musicbrainz.org/recording/8f70c1ba-4bb7-4f62-9792-8ee7b152010e#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/9cac8647-0bf1-47f0-b741-e36e07ed6672#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/ba124ff3-808a-4bf5-9c0c-847e7ee05494#_> .
+<http://musicbrainz.org/recording/153374e9-e249-43c1-85f4-02e7946d9908#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Change" .
+<http://musicbrainz.org/artist/41491f31-4548-454e-a58d-d2d09547f23d#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicGroup> .
+<http://musicbrainz.org/release/9cac8647-0bf1-47f0-b741-e36e07ed6672#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/e17fe069-8855-42ff-98ce-897967f58aa9#_> .
+<http://musicbrainz.org/recording/153374e9-e249-43c1-85f4-02e7946d9908#_>	<http://purl.org/dc/elements/1.1/title>	"Change" .
+<http://musicbrainz.org/release/c3c5b57a-e5ab-404b-9902-684ca9c8765b#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Sampler IV"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/cdecb689-f69a-4038-978b-e84a45157c2a#_>	<http://purl.org/ontology/mo/track_count>	"13"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/release/c3c5b57a-e5ab-404b-9902-684ca9c8765b#_>	<http://purl.org/dc/elements/1.1/title>	"Sampler IV"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/ba124ff3-808a-4bf5-9c0c-847e7ee05494#_>	<http://purl.org/dc/elements/1.1/title>	"Lost Again" .
+<http://musicbrainz.org/recording/7b679b3f-ad98-4ff2-ae76-98de43f06d22#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Lost Again" .
+<http://musicbrainz.org/recording/ba124ff3-808a-4bf5-9c0c-847e7ee05494#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Lost Again" .
+<http://musicbrainz.org/recording/e17fe069-8855-42ff-98ce-897967f58aa9#_>	<http://purl.org/dc/elements/1.1/title>	"Decimate" .
+<http://musicbrainz.org/recording/3f3a9606-8d57-4e8b-9a32-ceb51581399d#_>	<http://purl.org/dc/elements/1.1/title>	"We Will Destroy (Kat5can remix)" .
+<http://musicbrainz.org/release/7f1ad69d-65db-4ddb-87f5-54663a857049#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/aa024f9a-cb1f-4bb0-b95b-2513d5983c86#_> .
+<http://musicbrainz.org/recording/bf3eaf32-faff-4266-8942-5f33cc1786b0#_>	<http://purl.org/dc/elements/1.1/title>	"Enemy Mine" .
+<http://musicbrainz.org/recording/8f70c1ba-4bb7-4f62-9792-8ee7b152010e#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Parasite" .
+<http://musicbrainz.org/recording/f41ced71-1baf-4692-b56b-6e2203d9dfbc#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/recording/b77e758b-b19a-4487-ab08-863a521a1e3d#_>	<http://purl.org/dc/elements/1.1/title>	"We Will Destroy" .
+<http://musicbrainz.org/recording/2b722f4e-8970-4b29-ad3a-788168d39f24#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Hell Is on the Way" .
+<http://musicbrainz.org/recording/f41ced71-1baf-4692-b56b-6e2203d9dfbc#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Music to Crash Cars To" .
+<http://musicbrainz.org/release/7f1ad69d-65db-4ddb-87f5-54663a857049#_>	<http://purl.org/ontology/mo/track_count>	"14"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/recording/e17fe069-8855-42ff-98ce-897967f58aa9#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Decimate" .
+<http://musicbrainz.org/recording/aa024f9a-cb1f-4bb0-b95b-2513d5983c86#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/9cac8647-0bf1-47f0-b741-e36e07ed6672#_>	<http://purl.org/dc/elements/1.1/title>	"Set 1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/9cac8647-0bf1-47f0-b741-e36e07ed6672#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/release/9cac8647-0bf1-47f0-b741-e36e07ed6672#_>	<http://purl.org/ontology/mo/track_count>	"8"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/release/c3c5b57a-e5ab-404b-9902-684ca9c8765b#_>	<http://purl.org/ontology/mo/track_count>	"6"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/release/7f1ad69d-65db-4ddb-87f5-54663a857049#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/f41ced71-1baf-4692-b56b-6e2203d9dfbc#_> .
+<http://musicbrainz.org/release/9cac8647-0bf1-47f0-b741-e36e07ed6672#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Set 1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/11506e00-e03d-4aa4-8bba-804a9f0f0654#_>	<http://purl.org/dc/elements/1.1/title>	"Underskin" .
+<http://musicbrainz.org/recording/b77e758b-b19a-4487-ab08-863a521a1e3d#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"We Will Destroy" .
+<http://musicbrainz.org/release/c3c5b57a-e5ab-404b-9902-684ca9c8765b#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/release/9cac8647-0bf1-47f0-b741-e36e07ed6672#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/2575bb98-9d0f-4025-b708-58058f9116d8#_> .
+<http://musicbrainz.org/release/cdecb689-f69a-4038-978b-e84a45157c2a#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/release/7f1ad69d-65db-4ddb-87f5-54663a857049#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/b77e758b-b19a-4487-ab08-863a521a1e3d#_> .
+<http://musicbrainz.org/artist/41491f31-4548-454e-a58d-d2d09547f23d#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"DeathBoy" .
+<http://musicbrainz.org/release/cdecb689-f69a-4038-978b-e84a45157c2a#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Boxes of Tricks and Traps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/7f1ad69d-65db-4ddb-87f5-54663a857049#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/2b722f4e-8970-4b29-ad3a-788168d39f24#_> .
+<http://musicbrainz.org/artist/41491f31-4548-454e-a58d-d2d09547f23d#_>	<http://xmlns.com/foaf/0.1/name>	"DeathBoy" .
+<http://musicbrainz.org/artist/41491f31-4548-454e-a58d-d2d09547f23d#_>	<http://purl.org/ontology/mo/biography>	<http://en.wikipedia.org/wiki/DeathBoy> .
+<http://musicbrainz.org/release/7f1ad69d-65db-4ddb-87f5-54663a857049#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/7b679b3f-ad98-4ff2-ae76-98de43f06d22#_> .
+
+
+# Servant
+<http://musicbrainz.org/recording/5ed8716c-8098-4390-8086-fcb9086f3edb#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Born In The Fire" .
+<http://musicbrainz.org/release/95407d5c-f830-46bb-9ef9-1b949af859c6#_>	<http://purl.org/ontology/mo/track_count>	"10"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/recording/874d411c-0432-4fb5-8ca1-2fbaea9abe96#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/95407d5c-f830-46bb-9ef9-1b949af859c6#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/f9e3fb3e-1b01-439f-94e3-df8a920c1f43#_> .
+<http://musicbrainz.org/artist/6e0ab3a4-1fc8-426f-b230-60b4d5f7f75b#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicArtist> .
+<http://musicbrainz.org/release/95407d5c-f830-46bb-9ef9-1b949af859c6#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Light Maneuvers"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/release/95407d5c-f830-46bb-9ef9-1b949af859c6#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/recording/5ed8716c-8098-4390-8086-fcb9086f3edb#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/95407d5c-f830-46bb-9ef9-1b949af859c6#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/5ed8716c-8098-4390-8086-fcb9086f3edb#_> .
+<http://musicbrainz.org/recording/5ed8716c-8098-4390-8086-fcb9086f3edb#_>	<http://purl.org/dc/elements/1.1/title>	"Born In The Fire" .
+<http://musicbrainz.org/release/95407d5c-f830-46bb-9ef9-1b949af859c6#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/6e0ab3a4-1fc8-426f-b230-60b4d5f7f75b#_> .
+<http://musicbrainz.org/artist/6e0ab3a4-1fc8-426f-b230-60b4d5f7f75b#_>	<http://purl.org/ontology/mo/biography>	<http://en.wikipedia.org/wiki/Servant_(band)> .
+<http://musicbrainz.org/recording/f9e3fb3e-1b01-439f-94e3-df8a920c1f43#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/artist/6e0ab3a4-1fc8-426f-b230-60b4d5f7f75b#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicGroup> .
+<http://musicbrainz.org/recording/874d411c-0432-4fb5-8ca1-2fbaea9abe96#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Zero Minus One" .
+<http://musicbrainz.org/release/95407d5c-f830-46bb-9ef9-1b949af859c6#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/874d411c-0432-4fb5-8ca1-2fbaea9abe96#_> .
+<http://musicbrainz.org/artist/6e0ab3a4-1fc8-426f-b230-60b4d5f7f75b#_>	<http://xmlns.com/foaf/0.1/name>	"Servant" .
+<http://musicbrainz.org/recording/f9e3fb3e-1b01-439f-94e3-df8a920c1f43#_>	<http://purl.org/dc/elements/1.1/title>	"Surrender" .
+<http://musicbrainz.org/artist/6e0ab3a4-1fc8-426f-b230-60b4d5f7f75b#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Servant" .
+<http://musicbrainz.org/release/95407d5c-f830-46bb-9ef9-1b949af859c6#_>	<http://purl.org/dc/elements/1.1/title>	"Light Maneuvers"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/f9e3fb3e-1b01-439f-94e3-df8a920c1f43#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Surrender" .
+<http://musicbrainz.org/recording/874d411c-0432-4fb5-8ca1-2fbaea9abe96#_>	<http://purl.org/dc/elements/1.1/title>	"Zero Minus One" .
+
+
+# Blanket of Secrecy
+<http://musicbrainz.org/artist/4dde4730-1857-429b-8986-d2d1b07912a7#_>	<http://xmlns.com/foaf/0.1/name>	"Blanket of Secrecy" .
+<http://musicbrainz.org/artist/4dde4730-1857-429b-8986-d2d1b07912a7#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Blanket of Secrecy" .
+<http://musicbrainz.org/artist/4dde4730-1857-429b-8986-d2d1b07912a7#_>	<http://purl.org/ontology/mo/biography>	<http://en.wikipedia.org/wiki/Blanket_of_Secrecy> .
+<http://musicbrainz.org/artist/4dde4730-1857-429b-8986-d2d1b07912a7#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicGroup> .
+<http://musicbrainz.org/release/02a23061-f2bc-47cd-8913-e16f46c3fadf#_>	<http://purl.org/ontology/mo/track>	<http://musicbrainz.org/recording/778ec609-985c-4779-b3e4-ee110ecc8087#_> .
+<http://musicbrainz.org/recording/778ec609-985c-4779-b3e4-ee110ecc8087#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Photograph" .
+<http://musicbrainz.org/release/02a23061-f2bc-47cd-8913-e16f46c3fadf#_>	<http://www.w3.org/2000/01/rdf-schema#label>	"Walls Have Ears"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/artist/4dde4730-1857-429b-8986-d2d1b07912a7#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/MusicArtist> .
+<http://musicbrainz.org/release/02a23061-f2bc-47cd-8913-e16f46c3fadf#_>	<http://purl.org/ontology/mo/track_count>	"12"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://musicbrainz.org/recording/778ec609-985c-4779-b3e4-ee110ecc8087#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Track> .
+<http://musicbrainz.org/release/02a23061-f2bc-47cd-8913-e16f46c3fadf#_>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://purl.org/ontology/mo/Record> .
+<http://musicbrainz.org/release/02a23061-f2bc-47cd-8913-e16f46c3fadf#_>	<http://purl.org/dc/elements/1.1/title>	"Walls Have Ears"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://musicbrainz.org/recording/778ec609-985c-4779-b3e4-ee110ecc8087#_>	<http://purl.org/dc/elements/1.1/title>	"Photograph" .
+<http://musicbrainz.org/release/02a23061-f2bc-47cd-8913-e16f46c3fadf#_>	<http://purl.org/ontology/mo/publisher>	<http://musicbrainz.org/artist/4dde4730-1857-429b-8986-d2d1b07912a7#_> .
